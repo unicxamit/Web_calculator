@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container-div{
+      @apply  px-6 md:px-20 py-10 bg-white w-full
+    }
+    .second-container{
+       @apply  max-w-screen-xl mx-auto  3sm:px-10 
+    }
+    .gst-heading{
+       @apply text-4xl font-medium text-gray-900 mb-5
+    }
+  .grid-layout {
+    @apply grid grid-cols-1 gap-4 space-y-4 md:space-y-0 2md:grid-cols-2;
+  }
+
+  .calculator-wrapper {
+ 
+  }
+
+  .input-label {
+    @apply block text-gray-800 font-semibold mb-2;
+  }
+
+  .input-wrapper {
+    @apply flex items-center border rounded-xl shadow-small px-3 py-2 ;
+  }
+
+  .input-field {
+    @apply  text-gray-700 font-medium outline-none bg-transparent;
+  }
+
+  .error-text {
+    @apply text-red-500 text-xs mt-1;
+  }
+
+  .type-buttons {
+    @apply flex flex-col gap-3  3sm:flex-row;
+  }
+
+  .type-button {
+    @apply flex-1 py-2 rounded-lg text-sm font-medium cursor-pointer transition-transform duration-300 ;
+  }
+.type-button:hover{
+  @apply scale-105
+}
+  .rate-grid {
+    @apply grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-y-2 gap-x-2 ;
+  }
+
+  .rate-button {
+    @apply py-2 rounded-lg border text-sm font-medium text-center w-full transition-transform duration-300 ;
+  }
+  .rate-button:hover{
+   @apply scale-105
+  }
+
+  .dropdown {
+    @apply w-full p-2.5 border border-gray-300 rounded-lg text-gray-700 font-medium outline-none ;
+  }
+
+  .results-box {
+    @apply rounded px-6 py-6  bg-white w-full shadow-shadowsmall;
+    /* class="p-12 bg-white relative w-full sm:p-6 xs:p-2 rounded-tr-md   rounded-br-md rounded-bl-md" */
+  }
+
+  .results-row {
+    @apply flex justify-between py-2 border-b-2 border-gray-100;
+  }
+
+  .highlighted-total {
+    @apply flex justify-between items-center mt-10 bg-green-600 py-4 px-10 rounded;
+  }
+
+  .highlighted-text {
+    @apply text-[1rem] font-semibold text-gray-100 uppercase;
+  }
+
+  .result-span{
+   @apply font-semibold text-gray-700
+  }
+  .content-div{
+   @apply space-y-12 text-gray-800 text-[15px] leading-relaxed 
+  }
+}
