@@ -24,7 +24,7 @@ const AllCalculator = () => {
   return (
     <>
       {/* <Header /> */}
-      <section className=" px-6  py-10 bg-white w-full">
+      <section className=" px-6  py-5 bg-white w-full">
         <div className=" max-w-screen-xl mx-auto pt-18 lg:px-10 3sm:px-4 pb-5">
          
             <section className="mb-14">
@@ -37,7 +37,7 @@ const AllCalculator = () => {
               {/* <div className="w-full cursor-pointer " onClick={() => navigate("/gst-calc")}> */}
 
               <div
-                className=" border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2
+                className=" border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 
                  w-full cursor-pointer border-[#D5E5FC]   hover:border-primary "
                 // data-testid="calculator-card"
                 // style={{
@@ -116,7 +116,7 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 h-72 border-[#D5E5FC] cursor-pointer  hover:border-primary "  
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary "  
                 onClick={() => navigate("/nps-calc")}
               >
                 <div>
@@ -133,7 +133,7 @@ const AllCalculator = () => {
                     <img
                       src={nps}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-3 object-contain"
+                      className="w-full h-24 mt-10 object-contain"
                     />
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const AllCalculator = () => {
                     <img
                       src={hra}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-3 object-contain"
+                      className="w-full h-24 mt-10 object-contain"
                     />
                   </div>
                 </div>
@@ -180,13 +180,13 @@ const AllCalculator = () => {
                     <img
                       src={sip}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-3 object-contain"
+                      className="w-full h-32 mt-6 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary  "
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary  "
                 onClick={() => navigate("/gratuity-calc")}
               >
                 <div>
@@ -202,13 +202,13 @@ const AllCalculator = () => {
                     <img
                       src={gratuity}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 object-contain"
+                      className="w-full h-28 mt-8 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] h-72 hover:border-primary  cursor-pointer"
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer"
                 onClick={() => navigate("/retirement-calc")}
               >
                 <div>
@@ -225,7 +225,7 @@ const AllCalculator = () => {
                     <img
                       src={retirement}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-20 lg:mt-4 object-contain"
+                      className="w-full h-20 lg:mt-12 object-contain"
                     />
                   </div>
                 {/* </div> */}
@@ -247,20 +247,20 @@ const AllCalculator = () => {
                     <img
                       src={rd}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-32 object-contain"
+                      className="w-full h-36 mt-4 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary   h-72 "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary   h-[318px]"
                 onClick={() => navigate("/simple-calc")}
               >
                 <div>
                   <p className="text-2xl font-medium text-textColor  mb-3 ">
                     Simple Interest Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-3  ">
+                  <span className="font-normal text-gray-500 line-clamp-2  ">
                     Easily predict your money's future, compound interest
                     calculator for your financial adventure.
                   </span>
@@ -269,7 +269,7 @@ const AllCalculator = () => {
                     <img
                       src={simple}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 object-contain"
+                      className="w-full h-24 mt-8 object-contain"
                     />
                   </div>
                 </div>
@@ -292,13 +292,13 @@ const AllCalculator = () => {
                     <img
                       src={tds}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-7 object-contain"
+                      className="w-full h-24 mt-9 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer h-72 "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer "
                 onClick={() => navigate("/business")}
               >
                 <div>
@@ -315,13 +315,13 @@ const AllCalculator = () => {
                     <img
                       src={business}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-2 object-contain"
+                      className="w-full h-28 mt-6 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary   "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary  h-[318px] "
                 onClick={() => navigate("/ppf-calc")}
               >
                 <div>
@@ -338,7 +338,7 @@ const AllCalculator = () => {
                     <img
                       src={ppf}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-3 object-contain"
+                      className="w-full h-28 mt-5 object-contain"
                     />
                   </div>
                 </div>
@@ -351,7 +351,7 @@ const AllCalculator = () => {
                   <p className="text-2xl font-medium text-textColor  mb-3 ">
                     Mutual Fund Returns Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-3 ">
+                  <span className="font-normal text-gray-500 line-clamp-2 ">
                     Mutual Fund Returns Calculator forecasts potential returns
                     based on investment amount, tenure, and expected returns. It
                     assists in evaluating mutual fund investment strategies.
@@ -361,7 +361,7 @@ const AllCalculator = () => {
                     <img
                       src={mutual}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 object-contain"
+                      className="w-full h-28 mt-5 object-contain"
                     />
                   </div>
                 </div>
@@ -384,20 +384,20 @@ const AllCalculator = () => {
                     <img
                       src={emi}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-36 object-contain"
+                      className="w-full h-36 mt-2 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2  border-[#D5E5FC] cursor-pointer  hover:border-primary  "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary  "
                 onClick={() => navigate("/fd-calc")}
               >
                 <div>
                   <p className="text-2xl font-medium text-textColor mb-3 ">
                     Online Fixed Deposit(FD) Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-3 ">
+                  <span className="font-normal text-gray-500 line-clamp-2 ">
                     Determine your FD returns with our Online Fixed Deposit
                     Calculator. Enter your investment amount, tenure, and
                     interest rate for results
@@ -407,7 +407,7 @@ const AllCalculator = () => {
                     <img
                       src={fd}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 object-contain"
+                      className="w-full h-24 mt-9 object-contain"
                     />
                   </div>
                 </div>
@@ -420,7 +420,7 @@ const AllCalculator = () => {
                   <p className="text-2xl font-medium text-textColor  mb-3 ">
                     Online Home EMI Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-3  ">
+                  <span className="font-normal text-gray-500 line-clamp-2  ">
                     Calculate your Home Loan EMI effortlessly with our online
                     tool. Enter the loan amount, interest rate, and tenure to
                     get the EMI outcomes.
@@ -430,7 +430,7 @@ const AllCalculator = () => {
                     <img
                       src={home}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 object-contain"
+                      className="w-full h-24 mt-9 object-contain"
                     />
                   </div>
                 </div>
@@ -453,7 +453,7 @@ const AllCalculator = () => {
                     <img
                       src={lump}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 object-contain"
+                      className="w-full h-28 mt-5 object-contain"
                     />
                   </div>
                 </div>

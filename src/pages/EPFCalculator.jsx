@@ -312,7 +312,7 @@ function EPFCalculator() {
     <Header/>
     <section className="container-div mt-14">
       <div className=" second-container">
-        <div className="border-4">
+        <div className="">
         <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">EPF Calculator</h1>
           {/* <p className="mb-8 ">
@@ -641,7 +641,7 @@ function EPFCalculator() {
         
 
         {/* What is EPF Section */}
-        <div className="mt-24 border-2">
+        <div className="mt-24 ">
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             <section className="">
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -1110,7 +1110,7 @@ function EPFCalculator() {
                       )}
                     </div>
                     <p
-                      className={`text-gray-800 text-md font-normal px-3 ${
+                      className={`text-gray-800 text-base font-normal px-3 ${
                         openFAQ === i
                           ? "max-h-[500px] opacity-100 py-2 "
                           : "max-h-0 opacity-0"

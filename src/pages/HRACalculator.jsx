@@ -10,7 +10,8 @@ import {
   MapPin,
   Users,
 } from "lucide-react"; 
-import "../css/Hra.css"
+import Header from "../component/Header";
+
 const HRACalculator = () => {
   const [basic, setBasic] = useState("600000");
   const [da, setDa] = useState("998");
@@ -142,19 +143,22 @@ const HRACalculator = () => {
     },
   ];
   return (
-    <div className="container-div">
+    <><Header/>
+    <section className="container-div mt-14">
       <div className=" second-container ">
+      <div className="border-2"> 
+
       
-        <div className="">
+        <div className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5 ">HRA Calculator</h1>
-          <p className="mb-8">
+          {/* <p className="mb-8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
             veniam beatae veritatis possimus nisi quaerat ad, omnis voluptas
             harum odit quod eveniet pariatur ex vel magni reprehenderit nobis
             minus dolore.
-          </p>
+          </p> */}
         </div>
-        <div className="grid-layout">
+        <div className="grid-layout border-2">
           <div className="  ">
             <div className="mb-6">
               <label className="block text-gray-600 font-medium mb-2">Basic salary received (₹)</label>
@@ -367,7 +371,7 @@ const HRACalculator = () => {
         </div>
      
 
-      <div className="mt-10">
+      <div className="mt-24 border-2">
         <div className="space-y-14 text-gray-700 text-base leading-relaxed">
           {/* Intro - Expanded with Updates/Rules style */}
           <section className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
@@ -442,7 +446,7 @@ const HRACalculator = () => {
 
           {/* What is House Rent Allowance (HRA)? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-medium text-textColor mb-3">
               What is House Rent Allowance (HRA)?
             </h2>
             <p className="mb-4">
@@ -863,6 +867,8 @@ const HRACalculator = () => {
       </div>
     </div>
     </div>
+    </section>
+    </>
    
   );
 };
