@@ -22,7 +22,7 @@ import {
   Percent,
   CreditCard,
 } from "lucide-react";
-
+import fdlogo from "../assets/BG IMAGES/fd1.png"
 function FDCalculator() {
   const [principal, setPrincipal] = useState("10000");
   const [rate, setRate] = useState("5");
@@ -366,7 +366,9 @@ function FDCalculator() {
               <h2 className="text-2xl font-bold mb-3">
                 What is a Fixed Deposit (FD)?
               </h2>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                    <p className="mb-4 text-gray-800 leading-relaxed">
                 A{" "}
                 <span className="font-bold text-blue-600">
                   Fixed Deposit (FD)
@@ -384,6 +386,17 @@ function FDCalculator() {
                 them ideal for achieving specific financial goals over short to
                 medium terms.
               </p>
+                  </div>
+              
+               <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={fdlogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
             </section>
 
             {/* Why is an FD Calculator Important? Section */}

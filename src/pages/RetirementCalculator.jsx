@@ -13,8 +13,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Header from "../component/Header";
-// Assuming FaRupeeSign is used for currency inputs
-// import { FaRupeeSign } from "react-icons/fa";
+import gratuitylogo from "../assets/BG IMAGES/retir1.png"
 
 
 function RetirementCalculator() {
@@ -791,7 +790,9 @@ function RetirementCalculator() {
               <h2 className="text-2xl font-bold mb-3">
                 What is Retirement Planning?
               </h2>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                     <p className="mb-4 text-gray-800 leading-relaxed">
                 <strong className="font-semibold">Retirement planning</strong>{" "}
                 is the process of setting financial goals for your post-working
                 life and developing a strategy to achieve them. It involves
@@ -801,6 +802,17 @@ function RetirementCalculator() {
                 ensure you maintain your desired lifestyle and financial
                 independence long after you stop earning an active income.
               </p>
+                  </div>
+             
+               <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={gratuitylogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
             </section>
 
             {/* Securing Your Future: Why a Retirement Calculator is Essential Section */}

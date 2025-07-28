@@ -15,7 +15,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import Header from "../component/Header";
-
+import gratuitylogo from "../assets/BG IMAGES/gratuity1.png"
 function GratuityCalculator() {
   const [lastSalary, setLastSalary] = useState("10000");
   const [yearsOfService, setYearsOfService] = useState("5");
@@ -263,7 +263,9 @@ function GratuityCalculator() {
     {/* What is Gratuity? */}
     <section>
       <h2 className="text-2xl font-bold mb-3">What is Gratuity?</h2>
-      <p className="mb-4">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                      <p className="mb-4">
         <strong>Gratuity</strong> is a lump sum payment made by an employer to an
         employee upon the employee's superannuation (retirement),
         resignation, death, or disablement, provided they meet certain
@@ -272,10 +274,22 @@ function GratuityCalculator() {
         the <strong>Payment of Gratuity Act, 1972</strong>, and a policy-based
         benefit for others.
       </p>
-      <p>
+       <p>
         It serves as a long-term benefit for employees, recognizing
         their loyalty and contribution to the company over the years.
       </p>
+                  </div>
+    
+     
+       <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={gratuitylogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
     </section>
 
     {/* The Payment of Gratuity Act, 1972 (and its Scope) */}

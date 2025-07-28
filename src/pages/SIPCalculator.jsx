@@ -12,7 +12,7 @@ import {
   HelpCircle,
 } from "lucide-react"; 
 import Header from "../component/Header";
-
+import siplogo from "../assets/BG IMAGES/sip1.png"
 function SIPCalculator() {
   const [tab, setTab] = useState("sip");
   const [sipAmount, setSipAmount] = useState("5000");
@@ -597,7 +597,9 @@ function SIPCalculator() {
             <h2 className="text-2xl font-bold mb-3">
               What is a Systematic Investment Plan (SIP)?
             </h2>
-            <p className="mb-4">
+             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                     <p className="mb-4">
               A <strong>Systematic Investment Plan (SIP)</strong> is an
               investment method offered by mutual funds, allowing investors to
               make regular, fixed payments (e.g., monthly, quarterly) into a
@@ -618,6 +620,16 @@ function SIPCalculator() {
               proving to be a powerful tool for long-term wealth creation,
               especially when leveraging the benefit of compounding.
             </p>
+                  </div>
+            <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={siplogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
           </section>
 
           {/* How Does a SIP Work? - Standard section style */}

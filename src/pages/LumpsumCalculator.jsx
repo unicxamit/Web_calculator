@@ -15,7 +15,8 @@ import {
  
 } from "lucide-react";
 import Header from "../component/Header";
-
+import lumpsumlogo from "../assets/BG IMAGES/lump1.png"
+import benifite from "../assets/All-Calculators-image/benefit.png"
 function LumpsumCalculator() {
   const [amount, setAmount] = useState("10000");
   const [rate, setRate] = useState("5");
@@ -323,13 +324,13 @@ function LumpsumCalculator() {
                 It's a powerful way to leverage market opportunities if timed strategically, allowing your entire capital to benefit from compounding from day one.
               </p>
             </div>
-            <div className="flex justify-center items-center h-full rounded-lg overflow-hidden shadow-md">
-              {/* <img
-                src={lumpSumConceptImage}
+            <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+              <img
+                src={lumpsumlogo}
                 alt="Illustration showing a pile of money or investments growing, representing a lump sum mutual fund investment."
-                className="w-full h-auto object-cover rounded-lg"
+                className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
                 loading="lazy"
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -564,13 +565,13 @@ function LumpsumCalculator() {
                 </ul>
             </div>
             {/* Image for Who Can Benefit */}
-            <div className="flex justify-center items-center h-full rounded-lg overflow-hidden shadow-md">
-                {/* <img
-                    src={lumpSumWhoCanBenefitImage}
+            <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                <img
+                    src={benifite}
                     alt="Image showing diverse individuals benefiting from using a lump sum mutual fund calculator for investment planning"
-                    className="w-full h-auto object-cover rounded-lg"
+                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
                     loading="lazy"
-                /> */}
+                />
             </div>
           </div>
         </section>

@@ -296,34 +296,34 @@ function GSTCalculator() {
               </div>
             </div>
 
-            <div className="mt-24 ">
-              <div className="space-y-14 text-gray-700 text-base leading-relaxed">
+            <div className="mt-24">
+              <div className="space-y-14 text-gray-700 leading-relaxed">
                 {/* Intro - Expanded */}
                 <section className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm ">
-                  <h2 className="text-2xl font-bold text-blue-700 mb-3 gap-2 flex items-center">
+                  <h2 className="text-[23px] font-semibold text-blue-700 mb-3 gap-2 flex items-center">
                     <AlertCircle
                       size={18}
                       className="mr-2 mt-1 flex-shrink-0"
                     />
                     Important GST Updates: What's New from July 2025!
                   </h2>
-                  <p className="text-blue-800 mb-4">
+                  <p className="text-blue-600 text-[16px] font-[300]  mb-4">
                     The <strong>GST framework in India</strong> has undergone
                     significant procedural updates effective{" "}
                     <strong>July 1, 2025</strong>. It is crucial for all
                     taxpayers to understand and adapt to these changes to
                     maintain compliance and avoid penalties.
                   </p>
-                  <ul className="list-inside space-y-8 text-blue-700">
+                  <ul className="list-inside space-y-6 text-blue-600">
                     <li>
-                      <strong className="flex items-start">
+                      <strong className="flex text-[18px] font-[400]  items-start mb-2">
                         <CheckCircle
                           size={18}
                           className="mr-2 mt-1 flex-shrink-0"
                         />
                         GSTR-3B Auto-Locking:
                       </strong>
-                      <span className="block ml-6 -mt-1">
+                      <span className="block ml-6 -mt-1 text-base font-[300] ">
                         From the <strong>July 2025 tax period</strong> (to be
                         filed in August), your <strong>GSTR-3B</strong> will be{" "}
                         <strong>hard-locked</strong> based on auto-populated
@@ -336,11 +336,11 @@ function GSTCalculator() {
                       </span>
                     </li>
                     <li>
-                      <strong className="flex items-start">
+                      <strong className="flex font-normal text-[18px] items-start mb-2">
                         <Clock size={18} className="mr-2 mt-1 flex-shrink-0" />
                         Strict 3-Year Time Limit for Returns:
                       </strong>
-                      <span className="block ml-6 -mt-1">
+                      <span className="block ml-6 -mt-1 text-base font-[300]">
                         A <strong>strict three-year deadline</strong> is now
                         enforced for filing all GST returns (
                         <strong>GSTR-1, 3B, 4, 5, 5A, 6, 7, 8, 9</strong>) from
@@ -352,14 +352,14 @@ function GSTCalculator() {
                       </span>
                     </li>
                     <li>
-                      <strong className="flex items-start">
+                      <strong className="flex text-[18px] font-normal mb-2 items-start">
                         <CheckCircle
                           size={18}
                           className="mr-2 mt-1 flex-shrink-0"
                         />
                         New E-Way Bill Portal 2.0:
                       </strong>
-                      <span className="block ml-6 -mt-1">
+                      <span className="block ml-6 -mt-1 text-base font-[300]">
                         The <strong>E-Way Bill 2.0 portal</strong> (accessible
                         at{" "}
                         <a
@@ -377,14 +377,14 @@ function GSTCalculator() {
                       </span>
                     </li>
                     <li>
-                      <strong className="flex items-start">
+                      <strong className="flex items-start text-[18px] font-normal mb-2">
                         <CheckCircle
                           size={18}
                           className="mr-2 mt-1 flex-shrink-0"
                         />
                         12% GST Slab Review:
                       </strong>
-                      <span className="block ml-6 -mt-1">
+                      <span className="block ml-6 -mt-1 text-base">
                         The GST Council is actively discussing a major revamp,
                         potentially
                         <strong>removing the 12% GST slab</strong> and
@@ -409,36 +409,36 @@ function GSTCalculator() {
                 <section className="">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4  ">
                     <div className=" ">
-                      <h2 className="text-2xl text-textColor font-medium mb-3">
+                      <h2 className="text-2xl text-textColor font-semibold mb-3">
                         What is Goods and Services Tax (GST) in India?
                       </h2>
                       <span className="space-y-3">
-                        <p className="text-md">
-                          <strong>GST (Goods and Services Tax)</strong> is a
+                        <p className="text-gray-600 tracking-wide text-[15px] font-[360] ">
+                          <strong className="text-blue-600">GST (Goods and Services Tax)</strong> is a
                           landmark unified, indirect tax system introduced in
                           India on <strong>July 1, 2017</strong>. It marked a
                           significant reform, replacing a multitude of cascading
                           indirect taxes such as{" "}
-                          <strong>Value Added Tax (VAT)</strong>,{" "}
-                          <strong>Service Tax</strong>,{" "}
-                          <strong>Excise Duty</strong>, and more. GST is levied
+                          <strong className="text-blue-600">Value Added Tax (VAT)</strong>,{" "}
+                          <strong className="text-blue-600">Service Tax,Excise Duty</strong>,{" "}
+                           and more. GST is levied
                           at each step of the supply chain on the "supply" of
                           goods and services and is ultimately borne by the
                           final consumer, creating a "One Nation, One Tax"
                           regime across India.
                         </p>
-                        <p className="text-md">
+                        <p className="text-gray-700 tracking-wide text-base font-[360]">
                           As a{" "}
-                          <strong>
+                          <strong className="text-blue-600">
                             comprehensive, multi-stage, destination-based tax
                           </strong>
                           , GST aims to streamline taxation, reduce complexity,
                           and foster economic growth by eliminating the
                           tax-on-tax effect through the robust{" "}
-                          <strong>Input Tax Credit (ITC)</strong> mechanism.
+                          <strong className="text-blue-600">Input Tax Credit (ITC)</strong> mechanism.
                           Goods and services are primarily categorized into{" "}
-                          <strong>five distinct GST slabs</strong>:{" "}
-                          <strong>0%, 5%, 12%, 18%, and 28%</strong>, although
+                          <strong className="text-blue-600">five distinct GST slabs : </strong>
+                          <strong className="text-blue-600">0%, 5%, 12%, 18%, and 28%</strong>, although
                           some products like petroleum, alcoholic drinks, and
                           electricity are not taxed under GST and fall under the
                           purview of individual state governments.
@@ -459,8 +459,8 @@ function GSTCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Types of GST in India: CGST, SGST, IGST, UTGST Explained
                   </h2>
-                  <p className="mb-4">
-                    Understanding the <strong>four types of GST</strong> is
+                  <p className="mb-4 text-gray-700 tracking-wide text-base font-[360]">
+                    Understanding the <strong className="text-blue-600">four types of GST</strong> is
                     crucial for accurate tax computation and compliance, as they
                     apply depending on the nature and location of the supply:
                   </p>
@@ -476,10 +476,10 @@ function GSTCalculator() {
                     </div>
                     <div className="space-y-4 ">
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-normal text-[#314259] text-lg">
+                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
                           CGST (Central GST)
                         </h3>
-                        <p className="text-sm text-gray-600">
+                        <p className=" text-gray-700 tracking-wide text-[14px] font-[300] ">
                           <strong>Central Goods and Services Tax</strong>.
                           Collected by the <strong>Central Government</strong>{" "}
                           for{" "}
@@ -491,10 +491,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-normal text-[#314259] text-lg">
+                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
                           SGST (State GST)
                         </h3>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
                           <strong>State Goods and Services Tax</strong>.
                           Collected by the <strong>State Government</strong> for{" "}
                           <strong>
@@ -505,10 +505,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-normal text-[#314259] text-lg">
+                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
                           IGST (Integrated GST)
                         </h3>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
                           <strong>Integrated Goods and Services Tax</strong>.
                           Collected by the <strong>Central Government</strong>{" "}
                           on{" "}
@@ -521,10 +521,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-normal text-[#314259] text-lg">
+                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
                           UTGST (Union Territory GST)
                         </h3>
-                        <p className="text-sm text-gray-600">
+                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
                           <strong>
                             Union Territory Goods and Services Tax
                           </strong>
@@ -544,37 +544,37 @@ function GSTCalculator() {
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
                     <div className="">
-                      <p className="text-md">
-                        Our <strong>user-friendly GST calculator</strong>{" "}
+                      <p className="text-gray-700 tracking-wide text-base font-[360]">
+                        Our <strong className="text-blue-600">user-friendly GST calculator</strong>{" "}
                         simplifies complex tax computations. Follow these simple
                         steps to get <strong>accurate results instantly</strong>
                         :
                       </p>
-                      <ol className="list-decimal list-inside space-y-1 text-md">
-                        <li>
-                          <strong>Enter the Price:</strong> Input the base price
+                      <ol className="list-decimal list-inside space-y-4 mt-3">
+                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                          <strong className="">Enter the Price:</strong> Input the base price
                           of your goods or services in the designated "Amount"
                           field.
                         </li>
-                        <li>
+                        <li className="text-gray-700 tracking-wide text-base font-[360]">
                           <strong>Select Calculation Type:</strong> Choose
                           whether the price you entered is "Inclusive of Tax"
                           (to extract GST) or "Exclusive of Tax" (to add GST).
                         </li>
-                        <li>
+                        <li className="text-gray-700 tracking-wide text-base font-[360]">
                           <strong>Choose GST Rate:</strong> Select the
                           applicable GST rate (e.g., 5%, 12%, 18%, or 28%) from
                           the available options. This corresponds to the tax
                           slab for your specific product or service.
                         </li>
-                        <li>
+                        <li className="text-gray-700 tracking-wide text-base font-[360]">
                           <strong>Pick Supply Type (if applicable):</strong>{" "}
                           Indicate if the supply is Inter-state or Intra-state.
                           Our calculator intelligently determines the{" "}
-                          <strong>CGST, SGST</strong>, or <strong>IGST</strong>{" "}
+                          <strong className="text-blue-600">CGST, SGST</strong>, or <strong className="text-blue-600">IGST</strong>{" "}
                           components.
                         </li>
-                        <li>
+                        <li className="text-gray-700 tracking-wide text-base font-[360]">
                           <strong>View Instant Breakdown:</strong> The
                           calculator will automatically display a clear
                           breakdown of the total amount, GST amount, and the net
@@ -597,34 +597,34 @@ function GSTCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     GST Calculation Formulas & Practical Examples
                   </h2>
-                  <p className="text-md">
-                    While our <strong>UniCX GST Calculator</strong> automates
+                  <p className="text-gray-700 tracking-wide text-base font-[360]">
+                    While our <strong className="text-blue-600">UniCX GST Calculator</strong> automates
                     everything, understanding the underlying formulas can
                     provide deeper insights into your tax liabilities:
                   </p>
-                  <h3 className="font-normal text-xl mt-4 mb-2">
+                  <h3 className="font-normal text-[18px] mt-4 mb-2">
                     1. When the Price is Exclusive of GST (Adding GST):
                   </h3>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>
+                  <ul className="list-disc list-inside ml-4 space-y-1 ">
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Amount</strong> = (Value of Supply x GST%) /
                       100
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>Price to be Charged</strong> = Value of Supply +
                       GST Amount
                     </li>
                   </ul>
 
-                  <h3 className="font-normal text-xl mt-4 mb-2">
+                  <h3 className="font-normal text-[18px] mt-4 mb-2">
                     2. When the Price is Inclusive of GST (Removing GST):
                   </h3>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>
+                  <ul className="list-disc list-inside ml-4 space-y-1 text-gray-700 tracking-wide text-[15px] font-[300]">
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Amount</strong> = Value of Supply – [Value of
                       Supply x{`{100 / (100 + GST%)}`}]
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>Original Price (Pre-GST)</strong> = Value of
                       Supply - GST Amount
                     </li>
@@ -673,8 +673,8 @@ function GSTCalculator() {
                     </div>
                   </div>
 
-                  <p className="mt-4">
-                    <strong>Impact of GST across the Supply Chain:</strong>{" "}
+                  <p className="mt-4 text-gray-700 tracking-wide text-base font-[360]">
+                    <strong className="">Impact of GST across the Supply Chain:</strong>{" "}
                     GST's <strong>Input Tax Credit (ITC) mechanism</strong>{" "}
                     significantly reduces the cascading effect of taxes (tax on
                     tax), benefiting{" "}
@@ -689,35 +689,35 @@ function GSTCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Who Can Benefit from the UniCX GST Calculator?
                   </h2>
-                  <p className="text-md">
+                  <p className="text-gray-700 tracking-wide text-base font-[360] mb-3">
                     Our <strong>GST calculator</strong> is a versatile tool
                     designed to assist a wide range of users in accurately
                     managing their GST-related calculations:
                   </p>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>
+                  <ul className="list-disc list-inside space-y-2 ">
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Small business owners & startups:</strong> For
                       accurate invoicing and expense tracking.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Freelancers and service providers:</strong> To
                       easily determine service charges inclusive or exclusive of
                       GST.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Retailers and e-commerce sellers:</strong> For
                       precise product pricing and tax compliance.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Manufacturers and Wholesalers:</strong> To
                       calculate GST payable at each stage of the supply chain
                       and manage Input Tax Credit effectively.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Customers:</strong> To verify the final GST
                       charges on purchases.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300]">
                       <strong>Accountants & Tax Professionals:</strong> As a
                       quick verification tool for clients' GST computations.
                     </li>
@@ -729,25 +729,25 @@ function GSTCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Advantages of Using the UniCX GST Calculator
                   </h2>
-                  <p>
-                    Leveraging our <strong>free online GST calculator</strong>{" "}
+                  <p className="text-gray-700 tracking-wide text-base font-[360] mb-3">
+                    Leveraging our <strong className="  ">free online GST calculator</strong>{" "}
                     offers significant benefits for individuals and businesses
                     alike:
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-md">
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300] mb-3">
                       <strong>Accuracy Guaranteed:</strong> Automated
                       calculations eliminate the common errors associated with
                       manual tax computations, ensuring precise GST calculations
                       for invoicing, pricing, and tax filings.
                     </li>
-                    <li>
-                      <strong>Significant Time Savings:</strong> Get instant
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300] mb-3">
+                      <strong className="">Significant Time Savings:</strong> Get instant
                       results, freeing up valuable time that can be redirected
                       to core business activities and strategic planning.
                     </li>
-                    <li>
-                      <strong>Simplifies Complexity:</strong> Easily bifurcate
+                    <li className="text-gray-700 tracking-wide text-[15px] font-[300] mb-3">
+                      <strong className="">Simplifies Complexity:</strong> Easily bifurcate
                       between CGST, SGST, and IGST components, providing clarity
                       in your tax breakdown.
                     </li>
@@ -773,7 +773,7 @@ function GSTCalculator() {
                 {/* Tip box - Maintained */}
                 <section className="">
                   <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md shadow-sm">
-                    <p className="text-sm text-yellow-700">
+                    <p className="text-sm text-yellow-700 tracking-wide  font-[360]">
                       <strong>UniCX Tip:</strong> For B2B invoices, always
                       display both CGST and SGST (or IGST for inter-state
                       supplies) clearly. This helps your clients accurately
@@ -790,7 +790,7 @@ function GSTCalculator() {
                     Beyond Calculations: UniCX - Your Partner in GST Compliance
                     & Growth
                   </h2>
-                  <p className="text-md">
+                  <p className="text-gray-700 tracking-wide text-base font-[360]">
                     At{" "}
                     <strong>
                       UniconsultX Solutions Private Limited (UniCX)
@@ -808,7 +808,7 @@ function GSTCalculator() {
                     Our Expert GST Services Include:
                   </h3>
                   <ul className="list-disc list-inside space-y-1 text-md">
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Registration Guidance:</strong> Seamless
                       assistance with obtaining your{" "}
                       <strong>
@@ -816,35 +816,35 @@ function GSTCalculator() {
                       </strong>
                       .
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Return Filing Support:</strong> Expert help
                       with accurate and timely filing of various GST returns
                       (e.g., GSTR-1, GSTR-3B), keeping in mind the new 3-year
                       time limit and GSTR-3B auto-locking.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>Input Tax Credit (ITC) Optimization:</strong>{" "}
                       Strategies to maximize your ITC claims, reducing your
                       overall tax liability and ensuring compliance with the
                       latest rules.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Advisory & Consulting:</strong> Personalized
                       advice on complex GST issues, ensuring your business
                       adheres to the latest regulations and avoids pitfalls,
                       including guidance on new e-way bill procedures.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>GST Audit & Reconciliation:</strong> Support for
                       GST audits and reconciling your books with GST records.
                     </li>
-                    <li>
+                    <li className="text-gray-700 tracking-wide text-base font-[300]">
                       <strong>Educational Resources:</strong> Access to
                       informative articles, FAQs, and timely updates on GST laws
                       and amendments.
                     </li>
                   </ul>
-                  <p className="mt-4">
+                  <p className="mt-4 text-gray-700 tracking-wide text-base font-[360]">
                     <strong>Stay Ahead with UniCX:</strong> We are dedicated to
                     being your reliable source for all things GST. Explore our
                     website for more in-depth articles, common FAQs, and the
@@ -881,7 +881,7 @@ function GSTCalculator() {
                           className="flex justify-between items-center px-4 py-2 cursor-pointer bg-white" // Added background to header
                           onClick={() => toggleFAQ(i)}
                         >
-                          <p className="font-medium text-md text-gray-700">
+                          <p className="text-gray-800 tracking-wide text-base font-[400]">
                             {faq.q}
                           </p>
                           {openFAQ === i ? (
@@ -913,7 +913,7 @@ function GSTCalculator() {
                 </section>
                 {/* Footer note - Maintained */}
                 <section className="pt-6 border-t mt-6 ">
-                  <p className="text-sm text-gray-500">
+                  <p className="text-gray-700 tracking-wide text-base font-[360]">
                     This GST calculator and information is developed and
                     maintained by{" "}
                     <strong>

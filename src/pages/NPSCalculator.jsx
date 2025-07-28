@@ -3,6 +3,8 @@ import { FaRupeeSign } from "react-icons/fa"; // Import FaRupeeSign for consiste
 
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Header from "../component/Header";
+import npslogo from "../assets/BG IMAGES/nps.png";
+import benifite from "../assets/All-Calculators-image/benefit.png"
 // import { AlertCircle, CheckCircle, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 function NPSCalculator() {
   const [currentAge, setCurrentAge] = useState(30);
@@ -394,11 +396,14 @@ function NPSCalculator() {
                     </p>
                   </div>
                   {/* Replaced gstlogo with a placeholder or removed if no equivalent image needed for NPS intro */}
-                  <div className="flex justify-center items-center mt-[-20px] max-h-[350px] rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                    <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-500 w-full max-h-[350px] flex items-center justify-center">
-                      [Image Placeholder for NPS Introduction]
-                    </div>
-                  </div>
+                 <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={npslogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
                 </div>
               </section>
 
@@ -667,12 +672,15 @@ function NPSCalculator() {
                 <h2 className="text-2xl text-textColor font-medium mb-3">
                   Who Can Benefit from the UniCX NPS Calculator?
                 </h2>
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
                 <p>
                   Our <strong>NPS calculator</strong> is a versatile tool
                   designed to assist a wide range of users in accurately
                   managing their NPS-related projections:
                 </p>
-                <ul className="list-disc list-inside space-y-1 text-md">
+                 
+                       <ul className="list-disc list-inside space-y-1 text-md">
                   <li>
                     <strong>Individuals planning for retirement:</strong> To
                     estimate their retirement corpus and pension.
@@ -696,6 +704,17 @@ function NPSCalculator() {
                     To visualize the power of compounding with NPS.
                   </li>
                 </ul>
+                  </div>
+                   <div className="flex justify-center items-center cursor-pointer hover:scale-102 transition-transform duration-300">
+                                  
+                                    <img
+                                      src={benifite}
+                                      alt="Who can use EPF Calculator - Target audience icon"
+                                      className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
+                                    />
+                                  </div>
+                 </div>
+             
               </section>
 
               {/* Advantages of GST Calculator -> Advantages of NPS Calculator */}

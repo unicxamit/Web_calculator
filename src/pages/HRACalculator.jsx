@@ -11,7 +11,7 @@ import {
   Users,
 } from "lucide-react"; 
 import Header from "../component/Header";
-
+import hralogo from "../assets/BG IMAGES/hra1.png"
 const HRACalculator = () => {
   const [basic, setBasic] = useState("600000");
   const [da, setDa] = useState("998");
@@ -449,6 +449,8 @@ const HRACalculator = () => {
             <h2 className="text-2xl font-medium text-textColor mb-3">
               What is House Rent Allowance (HRA)?
             </h2>
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
             <p className="mb-4">
               <strong>House Rent Allowance (HRA)</strong> is a special allowance
               provided by employers to their employees to help cover the cost of
@@ -464,6 +466,16 @@ const HRACalculator = () => {
               component for effective tax planning for those living in rented
               homes.
             </p>
+            </div>
+             <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                            
+                                              <img
+                                                src={hralogo}
+                                                alt="EPF - Retirement Savings and Security"
+                                                className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                              />
+                                            </div>
+                            </div>
           </section>
 
           {/* Key Benefits & Tax Exemption Rules of HRA - NOW MATCHING NPS CARD STYLE */}

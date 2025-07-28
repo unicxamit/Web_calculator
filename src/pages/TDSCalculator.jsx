@@ -12,6 +12,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Header from "../component/Header";
+import tdslogo from "../assets/BG IMAGES/tds1.png"
 function TDSCalculator() {
   // List of TDS sections with their logic (Unique keys now)
   const tdsOptions = [
@@ -434,7 +435,9 @@ function TDSCalculator() {
               <h2 className="text-2xl font-bold mb-3">
                 What is Tax Deducted at Source (TDS)?
               </h2>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                     <p className="mb-4 text-gray-800 leading-relaxed">
                 Understanding Tax Deducted at Source (TDS) is crucial for both
                 individuals and businesses in India. TDS is essentially a
                 mechanism introduced by the Indian Income Tax Department to
@@ -464,6 +467,17 @@ function TDSCalculator() {
                 determine the applicable TDS amounts and ensure compliance with
                 tax regulations.
               </p>
+                  </div>
+             
+               <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={tdslogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
             </section>
 
             {/* Why Use the UniCX TDS Calculator? Section */}

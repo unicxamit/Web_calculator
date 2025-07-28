@@ -17,7 +17,7 @@ import {
   CheckCircle,
   FileText,
 } from "lucide-react";
-
+import emilogo from "../assets/BG IMAGES/emi1.png"
 import Header from "../component/Header";
 function EMICalculator() {
   const [loanAmount, setLoanAmount] = useState("2000000");
@@ -440,7 +440,9 @@ function EMICalculator() {
             {/* What is EMI? Section */}
             <section className="">
               <h2 className="text-2xl font-bold mb-3">What is EMI?</h2>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                    <p className="mb-4 text-gray-800 leading-relaxed">
                 EMI stands for{" "}
                 <strong className="text-blue-600">
                   Equated Monthly Installment
@@ -457,6 +459,17 @@ function EMICalculator() {
                 type of financing, EMIs are the standard method of repayment,
                 ensuring a systematic and predictable way to clear your debt.
               </p>
+                  </div>
+              
+               <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={emilogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
             </section>
 
             {/* Why is an EMI Calculator Important? Section */}

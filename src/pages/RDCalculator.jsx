@@ -14,6 +14,7 @@ import {
   Target,
 } from "lucide-react";
 import Header from "../component/Header";
+import rdlogo from "../assets/BG IMAGES/rd1.png"
 // Assuming FaRupeeSign is used for currency inputs
 // import { FaRupeeSign } from "react-icons/fa";
 
@@ -361,7 +362,9 @@ function RDCalculator() {
             <h2 className="text-2xl font-bold mb-3">
               What is a Recurring Deposit (RD)?
             </h2>
-            <p className="mb-4 text-gray-800 leading-relaxed">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                       <p className="mb-4 text-gray-800 leading-relaxed">
               A{" "}
               <strong className="font-semibold">Recurring Deposit (RD)</strong>{" "}
               is a popular savings scheme offered by banks and post offices in
@@ -373,7 +376,19 @@ function RDCalculator() {
               you receive a lump sum amount, including your total invested
               principal and the accumulated interest. RDs are an excellent tool
               for disciplined savings towards specific financial goals.
-            </p>
+            </p>  </div>
+             <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={rdlogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                              
+                  </div>
+         
+
           </section>
 
           {/* Why Use the UniCX RD Calculator? Section */}

@@ -6,7 +6,7 @@ import {
   Scale
 } from 'lucide-react';
 import Header from "../component/Header";
-
+import mutuallogo from "../assets/BG IMAGES/mf1.png"
 function MutualFundCalculator() {
   const [tab, setTab] = useState("sip"); // 'sip' or 'lumpsum'
 
@@ -663,7 +663,9 @@ function MutualFundCalculator() {
 
         <section className="mt-8">
           <h2 className="text-2xl font-bold mb-3">What are Mutual Funds?</h2>
-          <p className="mb-4 text-gray-800 leading-relaxed">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+ <p className="mb-4 text-gray-800 leading-relaxed">
             Mutual Funds are sophisticated yet accessible investment vehicles that play a crucial role in modern financial planning. At their core, a mutual fund pools money from multiple investors with a common investment objective. This collective corpus is then invested by professional fund managers in a diversified portfolio of various securities such as stocks, bonds, money market instruments, or other assets.
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
@@ -677,6 +679,17 @@ function MutualFundCalculator() {
           <p className="mt-4 text-gray-800 leading-relaxed">
             The <strong>UniCX Mutual Fund Calculator</strong> is your strategic partner in this investment journey. It's designed to demystify the potential growth of your investments, helping you project returns and plan effectively for your financial future, whether through Systematic Investment Plans (SIPs) or Lumpsum investments.
           </p>
+                  </div>
+         
+           <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={mutuallogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
         </section>
 
         {/* Why Invest in Mutual Funds? Section */}

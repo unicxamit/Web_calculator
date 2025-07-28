@@ -11,7 +11,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Header from "../component/Header";
-
+import ppflogo from "../assets/BG IMAGES/ppf1.png"
 function PPFCalculator() {
   const [perPeriodDeposit, setPerPeriodDeposit] = useState("10000");
   const [tenure, setTenure] = useState("15");
@@ -420,7 +420,9 @@ function PPFCalculator() {
               <h2 className="text-2xl font-bold mb-3">
                 What is Public Provident Fund (PPF)?
               </h2>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                     <p className="mb-4 text-gray-800 leading-relaxed">
                 The Public Provident Fund (PPF) is a highly favored,
                 government-backed, long-term savings and tax-saving scheme in
                 India. Introduced to encourage small savings and promote
@@ -452,6 +454,17 @@ function PPFCalculator() {
                 of your investments and plan your financial future with
                 confidence.
               </p>
+                  </div>
+                   <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={ppflogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
+             
             </section>
 
             {/* Why Use the UniCX PPF Calculator? Section */}

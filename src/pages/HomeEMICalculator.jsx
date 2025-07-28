@@ -24,7 +24,7 @@ import {
   Banknote,
   Percent,
 } from "lucide-react";
-
+import homelogo from "../assets/BG IMAGES/hemi1.png"
 function HomeEMICalculator() {
   const [loanAmount, setLoanAmount] = useState("10000");
   const [interestRate, setInterestRate] = useState("6");
@@ -443,7 +443,9 @@ function HomeEMICalculator() {
   <div className="space-y-14 text-gray-700 text-base leading-relaxed">
         <section className="">
           <h2 className="text-2xl font-bold mb-3">What is a Home Loan?</h2>
-          <p className="mb-4 text-gray-800 leading-relaxed">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                    <p className="mb-4 text-gray-800 leading-relaxed">
             A <span className="font-bold text-blue-600">Home Loan</span> is a
             secured financial facility offered by banks and Housing Finance
             Companies (HFCs) to help individuals purchase, construct, extend, or
@@ -457,6 +459,17 @@ function HomeEMICalculator() {
             a home loan is one of the most significant financial commitments an
             individual undertakes.
           </p>
+                  </div>
+          
+           <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={homelogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
         </section>
 
         {/* Why is a Home Loan Calculator Important? Section */}

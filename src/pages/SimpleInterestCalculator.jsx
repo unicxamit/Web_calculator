@@ -13,7 +13,7 @@ import {
   CalendarDays,
 } from "lucide-react";
 import Header from "../component/Header";
-
+import simplelogo from "../assets/BG IMAGES/sim1.png"
 function SimpleInterestCalculator() {
   const [activeTab, setActiveTab] = useState("simple");
   const [principal, setPrincipal] = useState("10000");
@@ -397,8 +397,9 @@ function SimpleInterestCalculator() {
                 <h2 className="text-2xl font-bold mb-3">
                   What are Simple Interest & Compound Interest?
                 </h2>{" "}
-                {/* Reverted margin */}
-                <p className="mb-4 text-gray-800 leading-relaxed">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                  <div>
+                     <p className="mb-4 text-gray-800 leading-relaxed">
                   {" "}
                   {/* Reverted text size/color */}
                   Understanding how interest works is fundamental to effective
@@ -441,6 +442,18 @@ function SimpleInterestCalculator() {
                     monthly vs. annually), the faster your money grows.
                   </li>
                 </ul>
+                  </div>
+                   <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+                                
+                                  <img
+                                    src={simplelogo}
+                                    alt="EPF - Retirement Savings and Security"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                  />
+                                </div>
+                                </div>
+                {/* Reverted margin */}
+               
               </section>
 
               {/* Why Use the UniCX Simple & Compound Interest Calculator? Section */}
