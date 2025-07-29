@@ -13,10 +13,7 @@ import {
   ChevronUp,
   ChevronDown,
   CheckCircle,
-  Home,
-  Car,
-  HeartHandshake,
-  School,
+  
   Banknote,
   Users,
   Percent,
@@ -365,16 +362,16 @@ function FDCalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is a Fixed Deposit (FD)? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 What is a Fixed Deposit (FD)?
               </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                    <p className="mb-4 text-gray-800 leading-relaxed">
+                    <p className="mb-4 p-content">
                 A{" "}
-                <span className="font-bold text-blue-600">
+                <strong className="bold-content">
                   Fixed Deposit (FD)
-                </span>{" "}
+                </strong>{" "}
                 is a popular and secure investment option offered by banks and
                 Non-Banking Financial Companies (NBFCs) in India. It allows
                 individuals to deposit a lump sum amount for a pre-determined
@@ -382,7 +379,7 @@ function FDCalculator() {
                 the money deposited in an FD cannot be withdrawn regularly and
                 earns a higher interest rate, providing assured returns.
               </p>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+              <p className=" p-content">
                 FDs are a preferred choice for conservative investors due to
                 their safety, guaranteed returns, and predictability, making
                 them ideal for achieving specific financial goals over short to
@@ -403,18 +400,18 @@ function FDCalculator() {
 
             {/* Why is an FD Calculator Important? Section */}
             <section className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Why is an FD Calculator Important?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="mb-4 text-gray-800 leading-relaxed">
+                  <p className="mb-4 p-content">
                     An FD calculator is an essential tool for effective
                     financial planning and making informed investment decisions.
                     Here's why it's invaluable:
                   </p>
-                  <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-none space-y-3 ">
+                    <li className="list-content">
                       <span className="font-bold flex items-start">
                         <Calculator
                           size={18}
@@ -427,7 +424,7 @@ function FDCalculator() {
                         receive, including principal and compounded interest.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold flex items-start">
                         <TrendingUp
                           size={18}
@@ -440,7 +437,7 @@ function FDCalculator() {
                         compare offers and optimize your strategy.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold flex items-start">
                         <Percent
                           size={18}
@@ -453,7 +450,7 @@ function FDCalculator() {
                         enhance your earnings.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold flex items-start">
                         <PiggyBank
                           size={18}
@@ -467,9 +464,9 @@ function FDCalculator() {
                       </span>
                     </li>
                   </ul>
-                  <p className="mt-4 text-gray-800 leading-relaxed">
+                  <p className="mt-4 list-content">
                     The{" "}
-                    <span className="font-bold text-blue-600">
+                    <span className="font-bold text-blue-500">
                       UniCX FD Calculator
                     </span>{" "}
                     provides transparent and instant calculations, empowering
@@ -491,65 +488,65 @@ function FDCalculator() {
 
             {/* How to Use the UniCX FD Calculator Section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 How to Use the UniCX FD Calculator
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="p-content mb-4">
                     Our FD calculator is designed for ease of use and provides
                     accurate results in moments:
                   </p>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed mt-4">
-                    <li>
-                      <span className="font-bold">
+                  <ol className="list-decimal list-inside space-y-3  mt-4">
+                    <li className="list-content">
+                      <span className="font-medium">
                         Enter Principal Investment Amount:
                       </span>{" "}
                       Input the lump sum amount you plan to deposit (e.g.,
                       ₹1,00,000 or ₹5,00,000).
                     </li>
-                    <li>
-                      <span className="font-bold">
+                    <li className="list-content">
+                      <span className="font-medium">
                         Enter Annual Interest Rate (%):
                       </span>{" "}
                       Provide the annual interest rate offered by the bank/NBFC
                       (e.g., 6.5%, 7.0%).
                     </li>
-                    <li>
-                      <span className="font-bold">
+                    <li className="list-content">
+                      <span className="font-medium">
                         Specify Investment Tenure:
                       </span>{" "}
                       Choose the duration of your Fixed Deposit in either
                       "Years" or "Months."
                     </li>
-                    <li>
-                      <span className="font-bold">
+                    <li className="list-content">
+                      <span className="font-medium">
                         Select Compounding Frequency:
                       </span>{" "}
                       This is crucial for FDs. Choose how often the interest is
                       compounded:
-                      <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
+                      <ul className="list-circle list-inside ml-6 mt-1 space-y-2 list-content">
                         <li>Monthly</li>
                         <li>Quarterly (most common for non-cumulative FDs)</li>
                         <li>Half-yearly</li>
                         <li>Annually (most common for cumulative FDs)</li>
                       </ul>
                     </li>
-                    <li>
-                      <span className="font-bold">Calculate:</span> Click the
+                    <li className="list-content">
+                      <span className="font-medium">Calculate:</span> Click the
                       "Calculate FD Maturity" button.
                     </li>
                   </ol>
-                  <h3 className="font-semibold text-xl mt-4 mb-2">
+                  <h3 className="font-medium text-lg mt-4 mb-2">
                     The UniCX FD Calculator will instantly display:
                   </h3>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="list-content">
                       <span className="font-bold">Maturity Amount:</span> The
                       total amount you will receive at the end of the tenure
                       (Principal + Total Interest).
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold">Total Interest Earned:</span>{" "}
                       The absolute amount of interest your investment has
                       generated.
@@ -570,27 +567,27 @@ function FDCalculator() {
 
             {/* Understanding Fixed Deposits: Key Aspects of Your Investment Section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Understanding Fixed Deposits: Key Aspects of Your Investment
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 p-content">
                 To make the most of your Fixed Deposit, it's essential to grasp
                 its various facets:
               </p>
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <CreditCard
                   size={18}
                   className="mr-2 flex-shrink-0 text-green-600"
                 />{" "}
                 Types of Fixed Deposits
               </h3>
-              <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 p-content">
                 Banks and NBFCs offer several types of FDs to cater to diverse
                 investor needs:
               </p>
-              <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-none space-y-3">
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <DollarSign
                       size={18}
@@ -603,7 +600,7 @@ function FDCalculator() {
                     interest is received at maturity.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <Banknote
                       size={18}
@@ -616,7 +613,7 @@ function FDCalculator() {
                     to your savings account.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <Scale
                       size={18}
@@ -629,7 +626,7 @@ function FDCalculator() {
                     deduction.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <Users
                       size={18}
@@ -642,7 +639,7 @@ function FDCalculator() {
                     and above.
                   </span>
                 </li>
-                <li>
+                <li className="list-content"> 
                   <span className="font-bold flex items-start">
                     <FileText
                       size={18}
@@ -656,40 +653,40 @@ function FDCalculator() {
                 </li>
               </ul>
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-4 flex items-center">
                 <ShieldCheck
                   size={18}
                   className="mr-2 flex-shrink-0 text-purple-600"
                 />{" "}
                 Key Features of Fixed Deposits
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3 ">
+                <li className="list-content">
                   <span className="font-bold">Fixed Interest Rate:</span> The
                   rate is locked in for the entire tenure, offering
                   predictability.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Compounding:</span> Interest is
                   added to the principal at regular intervals, earning "interest
                   on interest."
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Safety & Security:</span> Insured
                   by the <span className="font-bold">DICGC</span> up to{" "}
                   <span className="font-bold">₹5 Lakh</span> per depositor per
                   bank.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Liquidity (with caveats):</span>{" "}
                   Allows premature withdrawal, usually with a penalty.
                   Tax-saving FDs have a strict lock-in.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Loan Against FD:</span> Most banks
                   offer loans against your FD.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Nomination Facility:</span>{" "}
                   Simplifies the claim process for beneficiaries.
                 </li>
@@ -704,46 +701,46 @@ function FDCalculator() {
             /> */}
               </div>
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <Percent
                   size={18}
                   className="mr-2 flex-shrink-0 text-orange-600"
                 />{" "}
                 Taxation of FD Interest
               </h3>
-              <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-2 p-content">
                 It's crucial to understand the tax implications of FD interest:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="list-content">
                   <span className="font-bold">Taxable Income:</span> Interest
                   earned is fully taxable as "Income from Other Sources" and
                   taxed as per your applicable income tax slab.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     TDS (Tax Deducted at Source):
                   </span>
-                  <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
-                    <li>
+                  <ul className="list-circle list-inside ml-6 mt-1 space-y-2">
+                    <li className="list-content">
                       Banks deduct TDS if interest exceeds{" "}
                       <span className="font-bold">₹40,000</span> for general
                       citizens, <span className="font-bold">₹50,000</span> for
                       senior citizens, in a financial year.
                     </li>
-                    <li>
+                    <li className="list-content">
                       TDS rate is typically{" "}
                       <span className="font-bold">10%</span> with PAN,{" "}
                       <span className="font-bold">20%</span> without PAN.
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     Avoiding TDS (Form 15G / 15H):
                   </span>
                   <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
-                    <li>
+                    <li className="list-content">
                       Submit{" "}
                       <span className="font-bold">
                         Form 15G (for non-senior citizens/HUFs)
@@ -762,39 +759,39 @@ function FDCalculator() {
 
             {/* Who Can Benefit from the UniCX FD Calculator? */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Who Can Benefit from the UniCX FD Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="p-content mb-4">
                     The UniCX FD Calculator is a valuable resource for:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="list-content">
                       <span className="font-bold">Conservative Investors:</span>{" "}
                       Prioritizing capital safety and guaranteed returns.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold">
                         Retirees & Senior Citizens:
                       </span>{" "}
                       Planning for a steady, predictable income stream.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold">
                         Short to Medium-Term Savers:
                       </span>{" "}
                       Individuals saving for specific goals like a down payment
                       or education fees.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold">
                         Emergency Fund Builders:
                       </span>{" "}
                       Seeking slightly higher returns on emergency savings.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <span className="font-bold">Tax Planners:</span>{" "}
                       Understanding maturity values and anticipating taxable
                       interest.
@@ -816,11 +813,11 @@ function FDCalculator() {
             {/* Key Considerations & Important Notes for FD Investors */}
             <section className="mt-10">
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-md shadow-sm">
-                <h2 className="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
+                <h2 className="text-2xl font-semibold text-yellow-700 mb-3 flex items-center">
                   <Lightbulb size={20} className="mr-3 mt-1 flex-shrink-0" />
                   Key Considerations & Important Notes for FD Investors
                 </h2>
-                <p className="text-yellow-800 text-[15px] leading-relaxed mb-4">
+                <p className="text-yellow-800 text-[15px] font-[380] leading-relaxed mb-4">
                   While FDs offer stability, keep these points in mind:
                 </p>
                 {/* Image for Important Considerations (If available) */}
@@ -917,7 +914,7 @@ function FDCalculator() {
 
             {/* FAQs Section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3 flex items-center">
+              <h2 className="main-heading mb-3 flex items-center">
                 <HelpCircle size={20} className="mr-2 flex-shrink-0" />
                 Frequently Asked Questions (FAQs) about Fixed Deposits
               </h2>
@@ -930,16 +927,16 @@ function FDCalculator() {
                     }`}
                   >
                     <button
-                      className={`flex justify-between items-center px-4 w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg py-3 ${
+                      className={`flex justify-between items-center px-4 w-full text-left  rounded-lg py-3 ${
                         openFAQ !== i
                           ? "border border-gray-300 hover:border-gray-400"
-                          : "border-b border-blue-200"
+                          : " border-blue-200"
                       }`}
                       onClick={() => toggleFAQ(i)}
                       aria-expanded={openFAQ === i ? "true" : "false"}
                       aria-controls={`faq-answer-${i}`}
                     >
-                      <p className="font-semibold text-gray-800">{faq.q}</p>
+                      <p className="p-content">{faq.q}</p>
                       {openFAQ === i ? (
                         <ChevronUp size={20} className="flex-shrink-0 ml-2" />
                       ) : (
@@ -948,9 +945,9 @@ function FDCalculator() {
                     </button>
                     <p
                       id={`faq-answer-${i}`}
-                      className={`text-gray-800 text-md font-normal px-4 ${
+                      className={`list-content px-4 ${
                         openFAQ === i
-                          ? "max-h-[500px] opacity-100 py-3"
+                          ? "max-h-[500px] opacity-100 "
                           : "max-h-0 opacity-0"
                       }`}
                       aria-hidden={openFAQ !== i}
@@ -964,7 +961,7 @@ function FDCalculator() {
 
             {/* Conclusion */}
             <section className="pt-6 border-t mt-10">
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="list-content">
                 The UniCX FD Calculator is a powerful tool to help you
                 understand, plan, and optimize your Fixed Deposit investments.
                 It offers clarity on your potential earnings and assists in
@@ -973,9 +970,9 @@ function FDCalculator() {
                 <br />
                 This Fixed Deposit Calculator and the information provided are
                 developed and maintained by{" "}
-                <span className="font-bold">
+                <strong className="bold-content">
                   UniCX (UniconsultX Solutions Private Limited)
-                </span>{" "}
+                </strong>{" "}
                 to help users understand FD calculations. While we strive for
                 accuracy, the information is for illustrative purposes only and
                 should not be considered financial advice. For personalized

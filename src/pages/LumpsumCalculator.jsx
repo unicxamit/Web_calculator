@@ -315,13 +315,13 @@ function LumpsumCalculator() {
             <div className="space-y-14 text-gray-700 text-base leading-relaxed">
      
           <section className="">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">What is a Lump Sum Mutual Fund Investment?</h2>
+          <h2 className="main-heading ">What is a Lump Sum Mutual Fund Investment?</h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center"> {/* Grid for text and image */}
             <div>
-              <p className="mb-4 text-gray-700 leading-relaxed">
-                A <span className="font-bold ">Lump Sum Mutual Fund Investment</span> refers to a one-time, significant investment made into a chosen mutual fund scheme. Unlike a Systematic Investment Plan (SIP) where you invest a fixed amount periodically, a lump sum involves deploying all your capital at once. This approach is typically chosen when an investor has a substantial sum available, such as a bonus, inheritance, maturity proceeds from another investment, or funds from a property sale.
+              <p className="mb-4 p-content">
+                A <span className="font-bold bold-content ">Lump Sum Mutual Fund Investment</span> refers to a one-time, significant investment made into a chosen mutual fund scheme. Unlike a Systematic Investment Plan (SIP) where you invest a fixed amount periodically, a lump sum involves deploying all your capital at once. This approach is typically chosen when an investor has a substantial sum available, such as a bonus, inheritance, maturity proceeds from another investment, or funds from a property sale.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="p-content">
                 It's a powerful way to leverage market opportunities if timed strategically, allowing your entire capital to benefit from compounding from day one.
               </p>
             </div>
@@ -338,12 +338,12 @@ function LumpsumCalculator() {
 
         
         <section className="  "> 
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Why is a Lump Sum Mutual Fund Calculator Important?</h2>
-          <p className="mb-6 text-gray-700 leading-relaxed"> {/* Adjusted margin-bottom */}
+          <h2 className="main-heading mb-4">Why is a Lump Sum Mutual Fund Calculator Important?</h2>
+          <p className="mb-6 p-content"> {/* Adjusted margin-bottom */}
             Investing a lump sum in mutual funds involves market dynamics, making a calculator an essential tool for strategic planning:
           </p>
-          <ul className="list-none space-y-4 text-gray-700 text-[16px] leading-relaxed"> {/* Increased space for list items */}
-            <li>
+          <ul className="list-none space-y-4 "> {/* Increased space for list items */}
+            <li className="list-content">
               <span className="font-semibold flex items-start"> {/* font-semibold for list items */}
                 <Calculator size={22} className="mr-3 mt-0.5 flex-shrink-0 font-semibold" /> {/* Larger icon, better alignment */}
                 Accurate Growth Projection:
@@ -352,7 +352,7 @@ function LumpsumCalculator() {
                 Get an estimated view of how your one-time investment could grow over a specified period, based on an expected rate of return.
               </span>
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-semibold flex items-start">
                 <DollarSign size={22} className="mr-3 mt-0.5 flex-shrink-0 text-blue-600" />
                 Scenario Analysis:
@@ -361,7 +361,7 @@ function LumpsumCalculator() {
                 Test different investment amounts and tenures to see their impact on your potential maturity value and total gains.
               </span>
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-semibold flex items-start">
                 <TrendingUp size={22} className="mr-3 mt-0.5 flex-shrink-0 text-blue-600" />
                 Fund Comparison:
@@ -370,7 +370,7 @@ function LumpsumCalculator() {
                 Use historical returns of various mutual funds as "expected returns" to compare their potential growth over your desired horizon.
               </span>
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-semibold flex items-start">
                 <Target size={22} className="mr-3 mt-0.5 flex-shrink-0 text-blue-600" />
                 Goal-Oriented Planning:
@@ -379,7 +379,7 @@ function LumpsumCalculator() {
                 Align your lump sum investment with specific financial goals (e.g., retirement, child's education) by projecting the required corpus.
               </span>
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-semibold flex items-start">
                 <PieChart size={22} className="mr-3 mt-0.5 flex-shrink-0 text-blue-600" />
                 Compounding Visualization:
@@ -389,39 +389,39 @@ function LumpsumCalculator() {
               </span>
             </li>
           </ul>
-          <p className="mt-6 text-gray-700 leading-relaxed bg-blue-50 p-4 rounded-md border border-blue-200">
+          <p className="mt-6 list-content bg-blue-50 p-4 rounded-md border border-blue-200">
             The <span className="font-bold text-blue-700">UniCX Lump Sum Mutual Fund Calculator</span> empowers you with estimated insights, but always remember that mutual fund returns are subject to market risks and are not guaranteed.
           </p>
         </section>
 
         {/* How to Use the UniCX Lump Sum Mutual Fund Calculator Section */}
         <section className=""> {/* Added padding, background, shadow */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">How to Use the UniCX Lump Sum Mutual Fund Calculator</h2>
+          <h2 className="main-heading mb-4">How to Use the UniCX Lump Sum Mutual Fund Calculator</h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center"> {/* Increased gap, aligned items */}
             <div>
-              <p className="text-gray-700 text-[16px] leading-relaxed">
+              <p className="p-content mb-4">
                 Our calculator provides quick estimates for your lump sum investments:
               </p>
-              <ol className="list-decimal list-inside space-y-3 text-gray-700 text-[16px] leading-relaxed mt-4">
-                <li>
+              <ol className="list-decimal list-inside space-y-3">
+                <li className="list-content">
                   <span className="font-semibold">Enter Principal Investment Amount:</span> Input the single amount you plan to invest (e.g., ₹1,00,000 or ₹10,00,000).
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-semibold">Enter Expected Annual Rate of Return (%):</span> Input the anticipated annual return percentage. <span className="font-bold bg-blue-50">(Important: This is an estimated value. Actual returns can vary significantly based on market performance.)</span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-semibold">Specify Investment Tenure (Years):</span> Choose the number of years you plan to stay invested.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-semibold">Calculate:</span> Click the "Calculate Growth" button.
                 </li>
               </ol>
-              <p className="font-bold  mt-6 leading-relaxed bg-blue-50 p-3 rounded-md border border-blue-200">
+              <p className="p-content  mt-6  bg-blue-50 p-3 rounded-md border border-blue-200">
                 Disclaimer: This calculator provides estimates based on your entered expected return. Mutual fund investments are subject to market risks, and actual returns may be higher or lower than projected.
               </p>
 
-              <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">The UniCX Lump Sum Mutual Fund Calculator will instantly display:</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 text-[16px] leading-relaxed">
+              <h3 className="font-medium text-lg mt-6 mb-3 text-gray-600">The UniCX Lump Sum Mutual Fund Calculator will instantly display:</h3>
+              <ul className="list-disc list-inside space-y-2 list-content">
                 <li>
                   <span className="font-semibold">Estimated Maturity Value:</span> The projected total value of your investment at the end of the tenure.
                 </li>
@@ -444,18 +444,18 @@ function LumpsumCalculator() {
 
         {/* Understanding Lump Sum Mutual Fund Investments: Key Aspects Section */}
         <section className=""> {/* No specific background here, relies on main bg-white */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Understanding Lump Sum Mutual Fund Investments: Key Aspects</h2>
-          <p className="mb-4 text-gray-700 text-[16px] leading-relaxed">
+          <h2 className="main-heading mb-3">Understanding Lump Sum Mutual Fund Investments: Key Aspects</h2>
+          <p className="mb-4 p-content">
             To make a well-informed lump sum investment, understanding its core principles is vital:
           </p>
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">What are Mutual Funds?</h3>
-          <p className="mb-2 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg  mb-3 text-gray-800">What are Mutual Funds?</h3>
+          <p className="mb-2 p-content">
             <span className="font-bold">Mutual Funds</span> are investment vehicles that pool money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. This portfolio is professionally managed by experienced fund managers, offering diversification and professional expertise.
           </p>
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">Advantages of Lump Sum Investing</h3>
-          <ul className="list-none space-y-3 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">Advantages of Lump Sum Investing</h3>
+          <ul className="list-none space-y-3 list-content">
             <li>
               <span className="font-semibold flex items-start">
                 <CheckCircle size={20} className="mr-3 mt-0.5 flex-shrink-0 text-green-600" />
@@ -494,8 +494,8 @@ function LumpsumCalculator() {
             /> */}
           </div>
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">Disadvantages of Lump Sum Investing</h3>
-          <ul className="list-none space-y-3 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg mt-6 mb-3 text-gray-800">Disadvantages of Lump Sum Investing</h3>
+          <ul className="list-none space-y-3 list-content">
             <li>
               <span className="font-semibold flex items-start">
                 <XCircle size={20} className="mr-3 mt-0.5 flex-shrink-0 text-red-600" />
@@ -517,15 +517,15 @@ function LumpsumCalculator() {
           </ul>
 
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">When is Lump Sum Mutual Fund Investment Suitable?</h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg mt-6 mb-3 text-gray-700">When is Lump Sum Mutual Fund Investment Suitable?</h3>
+          <ul className="list-disc list-inside space-y-2 list-content">
             <li>When you have a significant surplus amount (e.g., gratuity, bonus, matured FD).</li>
             <li>When market valuations are perceived to be low (requires careful research).</li>
             <li>For investors with a high-risk appetite and a long-term investment horizon (5+ years).</li>
           </ul>
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">Key Factors Influencing Mutual Fund Returns</h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg mt-6 mb-3 text-gray-700">Key Factors Influencing Mutual Fund Returns</h3>
+          <ul className="list-disc list-inside space-y-2 list-content">
             <li><span className="font-semibold">Market Performance:</span> Primary driver of returns.</li>
             <li><span className="font-semibold">Fund Manager's Expertise:</span> Skill in selecting securities.</li>
             <li><span className="font-semibold">Expense Ratio:</span> Annual fee charged. Lower means higher net returns.</li>
@@ -533,8 +533,8 @@ function LumpsumCalculator() {
             <li><span className="font-semibold">Investment Horizon:</span> Longer horizons generally mitigate short-term risks.</li>
           </ul>
 
-          <h3 className="font-semibold text-xl mt-6 mb-3 text-gray-800">Types of Mutual Funds (Relevant for Lump Sum)</h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 text-[16px] leading-relaxed">
+          <h3 className="font-medium text-lg mt-6 mb-3 text-gray-700">Types of Mutual Funds (Relevant for Lump Sum)</h3>
+          <ul className="list-disc list-inside space-y-2 list-content">
             <li><span className="font-semibold">Equity Funds:</span> High-risk, high-return potential. Suitable for long-term.</li>
             <li><span className="font-semibold">Debt Funds:</span> Lower risk, more stable returns. Suitable for short to medium-term.</li>
             <li><span className="font-semibold">Hybrid Funds:</span> Mix of equity and debt, offering a balance.</li>
@@ -544,13 +544,13 @@ function LumpsumCalculator() {
 
         {/* Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator? */}
         <section className=" "> {/* Added padding, background, shadow */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator?</h2>
+          <h2 className="main-heading mb-3">Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator?</h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
             <div>
-                <p className="text-gray-700 text-[16px] leading-relaxed">
+                <p className="p-content mb-4">
                     The UniCX Lump Sum Mutual Fund Calculator is a valuable tool for:
                 </p>
-                <ul className="list-disc list-inside space-y-3 text-gray-700 text-[16px] leading-relaxed">
+                <ul className="list-disc list-inside space-y-3 list-content">
                     <li>
                         <span className="font-semibold">Individuals with Surplus Capital:</span> Those who have received a significant sum of money.
                     </li>
@@ -580,11 +580,11 @@ function LumpsumCalculator() {
         {/* Key Considerations & Important Notes for Lump Sum Mutual Fund Investors */}
         <section className=" "> {/* No specific background here */}
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-md shadow-sm">
-            <h2 className="text-2xl font-bold text-yellow-800 mb-3 flex items-center">
+            <h2 className="text-2xl font-semibold text-yellow-800 mb-3 flex items-center">
               <Lightbulb size={24} className="mr-3 flex-shrink-0 text-yellow-600" /> {/* Larger icon */}
               Key Considerations & Important Notes for Lump Sum Mutual Fund Investors
             </h2>
-            <p className="text-yellow-800 text-[16px] leading-relaxed mb-4">
+            <p className="text-yellow-800 text-[16px] font-[380] leading-relaxed mb-4">
               Investing a lump sum requires careful consideration due to market dynamics:
             </p>
             {/* Image for Important Considerations (If available) */}
@@ -670,7 +670,7 @@ function LumpsumCalculator() {
 
         {/* FAQs Section */}
         <section className=" "> {/* Added padding, background, shadow */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+          <h2 className="main-heading mb-4 flex items-center">
             <HelpCircle size={24} className="mr-3 flex-shrink-0" /> {/* Larger icon */}
             Frequently Asked Questions (FAQs) about Lump Sum Mutual Funds
           </h2>
@@ -683,20 +683,20 @@ function LumpsumCalculator() {
                 }`}
               >
                 <button
-                  className={`flex justify-between items-center p-4 w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg ${
-                    openFAQ === i ? "pb-3" : "" // Add a little bottom padding when open for visual separation
+                  className={`flex justify-between items-center p-4 w-full text-left  rounded-lg ${
+                    openFAQ === i ? "bg-blue-50" : "" // Add a little bottom padding when open for visual separation
                   }`}
                   onClick={() => toggleFAQ(i)}
                   aria-expanded={openFAQ === i ? "true" : "false"}
                   aria-controls={`faq-answer-${i}`}
                 >
-                  <p className="font-semibold text-gray-800 text-[16px]">{faq.q}</p> {/* Font size */}
+                  <p className="p-content">{faq.q}</p> {/* Font size */}
                   {openFAQ === i ? <ChevronUp size={20} className="flex-shrink-0 ml-2 text-blue-600" /> : <ChevronDown size={20} className="flex-shrink-0 ml-2 text-gray-600" />}
                 </button>
                 <div
                   id={`faq-answer-${i}`}
-                  className={`text-gray-700 text-[15px] font-normal px-4 transition-all duration-300 ease-in-out ${
-                    openFAQ === i ? "max-h-[500px] opacity-100 py-3" : "max-h-0 opacity-0"
+                  className={`list-content px-4 transition-all duration-300 ease-in-out ${
+                    openFAQ === i ? "max-h-[500px] opacity-100 py-3 bg-blue-50" : "max-h-0 opacity-0"
                   }`}
                   aria-hidden={openFAQ !== i}
                 >
@@ -709,10 +709,10 @@ function LumpsumCalculator() {
 
         {/* Conclusion */}
         <section className="pt-0 border-t border-gray-200 mt-0"> {/* Adjusted padding, border color */}
-          <p className="text-sm text-gray-600 leading-relaxed"> {/* Adjusted text color */}
+          <p className="list-content"> {/* Adjusted text color */}
             The UniCX Lump Sum Mutual Fund Calculator is a valuable tool to project your potential wealth growth and understand the dynamics of a one-time mutual fund investment.
             <br/><br/>
-            <span className="font-bold text-red-600">Disclaimer: Mutual Fund investments are subject to market risks, read all scheme related documents carefully.</span>
+            <span className="font-bold text-blue-400">Disclaimer: Mutual Fund investments are subject to market risks, read all scheme related documents carefully.</span>
             <br/><br/>
             This Lump Sum Mutual Fund Calculator and the information provided are developed and maintained by{" "}
             <span className="font-bold text-gray-800">UniCX (UniconsultX Solutions Private Limited)</span> to help

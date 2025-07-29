@@ -414,7 +414,7 @@ function GSTCalculator() {
                         What is Goods and Services Tax (GST) in India?
                       </h2>
                       <span className="space-y-3">
-                        <p className="text-gray-600 tracking-wide text-[15px] font-[360] ">
+                        <p className="text-gray-600 tracking-wide text-[16px] font-[380] ">
                           <strong className="text-blue-600">GST (Goods and Services Tax)</strong> is a
                           landmark unified, indirect tax system introduced in
                           India on <strong>July 1, 2017</strong>. It marked a

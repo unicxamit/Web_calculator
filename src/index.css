@@ -22,6 +22,20 @@ body{
   @apply  md:px-20
 } */
 
+@layer utilities{
+  .main-heading{
+    @apply  text-2xl font-semibold text-textColor;
+  }
+  .p-content{
+    @apply text-gray-600 tracking-wide text-[16px] font-[380]
+  }
+  .list-content{
+    @apply text-gray-600 tracking-wide text-[15px] font-[380]
+  }
+  .bold-content{
+    @apply text-blue-500
+  }
+}
  
 
 

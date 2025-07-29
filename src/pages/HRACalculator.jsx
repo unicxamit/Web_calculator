@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaRupeeSign } from "react-icons/fa";
-import "../css/Hra.css";
+// import "../css/Hra.css";
 import {
   ChevronDown,
   ChevronUp,
@@ -551,12 +551,12 @@ const HRACalculator = () => {
               How to Use the UniCX Free Online HRA Calculator
             </h2>
              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
-                  <div className=""> <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                  <div className=""> <p className="mb-4 p-content">
               Our UniCX HRA Calculator makes determining your tax-exempt HRA
               simple and quick. Just follow these steps:
             </p>
             <ol className="list-decimal list-inside space-y-3 pl-4">
-              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+              <li className="list-content">
                 <strong>Basic Salary (Monthly ₹):</strong> Input your monthly
                 basic salary as per your payslip.
               </li>

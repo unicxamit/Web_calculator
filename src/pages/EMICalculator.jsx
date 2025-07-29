@@ -441,12 +441,12 @@ function EMICalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is EMI? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">What is EMI?</h2>
+              <h2 className="main-heading mb-3">What is EMI?</h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                    <p className="mb-4 text-gray-800 leading-relaxed">
+                    <p className="mb-4 p-content">
                 EMI stands for{" "}
-                <strong className="text-blue-600">
+                <strong className="bold-content">
                   Equated Monthly Installment
                 </strong>
                 . It is a fixed payment amount that a borrower pays to a lender
@@ -456,7 +456,7 @@ function EMICalculator() {
                 the loan tenure, making it easy for borrowers to budget their
                 finances.
               </p>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+              <p className="mb-4 p-content">
                 Whether it's a home loan, car loan, personal loan, or any other
                 type of financing, EMIs are the standard method of repayment,
                 ensuring a systematic and predictable way to clear your debt.
@@ -476,17 +476,17 @@ function EMICalculator() {
 
             {/* Why is an EMI Calculator Important? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Why is an EMI Calculator Important?
               </h2>
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+              {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4"> */}
                 <div>
-                  <p className="mb-4 text-gray-800 leading-relaxed">
+                  <p className="mb-4 p-content">
                     An EMI calculator is an indispensable tool for anyone
                     planning to take a loan. Here's why it's so crucial:
                   </p>
-                  <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-none space-y-3">
+                    <li className="list-content">
                       <strong className="flex items-start">
                         <PieChart
                           size={18}
@@ -500,7 +500,7 @@ function EMICalculator() {
                         strain.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong className="flex items-start">
                         <Calculator
                           size={18}
@@ -515,7 +515,7 @@ function EMICalculator() {
                         tenures.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong className="flex items-start">
                         <TrendingUp
                           size={18}
@@ -530,7 +530,7 @@ function EMICalculator() {
                         lifetime.
                       </span>
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong className="flex items-start">
                         <Handshake
                           size={18}
@@ -545,9 +545,9 @@ function EMICalculator() {
                       </span>
                     </li>
                   </ul>
-                  <p className="mt-4 text-gray-800 leading-relaxed">
+                  <p className="mt-4 p-content">
                     The{" "}
-                    <strong className="text-blue-600">
+                    <strong className="bold-content">
                       UniCX EMI Calculator
                     </strong>{" "}
                     simplifies the complex calculations involved in loan
@@ -556,65 +556,65 @@ function EMICalculator() {
                   </p>
                 </div>
                 {/* Image for Why Important */}
-                <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+                {/* <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300"> */}
                   {/* <img
                 src={emiBenefitsImage}
                 alt="Illustration showing benefits of an EMI calculator: financial planning, budgeting, loan comparison"
                 className="w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain rounded"
                 loading="lazy"
               /> */}
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             </section>
 
             {/* How to Use the UniCX EMI Calculator Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 How to Use the UniCX EMI Calculator
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="p-content mb-4">
                     Our EMI calculator is designed for simplicity and accuracy,
                     providing you with immediate results:
                   </p>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed mt-4">
-                    <li>
+                  <ol className="list-decimal list-inside space-y-3">
+                    <li className="list-content">
                       <strong>Enter Principal Loan Amount:</strong> Input the
                       total amount you wish to borrow (e.g., ₹5,00,000 for a car
                       loan, ₹50,00,000 for a home loan).
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Enter Interest Rate (%):</strong> Provide the
                       annual interest rate offered by the lender (e.g., 7% for a
                       home loan, 10% for a personal loan).
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Specify Loan Tenure:</strong> Choose the duration
                       of the loan in either "Years" or "Months."
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Calculate:</strong> Click the "Calculate EMI"
                       button to get your results instantly.
                     </li>
                   </ol>
-                  <h3 className="font-semibold text-xl mt-4 mb-2">
+                  <h3 className="font-medium text-lg mt-4 mb-3">
                     The UniCX EMI Calculator will then provide you with:
                   </h3>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="list-content">
                       <strong>Monthly EMI Amount:</strong> The exact amount you
                       will need to pay each month.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Total Interest Payable:</strong> The total amount
                       of interest you will pay over the entire loan tenure.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Total Amount Payable:</strong> The sum of your
                       principal loan amount and the total interest payable.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Amortization Schedule:</strong> A detailed
                       breakdown showing how your principal and interest
                       components change with each EMI payment over the loan
@@ -636,37 +636,37 @@ function EMICalculator() {
 
             {/* Understanding EMI: Key Aspects of Loan Repayment Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Understanding EMI: Key Aspects of Loan Repayment
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 p-content">
                 To effectively manage your loan, it's important to understand
                 the core concepts behind EMI:
               </p>
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <Banknote
                   size={18}
                   className="mr-2 flex-shrink-0 text-green-600"
                 />{" "}
                 Components of EMI
               </h3>
-              <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 p-content">
                 Every EMI payment consists of two parts:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="list-content">
                   <strong>Principal Component:</strong> This is the portion of
                   your payment that goes towards reducing your actual borrowed
                   amount.
                 </li>
-                <li>
+                <li className="list-content">
                   <strong>Interest Component:</strong> This is the cost of
                   borrowing money, calculated on the outstanding principal
                   balance.
                 </li>
               </ul>
-              <p className="mt-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mt-2 p-content">
                 In the initial years of a loan, a larger portion of your EMI
                 goes towards paying interest. As the loan progresses and the
                 principal outstanding reduces, a larger portion of your EMI
@@ -674,41 +674,41 @@ function EMICalculator() {
                 shift is clearly illustrated in the amortization schedule.
               </p>
               {/* Image for Understanding EMI */}
-              <div className="flex justify-center items-center mt-4 border rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* <div className="flex justify-center items-center mt-4 border rounded shadow-sm hover:shadow-md transition-shadow duration-300"> */}
                 {/* <img
               src={emiUnderstandingImage}
               alt="Diagram illustrating the breakdown of EMI into principal and interest components over time"
               className="w-full h-auto max-h-[300px] object-contain rounded"
               loading="lazy"
             /> */}
-              </div>
+              {/* </div> */}
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <Calculator
                   size={18}
                   className="mr-2 flex-shrink-0 text-purple-600"
                 />{" "}
                 Factors Affecting EMI
               </h3>
-              <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-2 p-content">
                 Three primary factors directly influence your EMI:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="list-content">
                   <strong>Principal Loan Amount:</strong> A higher loan amount
                   will naturally result in a higher EMI, assuming other factors
                   remain constant.
                 </li>
-                <li>
+                <li className="list-content">
                   <strong>Interest Rate:</strong> The interest rate is a
                   critical factor. Even a small change in the interest rate can
                   significantly impact your EMI and the total interest paid.
                   Higher interest rates lead to higher EMIs.
                 </li>
-                <li>
+                <li className="list-content">
                   <strong>Loan Tenure (Duration):</strong> This is the period
                   over which you choose to repay the loan.
-                  <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
+                  <ul className="list-circle list-inside ml-6 mt-1 space-y-2">
                     <li>
                       <strong>Longer Tenure:</strong> Leads to a lower EMI but
                       results in a higher total interest paid over the loan's
@@ -722,19 +722,19 @@ function EMICalculator() {
                 </li>
               </ul>
 
-              <h3 className="font-semibold text-xl mt-6 mb-2 flex items-center">
+              <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <FileText
                   size={18}
                   className="mr-2 flex-shrink-0 text-cyan-600"
                 />{" "}
                 Types of Loans (Repaid via EMI)
               </h3>
-              <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-3 p-content">
                 EMIs are the most common repayment method for various types of
                 loans:
               </p>
-              <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-none space-y-3 ">
+                <li className="list-content">
                   <strong className="flex items-start">
                     <Landmark
                       size={18}
@@ -747,7 +747,7 @@ function EMICalculator() {
                     Typically have lower interest rates and longer tenures.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <strong className="flex items-start">
                     <Car
                       size={18}
@@ -760,7 +760,7 @@ function EMICalculator() {
                     moderate interest rates and tenures.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <strong className="flex items-start">
                     <HeartHandshake
                       size={18}
@@ -773,7 +773,7 @@ function EMICalculator() {
                     higher interest rates and shorter tenures.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <strong className="flex items-start">
                     <School
                       size={18}
@@ -786,7 +786,7 @@ function EMICalculator() {
                     repayment options and tax benefits.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <strong className="flex items-start">
                     <Banknote
                       size={18}
@@ -803,32 +803,32 @@ function EMICalculator() {
 
             {/* Who Can Benefit from the UniCX EMI Calculator? */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="main-heading mb-3">
                 Who Can Benefit from the UniCX EMI Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="p-content mb-4">
                     The UniCX EMI Calculator is an indispensable tool for a wide
                     range of individuals and businesses:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="list-content">
                       <strong>Prospective Borrowers:</strong> Anyone considering
                       taking out a new loan can pre-calculate their potential
                       EMIs and total repayment costs.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Existing Loan Holders:</strong> To understand
                       their current loan's amortization schedule, or to evaluate
                       the impact of prepayments or refinancing.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Financial Planners & Advisors:</strong> To quickly
                       illustrate loan scenarios for their clients and help them
                       make informed borrowing decisions.
                     </li>
-                    <li>
+                    <li className="list-content">
                       <strong>Budget-Conscious Individuals:</strong> To ensure
                       that potential loan repayments fit comfortably within
                       their monthly budget.
@@ -850,11 +850,11 @@ function EMICalculator() {
             {/* Key Considerations & Important Notes Before Taking a Loan */}
             <section className="">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-                <h2 className="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                <h2 className="text-2xl font-semibold text-blue-700 mb-3 flex items-center">
                   <Lightbulb size={20} className="mr-3 mt-1 flex-shrink-0" />
                   Key Considerations & Important Notes Before Taking a Loan
                 </h2>
-                <p className="text-blue-800 text-[15px] leading-relaxed mb-4">
+                <p className="text-blue-800 text-[16px] font-[300] leading-relaxed mb-4">
                   While an EMI calculator provides clarity on your monthly
                   payments, remember to consider these broader factors before
                   committing to a loan:
@@ -957,7 +957,7 @@ function EMICalculator() {
 
             {/* FAQs Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3 flex items-center">
+              <h2 className="main-heading mb-3 flex items-center">
                 <HelpCircle size={20} className="mr-2 flex-shrink-0" />
                 Frequently Asked Questions (FAQs) about EMI
               </h2>
@@ -970,16 +970,16 @@ function EMICalculator() {
                     }`}
                   >
                     <button
-                      className={`flex justify-between items-center px-4 w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg py-3 ${
+                      className={`flex justify-between items-center px-4 w-full text-left   rounded-lg py-3 ${
                         openFAQ !== i
                           ? "border border-gray-300 hover:border-gray-400"
-                          : "border-b border-blue-200"
+                          : " border-blue-200"
                       }`}
                       onClick={() => toggleFAQ(i)}
                       aria-expanded={openFAQ === i ? "true" : "false"}
                       aria-controls={`faq-answer-${i}`}
                     >
-                      <p className="font-semibold text-gray-800">{faq.q}</p>
+                      <p className="p-content">{faq.q}</p>
                       {openFAQ === i ? (
                         <ChevronUp size={20} className="flex-shrink-0 ml-2" />
                       ) : (
@@ -988,7 +988,7 @@ function EMICalculator() {
                     </button>
                     <p
                       id={`faq-answer-${i}`}
-                      className={`text-gray-800 text-md font-normal px-4 ${
+                      className={`list-content px-4 ${
                         openFAQ === i
                           ? "max-h-[500px] opacity-100 py-3"
                           : "max-h-0 opacity-0"
@@ -1004,7 +1004,7 @@ function EMICalculator() {
 
             {/* Conclusion */}
             <section className="pt-6 border-t">
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="list-content">
                 The UniCX EMI Calculator is an indispensable tool for anyone
                 navigating the world of loans. It provides clarity, helps with
                 budgeting, and empowers you to make informed decisions about
@@ -1013,7 +1013,7 @@ function EMICalculator() {
                 <br />
                 This EMI Calculator and the information provided are developed
                 and maintained by{" "}
-                <strong>
+                <strong className="bold-content">
                   UniCX (UniconsultX Solutions Private Limited)
                 </strong>{" "}
                 to help users understand EMI calculations. While we strive for

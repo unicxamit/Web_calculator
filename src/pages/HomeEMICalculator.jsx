@@ -444,11 +444,11 @@ function HomeEMICalculator() {
 <div className=" mt-10">
   <div className="space-y-14 text-gray-700 text-base leading-relaxed">
         <section className="">
-          <h2 className="text-2xl font-bold mb-3">What is a Home Loan?</h2>
+          <h2 className="main-heading mb-3">What is a Home Loan?</h2>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                    <p className="mb-4 text-gray-800 leading-relaxed">
-            A <span className="font-bold text-blue-600">Home Loan</span> is a
+                    <p className="mb-4 p-content">
+            A <strong className="text-blue-500">Home Loan</strong> is a
             secured financial facility offered by banks and Housing Finance
             Companies (HFCs) to help individuals purchase, construct, extend, or
             renovate a residential property. It's considered a "secured" loan
@@ -456,7 +456,7 @@ function HomeEMICalculator() {
             typically repaid through Equated Monthly Installments (EMIs) over a
             long tenure, making homeownership accessible to many.
           </p>
-          <p className="mb-4 text-gray-800 leading-relaxed">
+          <p className="mb-4 p-content">
             Given the substantial amount involved and the long repayment period,
             a home loan is one of the most significant financial commitments an
             individual undertakes.
@@ -476,17 +476,17 @@ function HomeEMICalculator() {
 
         {/* Why is a Home Loan Calculator Important? Section */}
         <section className="">
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 className="main-heading mb-3">
             Why is a Home Loan Calculator Important?
           </h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <p className="mb-4 text-gray-800 leading-relaxed">
+              <p className="mb-4 p-content">
                 A Home Loan Calculator is an indispensable tool for anyone
                 planning to take on a mortgage. Here's why it's crucial:
               </p>
-              <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-none space-y-3">
+                <li className="list-content ">
                   <span className="font-bold flex items-start">
                     <Calculator
                       size={18}
@@ -500,7 +500,7 @@ function HomeEMICalculator() {
                     expenses.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <DollarSign
                       size={18}
@@ -514,7 +514,7 @@ function HomeEMICalculator() {
                     borrowing.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <Handshake
                       size={18}
@@ -527,7 +527,7 @@ function HomeEMICalculator() {
                     lenders.
                   </span>
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold flex items-start">
                     <TrendingUp
                       size={18}
@@ -541,7 +541,7 @@ function HomeEMICalculator() {
                   </span>
                 </li>
               </ul>
-              <p className="mt-4 text-gray-800 leading-relaxed">
+              <p className="mt-4 list-content">
                 The{" "}
                 <span className="font-bold text-blue-600">
                   UniCX Home Loan Calculator
@@ -565,61 +565,61 @@ function HomeEMICalculator() {
 
         {/* How to Use the UniCX Home Loan Calculator Section */}
         <section className="">
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 className="main-heading mb-3">
             How to Use the UniCX Home Loan Calculator
           </h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <p className="text-gray-800 text-[15px] leading-relaxed">
+              <p className="p-content mb-4">
                 Our Home Loan calculator is designed for simplicity, accuracy,
                 and providing you with comprehensive results:
               </p>
-              <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed mt-4">
-                <li>
+              <ol className="list-decimal list-inside space-y-3">
+                <li className="list-content">
                   <span className="font-bold">
                     Enter Principal Loan Amount:
                   </span>{" "}
                   Input the total amount you wish to borrow for your home (e.g.,
                   ₹30,00,000 or ₹75,00,000).
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     Enter Annual Interest Rate (%):
                   </span>{" "}
                   Provide the annual interest rate offered by the lender (e.g.,
                   8.5%, 9.0%).
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     Specify Loan Tenure (Years):
                   </span>{" "}
                   Choose the duration over which you plan to repay the loan
                   (e.g., 15 years, 20 years, 30 years).
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Calculate:</span> Click the
                   "Calculate Home Loan" button.
                 </li>
               </ol>
-              <h3 className="font-semibold text-xl mt-4 mb-2">
+              <h3 className="font-medium text-lg mt-4 mb-2">
                 The UniCX Home Loan Calculator will instantly provide you with:
               </h3>
               <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Monthly EMI Amount:</span> The
                   exact amount you will need to pay each month.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Total Interest Payable:</span> The
                   absolute amount of interest you will pay over the entire loan
                   tenure.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Total Amount Payable:</span> The
                   sum of your principal loan amount and the total interest
                   payable (your total repayment).
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Amortization Schedule:</span> A
                   detailed year-wise breakdown showing how much of each EMI
                   payment goes towards principal repayment and how much towards
@@ -641,27 +641,27 @@ function HomeEMICalculator() {
 
         {/* Understanding Home Loans: Key Aspects of Your Mortgage Section */}
         <section className="">
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 className="main-heading mb-3">
             Understanding Home Loans: Key Aspects of Your Mortgage
           </h2>
-          <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+          <p className="mb-4 p-content">
             Navigating a home loan requires understanding its various components
             and implications:
           </p>
 
-          <h3 className="font-semibold text-xl mt-6 mb-2">
+          <h3 className="font-medium text-lg mb-2">
             Components of a Home Loan & Factors Affecting Eligibility
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-            <li>
+          <ul className="list-disc list-inside space-y-3">
+            <li className="list-content">
               <span className="font-bold">Principal:</span> The actual amount of
               money you borrow.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Interest:</span> The cost of
               borrowing, paid on the outstanding principal balance.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">
                 EMI (Equated Monthly Installment):
               </span>{" "}
@@ -670,11 +670,11 @@ function HomeEMICalculator() {
           </ul>
 
           <div className="my-4 p-4 border rounded-lg shadow-sm bg-gray-50">
-            <h4 className="font-semibold text-lg mb-2">
+            <h4 className="font-medium text-lg mb-2">
               Key Factors Affecting Your Home Loan Eligibility & EMI:
             </h4>
-            <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-              <li>
+            <ul className="list-none space-y-3">
+              <li className="list-content">
                 <span className="font-bold flex items-start">
                   <Users
                     size={18}
@@ -688,7 +688,7 @@ function HomeEMICalculator() {
                   capacity.
                 </span>
               </li>
-              <li>
+              <li className="list-content">
                 <span className="font-bold flex items-start">
                   <CreditCard
                     size={18}
@@ -702,7 +702,7 @@ function HomeEMICalculator() {
                   interest rate you are offered.
                 </span>
               </li>
-              <li>
+              <li className="list-content">
                 <span className="font-bold flex items-start">
                   <Cake
                     size={18}
@@ -715,7 +715,7 @@ function HomeEMICalculator() {
                   maximum permissible tenure.
                 </span>
               </li>
-              <li>
+              <li className="list-content">
                 <span className="font-bold flex items-start">
                   <Scale
                     size={18}
@@ -728,7 +728,7 @@ function HomeEMICalculator() {
                   Debt-to-Income (DTI) ratio can reduce your eligibility.
                 </span>
               </li>
-              <li>
+              <li className="list-content">
                 <span className="font-bold flex items-start">
                   <Home
                     size={18}
@@ -753,14 +753,14 @@ function HomeEMICalculator() {
             /> */}
           </div>
 
-          <h3 className="font-semibold text-xl mt-6 mb-2">
+          <h3 className="font-medium text-lg mt-6 mb-2">
             Types of Home Loans
           </h3>
-          <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+          <p className="mb-3 p-content">
             Lenders offer various home loan products tailored to specific needs:
           </p>
-          <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-            <li>
+          <ul className="list-none space-y-3">
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Home
                   size={18}
@@ -770,7 +770,7 @@ function HomeEMICalculator() {
               </span>{" "}
               For buying a new or resale residential property.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Square
                   size={18}
@@ -780,7 +780,7 @@ function HomeEMICalculator() {
               </span>{" "}
               For purchasing a plot of land for residential construction.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Hammer
                   size={18}
@@ -790,7 +790,7 @@ function HomeEMICalculator() {
               </span>{" "}
               For building a house on a self-owned plot.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Paintbrush
                   size={18}
@@ -800,7 +800,7 @@ function HomeEMICalculator() {
               </span>{" "}
               For repairs, renovations, or upgrades to an existing home.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Maximize
                   size={18}
@@ -810,7 +810,7 @@ function HomeEMICalculator() {
               </span>{" "}
               For adding new rooms or floors to an existing house.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <RefreshCcw
                   size={18}
@@ -821,7 +821,7 @@ function HomeEMICalculator() {
               For transferring your existing home loan to another lender,
               usually for a lower interest rate or better terms.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <TrendingUp
                   size={18}
@@ -834,75 +834,75 @@ function HomeEMICalculator() {
             </li>
           </ul>
 
-          <h3 className="font-semibold text-xl mt-6 mb-2">
+          <h3 className="font-medium text-lg mt-6 mb-2">
             Interest Rate Types
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-            <li>
+          <ul className="list-disc list-inside space-y-3">
+            <li className="list-content">
               <span className="font-bold">Fixed Interest Rate:</span> The
               interest rate remains constant throughout the loan tenure,
               providing predictable EMIs.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Floating Interest Rate:</span> The
               interest rate fluctuates with market conditions. EMIs can increase
               or decrease.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Hybrid Interest Rate:</span> A
               combination, fixed for an initial period then converts to
               floating.
             </li>
           </ul>
 
-          <h3 className="font-semibold text-xl mt-6 mb-2">
+          <h3 className="font-medium text-lg mt-6 mb-2">
             Key Home Loan Terms to Know
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-            <li>
+          <ul className="list-disc list-inside space-y-3">
+            <li className="list-content">
               <span className="font-bold">Loan to Value (LTV) Ratio:</span> The
               maximum percentage of the property's value that a bank can
               finance.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Processing Fees:</span> A one-time fee
               charged by the lender for processing your loan application.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Prepayment/Foreclosure Charges:</span>{" "}
               Fees charged if you repay a part or the entire loan before tenure
               (often zero for floating-rate loans for individuals).
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">
                 Stamp Duty & Registration Charges:
               </span>{" "}
               Government levies on the property transaction, not covered by the
               loan.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">
                 Legal & Technical Valuation Fees:
               </span>{" "}
               Charges for legal verification of documents and property
               valuation.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold">Moratorium Period:</span> A temporary
               period during which the borrower is not required to make full EMI
               payments.
             </li>
           </ul>
 
-          <h3 className="font-semibold text-xl mt-6 mb-2">
+          <h3 className="font-medium text-lg mt-6 mb-2">
             Tax Benefits on Home Loans (India Specific)
           </h3>
-          <p className="mb-2 text-gray-800 text-[15px] leading-relaxed">
+          <p className="mb-2 p-content">
             Home loans offer significant tax benefits in India under the Income
             Tax Act, 1961:
           </p>
-          <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-            <li>
+          <ul className="list-none space-y-3">
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <FileText
                   size={18}
@@ -913,7 +913,7 @@ function HomeEMICalculator() {
               Deduction for principal repayment up to ₹1.5 Lakh per financial
               year.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <DollarSign
                   size={18}
@@ -924,7 +924,7 @@ function HomeEMICalculator() {
               Deduction for interest paid. Up to ₹2 Lakh for self-occupied
               property.
             </li>
-            <li>
+            <li className="list-content">
               <span className="font-bold flex items-start">
                 <Percent
                   size={18}
@@ -939,37 +939,37 @@ function HomeEMICalculator() {
 
         {/* Who Can Benefit from the UniCX Home Loan Calculator? */}
         <section className="">
-          <h2 className="text-2xl font-bold mb-3">
+          <h2 className="main-heading mb-3">
             Who Can Benefit from the UniCX Home Loan Calculator?
           </h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <p className="text-gray-800 text-[15px] leading-relaxed">
+              <p className="p-content mb-4">
                 The UniCX Home Loan Calculator is an indispensable tool for:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="list-content">
                   <span className="font-bold">First-Time Homebuyers:</span> To
                   understand affordability and compare loan options.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Existing Homeowners:</span>{" "}
                   Considering a balance transfer, top-up loan, or exploring
                   prepayment.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">Real Estate Investors:</span>{" "}
                   Analyzing the viability and returns of potential property
                   investments.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     Financial Planners & Advisors:
                   </span>{" "}
                   To quickly model various home loan scenarios for their
                   clients.
                 </li>
-                <li>
+                <li className="list-content">
                   <span className="font-bold">
                     Budget-Conscious Individuals:
                   </span>{" "}
@@ -993,11 +993,11 @@ function HomeEMICalculator() {
         {/* Key Considerations & Important Notes Before Taking a Home Loan */}
         <section className="">
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-md shadow-sm">
-            <h2 className="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
+            <h2 className="text-2xl font-semibold text-yellow-700 mb-3 flex items-center">
               <Lightbulb size={20} className="mr-3 mt-1 flex-shrink-0" />
               Key Considerations & Important Notes Before Taking a Home Loan
             </h2>
-            <p className="text-yellow-800 text-[15px] leading-relaxed mb-4">
+            <p className="text-yellow-800 text-[15px] font-[380] leading-relaxed mb-4">
               A home loan is a long-term commitment. Consider these factors
               beyond just the EMI:
             </p>
@@ -1086,7 +1086,7 @@ function HomeEMICalculator() {
 
         {/* FAQs Section */}
         <section className="">
-          <h2 className="text-2xl font-bold mb-3 flex items-center">
+          <h2 className="main-heading mb-3 flex items-center">
             <HelpCircle size={20} className="mr-2 flex-shrink-0" />
             Frequently Asked Questions (FAQs) about Home Loans
           </h2>
@@ -1099,7 +1099,7 @@ function HomeEMICalculator() {
                 }`}
               >
                 <button
-                  className={`flex justify-between items-center px-4 w-full text-left focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg py-3 ${
+                  className={`flex justify-between items-center px-4 w-full text-left  rounded-lg py-3 ${
                     openFAQ !== i
                       ? "border border-gray-300 hover:border-gray-400"
                       : "border-b border-blue-200"
@@ -1108,7 +1108,7 @@ function HomeEMICalculator() {
                   aria-expanded={openFAQ === i ? "true" : "false"}
                   aria-controls={`faq-answer-${i}`}
                 >
-                  <p className="font-semibold text-gray-800">{faq.q}</p>
+                  <p className="p-content">{faq.q}</p>
                   {openFAQ === i ? (
                     <ChevronUp size={20} className="flex-shrink-0 ml-2" />
                   ) : (
@@ -1117,7 +1117,7 @@ function HomeEMICalculator() {
                 </button>
                 <p
                   id={`faq-answer-${i}`}
-                  className={`text-gray-800 text-md font-normal px-4 ${
+                  className={`list-content px-4 ${
                     openFAQ === i
                       ? "max-h-[500px] opacity-100 py-3"
                       : "max-h-0 opacity-0"
@@ -1132,7 +1132,7 @@ function HomeEMICalculator() {
 
         {/* Conclusion */}
         <section className="pt-6 border-t mt-10">
-          <p className="text-sm text-gray-500 leading-relaxed">
+          <p className="list-content">
             The UniCX Home Loan Calculator is your trusted partner in navigating
             the complexities of home financing. It provides the clarity and
             insights you need to make empowered decisions for your dream home.
@@ -1140,7 +1140,7 @@ function HomeEMICalculator() {
             <br />
             This Home Loan Calculator and the information provided are developed
             and maintained by{" "}
-            <span className="font-bold">
+            <span className="font-bold bold-content">
               UniCX (UniconsultX Solutions Private Limited)
             </span>{" "}
             to help users understand home loan calculations. While we strive for
