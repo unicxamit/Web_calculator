@@ -23,6 +23,8 @@ import {
   CreditCard,
 } from "lucide-react";
 import fdlogo from "../assets/BG IMAGES/fd1.png"
+import howuse from "../assets/BG IMAGES/how4.png"
+import benifite from "../assets/BG IMAGES/4 png.png"
 function FDCalculator() {
   const [principal, setPrincipal] = useState("10000");
   const [rate, setRate] = useState("5");
@@ -555,13 +557,13 @@ function FDCalculator() {
                   </ul>
                 </div>
                 {/* Image for How to Use */}
-                <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-                  {/* <img
-                src={fdPurposeImage}
+                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                  <img
+                src={howuse}
                 alt="Image showing the UniCX FD calculator interface with inputs for principal, rate, tenure, and compounding frequency, and calculated outputs"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                 loading="lazy"
-              /> */}
+              />
                 </div>
               </div>
             </section>
@@ -800,13 +802,13 @@ function FDCalculator() {
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit */}
-                <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-                  {/* <img
-                    src={fdWhoCanBenefitImage}
+                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                  <img
+                    src={benifite}
                     alt="Image showing diverse individuals benefiting from using an FD calculator for savings and financial planning"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                     loading="lazy"
-                /> */}
+                />
                 </div>
               </div>
             </section>

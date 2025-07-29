@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import Header from "../component/Header";
 import ppflogo from "../assets/BG IMAGES/ppf1.png"
+import howuse from "../assets/BG IMAGES/how1.png";
+import benifite from "../assets/BG IMAGES/1 png.png"
 function PPFCalculator() {
   const [perPeriodDeposit, setPerPeriodDeposit] = useState("10000");
   const [tenure, setTenure] = useState("15");
@@ -417,12 +419,12 @@ function PPFCalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is Public Provident Fund (PPF)? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 What is Public Provident Fund (PPF)?
               </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4 text-gray-800 leading-relaxed">
+                     <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 The Public Provident Fund (PPF) is a highly favored,
                 government-backed, long-term savings and tax-saving scheme in
                 India. Introduced to encourage small savings and promote
@@ -430,25 +432,25 @@ function PPFCalculator() {
                 exceptional safety, guaranteed returns, attractive interest
                 rates, and significant tax benefits.
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
-                  <strong>Key Features:</strong> PPF is a beacon of security for
+              <ul className="list-disc list-inside space-y-3">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="text-blue-500">Key Features:</strong> PPF is a beacon of security for
                   Indian investors. It offers complete capital protection, with
                   returns that are assured by the government. Its long-term
                   nature makes it an ideal instrument for achieving major life
                   goals like retirement planning, children's education, or
                   marriage expenses.
                 </li>
-                <li>
-                  <strong>Purpose:</strong> By enabling individuals to build a
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="text-blue-500">Purpose:</strong> By enabling individuals to build a
                   substantial corpus over many years, PPF not only fosters a
                   habit of regular saving but also acts as a powerful tool for
                   tax planning, making it a cornerstone of many personal finance
                   portfolios.
                 </li>
               </ul>
-              <p className="mt-4 text-gray-800 leading-relaxed">
-                The <strong>UniCX PPF Calculator</strong> is your essential tool
+              <p className="mt-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                The <strong className="text-blue-500">UniCX PPF Calculator</strong> is your essential tool
                 to navigate this powerful investment avenue. It simplifies the
                 complexities of PPF growth, helping you visualize the potential
                 of your investments and plan your financial future with
@@ -469,19 +471,19 @@ function PPFCalculator() {
 
             {/* Why Use the UniCX PPF Calculator? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Why Use the UniCX PPF Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="mb-4 text-gray-800 leading-relaxed">
+                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                     Understanding the future value of your PPF investments can
                     be challenging given its long tenure and compounding
                     interest. Our calculator streamlines this process, offering
                     clear insights and powerful planning capabilities:
                   </p>
-                  <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-none space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]" >
                       <strong className="flex items-start">
                         <TrendingUp
                           size={18}
@@ -494,7 +496,7 @@ function PPFCalculator() {
                         into a significant tax-free corpus over time.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <Banknote
                           size={18}
@@ -507,7 +509,7 @@ function PPFCalculator() {
                         and the final maturity amount.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <ListChecks
                           size={18}
@@ -520,7 +522,7 @@ function PPFCalculator() {
                         tenures to set realistic and achievable financial goals.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <ShieldCheck
                           size={18}
@@ -549,33 +551,33 @@ function PPFCalculator() {
 
             {/* How to Use the UniCX PPF Calculator Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 How to Use the UniCX PPF Calculator
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
                     Our PPF calculator is designed for simplicity and
                     efficiency, allowing you to quickly project your PPF growth:
                   </p>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed mt-4">
-                    <li>
+                  <ol className="list-decimal list-inside space-y-3 mt-4">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Enter Annual Investment:</strong> Input the amount
                       you plan to invest in your PPF account each financial year
                       (e.g., ₹50,000, ₹1.5 lakh). Remember the minimum is ₹500
                       and the maximum is ₹1.5 lakh.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Select Investment Frequency:</strong> Choose
                       whether you plan to invest monthly (recommended for
                       maximizing interest) or annually (lump sum).
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Specify Tenure:</strong> The default tenure for a
                       PPF account is 15 years. You can also specify extended
                       periods in blocks of 5 years to see long-term growth.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Calculate:</strong> Click the "Calculate PPF"
                       button to instantly view your projected results.
                     </li>
@@ -584,20 +586,20 @@ function PPFCalculator() {
                     The calculator will then provide you with:
                   </h3>
                   <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Total Amount Invested:</strong> The cumulative sum
                       of all your contributions over the selected tenure.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Total Interest Earned:</strong> The total tax-free
                       interest your investment is projected to accrue.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Maturity Amount:</strong> The final, tax-free
                       corpus you can expect to receive at the end of the chosen
                       tenure.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Year-wise Growth Table:</strong> A detailed
                       breakdown of your yearly contributions, earned interest,
                       and closing balance, providing a clear trajectory of your
@@ -606,28 +608,28 @@ function PPFCalculator() {
                   </ul>
                 </div>
                 {/* Image for How to Use */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                src={ppfPurposeImage}
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                src={howuse}
                 alt="How to use UniCX PPF Calculator - Step by step guide"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-              /> */}
+              />
                 </div>
               </div>
             </section>
 
             {/* Understanding Public Provident Fund (PPF): Key Aspects of the Scheme */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Understanding Public Provident Fund (PPF): Key Aspects of the
                 Scheme
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 To make the most of your PPF investment, it's essential to grasp
                 its core features and rules:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside space-y-3">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Eligibility:</strong> Any resident Indian individual
                   can open a PPF account. Parents or legal guardians can also
                   open a PPF account on behalf of a minor child. Notably,
@@ -635,22 +637,22 @@ function PPFCalculator() {
                   accounts, though existing accounts opened while they were
                   residents can continue until maturity.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Tenure:</strong> The standard tenure for a PPF account
                   is <strong>15 years</strong>, calculated from the end of the
                   financial year in which the account was opened. After this
                   initial period, the account can be extended indefinitely in
                   blocks of 5 years.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Investment Limits:</strong>
                   <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Minimum:</strong> A mandatory minimum deposit of{" "}
                       <strong>₹500</strong> per financial year is required to
                       keep the account active.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Maximum:</strong> The maximum deposit allowed in a
                       financial year is <strong>₹1.5 lakh</strong>. This limit
                       applies across all PPF accounts held by an individual,
@@ -658,13 +660,13 @@ function PPFCalculator() {
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Deposit Frequency:</strong> You have the flexibility
                   to make deposits either as a lump sum amount (single deposit)
                   or in multiple installments throughout the financial year, up
                   to a maximum of 12 installments.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Interest Rate:</strong> The interest rate for PPF is
                   not fixed for the entire tenure; it is reviewed and{" "}
                   <strong>
@@ -677,29 +679,29 @@ function PPFCalculator() {
                   is 7.1% p.a. – Please note this rate is subject to quarterly
                   revisions by the government.)*
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Tax Benefits (EEE Status):</strong> One of the most
                   significant advantages of PPF is its 'Exempt-Exempt-Exempt'
                   (EEE) tax status:
                   <ul className="list-circle list-inside ml-6 mt-1 space-y-1">
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Exempted Contribution:</strong> Your contributions
                       to PPF (up to ₹1.5 lakh per financial year) are eligible
                       for deduction under <strong>Section 80C</strong> of the
                       Income Tax Act.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Exempted Interest:</strong> The interest earned on
                       your PPF account is completely <strong>tax-free</strong>.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Exempted Maturity Amount:</strong> The entire
                       corpus received upon maturity or premature closure is also
                       completely <strong>tax-free</strong>.
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Withdrawal Rules:</strong> Partial withdrawals from
                   your PPF account are permitted only after the completion of{" "}
                   <strong>7 financial years</strong> from the year the account
@@ -708,7 +710,7 @@ function PPFCalculator() {
                   withdrawal, or the balance at the end of the preceding year,
                   whichever is lower.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Loan Facility:</strong> A loan facility against your
                   PPF balance is available from the{" "}
                   <strong>3rd financial year</strong> up to the{" "}
@@ -722,44 +724,44 @@ function PPFCalculator() {
 
             {/* Who Can Benefit from the UniCX PPF Calculator? */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Who Can Benefit from the UniCX PPF Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                     The UniCX PPF Calculator is a valuable asset for a diverse
                     range of individuals aiming for financial security and
                     growth:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Long-Term Savers:</strong> If you prioritize
                       disciplined, consistent savings over many years to build
                       substantial wealth.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Tax Planners:</strong> Individuals actively
                       looking to maximize their tax deductions under Section 80C
                       while securing their future.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Risk-Averse Investors:</strong> Those who prefer
                       investments with absolute capital safety and
                       government-backed guaranteed returns, avoiding market
                       volatility.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Parents:</strong> Planning for significant future
                       expenses for their children, such as higher education or
                       marriage.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Retirement Planners:</strong> Individuals building
                       a robust, tax-free corpus that can serve as a strong
                       financial cushion during their retirement years.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>
                         Anyone seeking a secure, highly liquid, and
                         tax-efficient savings instrument backed by the
@@ -769,12 +771,12 @@ function PPFCalculator() {
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                    src={ppfWhoCanBenefitImage}
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                    src={benifite}
                     alt="Who can use UniCX PPF Calculator - Diverse users"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-                /> */}
+                />
                 </div>
               </div>
             </section>
@@ -782,11 +784,11 @@ function PPFCalculator() {
             {/* Key Considerations & Important Notes Regarding PPF */}
             <section className="">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-                <h2 className="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                <h2 className="text-2xl font-semibold text-blue-700 mb-3 flex items-center">
                   <ScrollText size={20} className="mr-3 mt-1 flex-shrink-0" />
                   Key Considerations & Important Notes Regarding PPF
                 </h2>
-                <p className="text-blue-800 mb-4 text-[15px] leading-relaxed">
+                <p className="text-blue-800 mb-4  tracking-wide text-[16px] font-[380]">
                   While PPF offers attractive benefits, it's crucial to be aware
                   of certain rules and conditions:
                 </p>
@@ -796,7 +798,7 @@ function PPFCalculator() {
                 alt="Important Considerations for PPF Investments"
                 className="w-auto h-16 mx-auto my-4"
             /> */}
-                <ul className="list-none space-y-2 text-blue-700 text-[15px] leading-relaxed">
+                <ul className="list-none space-y-2 text-blue-700 text-[15px] font-[300] leading-relaxed">
                   <li>
                     <strong className="flex items-start">
                       <CheckCircle
@@ -893,7 +895,7 @@ function PPFCalculator() {
 
             {/* FAQs Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Frequently Asked Questions (FAQs) about PPF
               </h2>
               <div className="space-y-2">
@@ -912,7 +914,7 @@ function PPFCalculator() {
                           : ""
                       }`}
                     >
-                      <p className="font-semibold text-gray-800">{faq.q}</p>
+                      <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
                       {openFAQ === i ? (
                         <ChevronUp size={18} />
                       ) : (
@@ -920,7 +922,7 @@ function PPFCalculator() {
                       )}
                     </div>
                     <p
-                      className={`text-gray-800 text-md font-normal px-3 ${
+                      className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                         openFAQ === i
                           ? "max-h-[500px] opacity-100 py-2 "
                           : "max-h-0 opacity-0"
@@ -935,7 +937,7 @@ function PPFCalculator() {
 
             {/* Conclusion */}
             <section className="pt-6 border-t mt-10">
-              <p className="text-sm text-gray-500">
+              <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 The UniCX PPF Calculator is an indispensable tool for anyone
                 looking to leverage the power of Public Provident Fund for
                 long-term financial security. Begin planning your investments
@@ -945,7 +947,7 @@ function PPFCalculator() {
                 <br />
                 This PPF Calculator and the information provided are developed
                 and maintained by{" "}
-                <strong>
+                <strong className="text-blue-500">
                   UniCX (UniconsultX Solutions Private Limited)
                 </strong>{" "}
                 to help users understand PPF calculations. While we strive for

@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import Header from "../component/Header";
 import tdslogo from "../assets/BG IMAGES/tds1.png"
+import benifite from "../assets/BG IMAGES/4 png.png"
+import howuse from "../assets/BG IMAGES/how2.png";
 function TDSCalculator() {
   // List of TDS sections with their logic (Unique keys now)
   const tdsOptions = [
@@ -271,16 +273,13 @@ function TDSCalculator() {
   ];
   return (
     <><Header/>
-    <div className="container-div">
+    <div className="container-div pt-14">
       <div
         className=" second-container">
     
-        <div className="my-4">
+        <div className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">TDS Calculator (India)</h1>
-          <p className="mb-8">
-            Calculate the **Tax Deducted at Source (TDS)** on various types of
-            payments as per the Indian Income Tax Act.
-          </p>
+         
         </div>
         {/* Right Section: Calculator Inputs and Results */}
         <div className="grid-layout ">
@@ -432,12 +431,12 @@ function TDSCalculator() {
         <section className="mt-10">
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 What is Tax Deducted at Source (TDS)?
               </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4 text-gray-800 leading-relaxed">
+                     <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 Understanding Tax Deducted at Source (TDS) is crucial for both
                 individuals and businesses in India. TDS is essentially a
                 mechanism introduced by the Indian Income Tax Department to
@@ -445,24 +444,24 @@ function TDSCalculator() {
                 flow of revenue to the government and widens the tax base by
                 bringing more transactions under tax purview.
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
-                  <strong>How it works:</strong> When certain payments (like
+              <ul className="list-disc list-inside space-y-3">
+                <li className="text-gray-600 tracking-wide text-[16px] font-[380]">
+                  <strong className="text-blue-500">How it works:</strong> When certain payments (like
                   salary, rent, professional fees, interest, commission, etc.)
                   are made, the payer (deductor) is mandated to deduct a
                   specific percentage as tax before making the final payment to
                   the recipient (deductee).
                 </li>
-                <li>
-                  <strong>Purpose:</strong> The amount deducted as TDS is then
+                <li className="text-gray-600 tracking-wide text-[16px] font-[380]">
+                  <strong className="text-blue-500">Purpose:</strong> The amount deducted as TDS is then
                   remitted by the deductor to the government. The deductee, in
                   turn, receives a credit for this deducted tax, which they can
                   claim against their total tax liability when filing their
                   annual income tax return.
                 </li>
               </ul>
-              <p className="mt-4 text-gray-800 leading-relaxed">
-                The <strong>UniCX TDS Calculator</strong> is designed to
+              <p className="mt-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                The <strong className="text-blue-500">UniCX TDS Calculator</strong> is designed to
                 simplify these intricate calculations, helping you effortlessly
                 determine the applicable TDS amounts and ensure compliance with
                 tax regulations.
@@ -482,18 +481,18 @@ function TDSCalculator() {
 
             {/* Why Use the UniCX TDS Calculator? Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Why Use the UniCX TDS Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="mb-4 text-gray-800 leading-relaxed">
+                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                     Navigating the various TDS sections, rates, and thresholds
                     can be complex. Our calculator offers a straightforward
                     solution to these challenges:
                   </p>
-                  <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-none space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <ShieldCheck
                           size={18}
@@ -507,7 +506,7 @@ function TDSCalculator() {
                         various sections.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <FileText
                           size={18}
@@ -521,7 +520,7 @@ function TDSCalculator() {
                         and penalties.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <Banknote
                           size={18}
@@ -535,7 +534,7 @@ function TDSCalculator() {
                         budgeting.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <ListChecks
                           size={18}
@@ -563,88 +562,88 @@ function TDSCalculator() {
 
             {/* How to Use the UniCX TDS Calculator Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 How to Use the UniCX TDS Calculator
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
                     Our calculator is designed for intuitive use, allowing you
                     to quickly determine your TDS estimates. You will typically
                     input the following:
                   </p>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed mt-4">
-                    <li>
+                  <ol className="list-decimal list-inside space-y-3 mt-4">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Select Payment Type:</strong> Choose the nature of
                       the payment from a dropdown (e.g., Salary, Rent,
                       Professional Fees, Interest, etc.). This determines the
                       applicable TDS section and rate.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Enter Payment Amount:</strong> Input the gross
                       amount of the payment before any deductions.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>PAN Availability:</strong> Indicate whether the
                       deductee's Permanent Account Number (PAN) is available.
                       This is critical as non-furnishing of PAN leads to higher
                       TDS rates.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Resident Status:</strong> Specify if the deductee
                       is a Resident or Non-Resident (relevant for certain
                       sections like 195).
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Select Financial Year:</strong> Choose the
                       appropriate financial year for which the calculation is
                       being made, as rates and rules can change annually.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Calculate:</strong> Click the "Calculate TDS"
                       button to instantly view the results.
                     </li>
                   </ol>
-                  <h3 className="font-semibold text-xl mt-4 mb-2">Outputs:</h3>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <h3 className="text-gray-600 tracking-wide text-[17px] font-[500] mt-4 mb-2">Outputs:</h3>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Applicable TDS Section & Rate:</strong> The
                       specific section of the Income Tax Act under which TDS is
                       to be deducted, along with the percentage rate.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Calculated TDS Amount:</strong> The exact amount
                       of tax to be deducted.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Net Amount Payable/Receivable:</strong> The amount
                       remaining after TDS deduction.
                     </li>
                   </ul>
                 </div>
                 {/* Image for How to Use */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                src={tdsPurposeImage} // Reusing image or provide specific if available
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                src={howuse} // Reusing image or provide specific if available
                 alt="How to use UniCX TDS Calculator - Step by step guide"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-              /> */}
+              />
                 </div>
               </div>
             </section>
 
             {/* Key Sections Covered by the TDS Calculator (Table) */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Key Sections Covered by the UniCX TDS Calculator
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 Our calculator helps you compute TDS for some of the most common
                 payment types:
               </p>
-              <div className="overflow-x-auto shadow-md rounded-lg border border-gray-200">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
+              <div className="overflow-x-auto shadow-md rounded-lg border-2 border-blue-200">
+                <table className="min-w-full divide-y divide-blue-200">
+                  <thead className="bg-blue-50">
                     <tr>
                       <th
                         scope="col"
@@ -672,7 +671,7 @@ function TDSCalculator() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody className="bg-white divide-y divide-blue-200">
                     <tr>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                         192
@@ -775,7 +774,7 @@ function TDSCalculator() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-sm text-gray-500 mt-4">
+              <p className="text-gray-600 tracking-wide text-[15px] font-[380] mt-4">
                 *_Rates and thresholds are illustrative and subject to change as
                 per Income Tax Act amendments. Always refer to the latest tax
                 laws for definitive rates._
@@ -784,15 +783,15 @@ function TDSCalculator() {
 
             {/* The Crucial Role of PAN in TDS Calculations */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 The Crucial Role of PAN in TDS Calculations
               </h2>
               <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-                <p className="text-blue-800 mb-4 text-[15px] leading-relaxed">
+                <p className="text-blue-800 mb-4  tracking-wide text-[16px] font-[380]">
                   The Permanent Account Number (PAN) is paramount in TDS
                   deductions:
                 </p>
-                <ul className="list-none space-y-2 text-blue-700 text-[15px] leading-relaxed">
+                <ul className="list-none space-y-2 text-blue-700 text-[15px] font-[320] leading-relaxed">
                   <li>
                     <strong className="flex items-start">
                       <CheckCircle
@@ -843,56 +842,56 @@ function TDSCalculator() {
 
             {/* Who Can Benefit from the UniCX TDS Calculator? */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Who Can Benefit from the UniCX TDS Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
                     This versatile calculator is beneficial for a wide array of
                     users:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Salaried Individuals:</strong> To understand the
                       TDS deducted from their salary and verify its accuracy.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Employers:</strong> For accurate and compliant TDS
                       deductions from employee salaries.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Businesses & Freelancers:</strong> To calculate
                       TDS on payments made for professional services, contracts,
                       commissions, or interest.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Property Owners & Tenants:</strong> To determine
                       TDS on rent payments (especially above thresholds).
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Accountants & Tax Professionals:</strong> As a
                       quick reference tool for TDS computation for their
                       clients.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Financial Departments:</strong> For precise
                       calculation and compliance across various payment
                       categories.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Students & Learners:</strong> To grasp practical
                       aspects of tax deductions.
                     </li>
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                    src={tdsWhoCanBenefitImage}
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                    src={benifite}
                     alt="Who can use UniCX TDS Calculator - Diverse users"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-                /> */}
+                />
                 </div>
               </div>
             </section>
@@ -900,11 +899,11 @@ function TDSCalculator() {
             {/* Key Considerations & Important Notes Regarding TDS */}
             <section className="">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-                <h2 className="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                <h2 className="text-2xl font-semibold  text-blue-700 mb-3 flex items-center">
                   <ScrollText size={20} className="mr-3 mt-1 flex-shrink-0" />
                   Key Considerations & Important Notes Regarding TDS
                 </h2>
-                <p className="text-blue-800 mb-4 text-[15px] leading-relaxed">
+                <p className="text-blue-800 mb-4  tracking-wide text-[16px] font-[380]">
                   While the calculator simplifies the process, it's essential to
                   be aware of the broader TDS landscape:
                 </p>
@@ -914,7 +913,7 @@ function TDSCalculator() {
                 alt="Important Considerations for TDS Calculations"
                 className="w-auto h-16 mx-auto my-4"
             /> */}
-                <ul className="list-none space-y-2 text-blue-700 text-[15px] leading-relaxed">
+                <ul className="list-none space-y-2 text-blue-700 text-[15px] font-[320] leading-relaxed">
                   <li>
                     <strong className="flex items-start">
                       <CheckCircle
@@ -1035,7 +1034,7 @@ function TDSCalculator() {
 
             {/* FAQs Section */}
             <section className="">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Frequently Asked Questions (FAQs) about TDS
               </h2>
               <div className="space-y-2">
@@ -1054,7 +1053,7 @@ function TDSCalculator() {
                           : ""
                       }`}
                     >
-                      <p className="font-semibold text-gray-800">{faq.q}</p>
+                      <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
                       {openFAQ === i ? (
                         <ChevronUp size={18} />
                       ) : (
@@ -1062,7 +1061,7 @@ function TDSCalculator() {
                       )}
                     </div>
                     <p
-                      className={`text-gray-800 text-md font-normal px-3 ${
+                      className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                         openFAQ === i
                           ? "max-h-[500px] opacity-100 py-2 "
                           : "max-h-0 opacity-0"
@@ -1077,7 +1076,7 @@ function TDSCalculator() {
 
             {/* Conclusion */}
             <section className="pt-6 border-t mt-10">
-              <p className="text-sm text-gray-500">
+              <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 The UniCX TDS Calculator is your reliable partner in navigating
                 the complexities of tax deducted at source. Empower yourself
                 with accurate calculations and ensure seamless compliance with
@@ -1086,7 +1085,7 @@ function TDSCalculator() {
                 <br />
                 This TDS Calculator and the information provided are developed
                 and maintained by{" "}
-                <strong>
+                <strong className="text-blue-500">
                   UniCX (UniconsultX Solutions Private Limited)
                 </strong>{" "}
                 to help users understand TDS calculations. While we strive for

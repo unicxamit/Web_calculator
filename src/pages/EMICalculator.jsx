@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import emilogo from "../assets/BG IMAGES/emi1.png"
 import Header from "../component/Header";
+import howuse from "../assets/BG IMAGES/how3.png"
+import benifite from  "../assets/BG IMAGES/3 png.png"
 function EMICalculator() {
   const [loanAmount, setLoanAmount] = useState("2000000");
   const [interestRate, setInterestRate] = useState("14");
@@ -621,13 +623,13 @@ function EMICalculator() {
                   </ul>
                 </div>
                 {/* Image for How to Use */}
-                <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-                  {/* <img
-                src={emiPurposeImage}
+                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                  <img
+                src={howuse}
                 alt="Image showing the UniCX EMI calculator interface with input fields and calculated outputs"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                 loading="lazy"
-              /> */}
+              />
                 </div>
               </div>
             </section>
@@ -834,13 +836,13 @@ function EMICalculator() {
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit */}
-                <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-                  {/* <img
-                    src={emiWhoCanBenefitImage}
+                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                  <img
+                    src={benifite}
                     alt="Image showing diverse individuals benefiting from using an EMI calculator for loan planning"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                     loading="lazy"
-                /> */}
+                />
                 </div>
               </div>
             </section>

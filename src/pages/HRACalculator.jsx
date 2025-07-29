@@ -12,6 +12,8 @@ import {
 } from "lucide-react"; 
 import Header from "../component/Header";
 import hralogo from "../assets/BG IMAGES/hra1.png"
+import howuse from "../assets/BG IMAGES/how3.png";
+import benifite from "../assets/BG IMAGES/3 png.png";
 const HRACalculator = () => {
   const [basic, setBasic] = useState("600000");
   const [da, setDa] = useState("998");
@@ -375,25 +377,25 @@ const HRACalculator = () => {
         <div className="space-y-14 text-gray-700 text-base leading-relaxed">
           {/* Intro - Expanded with Updates/Rules style */}
           <section className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-            <h2 className="text-2xl font-bold text-blue-700 mb-3 gap-2 flex items-center">
+            <h2 className="text-2xl font-semibold text-blue-700 mb-3 gap-2 flex items-center">
               <AlertCircle size={18} className="mr-2 mt-1 flex-shrink-0" />
               HRA Tax Exemption:{" "}
               <strong>Important Updates & Rules You Need to Know!</strong>
             </h2>
-            <p className="text-blue-800 mb-4">
+            <p className="text-blue-700 mb-4  tracking-wide text-base font-[400]">
               Understanding the <strong>House Rent Allowance (HRA)</strong>{" "}
               rules is crucial for salaried individuals looking to minimize
               their income tax liability. Stay informed about these key
               regulations to accurately claim your HRA exemption and ensure
               compliance.
             </p>
-            <ul className="list-inside space-y-8 text-blue-700">
+            <ul className="list-inside space-y-6 text-blue-700">
               <li>
-                <strong className="flex items-start">
+                <strong className="flex items-start  tracking-wide text-[16px] font-[400] ">
                   <FileText size={18} className="mr-2 mt-1 flex-shrink-0" />
                   Mandatory Landlord PAN for High Rent:
                 </strong>
-                <span className="block ml-6 -mt-1">
+                <span className="block ml-6 -mt-1  tracking-wide text-[15px] font-[380]">
                   If your annual rent payment exceeds{" "}
                   <strong>₹1,00,000 (Rupees One Lakh)</strong>, it is mandatory
                   to furnish your landlord's PAN details to your employer.
@@ -401,11 +403,11 @@ const HRACalculator = () => {
                 </span>
               </li>
               <li>
-                <strong className="flex items-start">
+                <strong className="flex items-start tracking-wide text-[16px] font-[400]">
                   <CheckCircle size={18} className="mr-2 mt-1 flex-shrink-0" />
                   Retain Rent Receipts as Proof:
                 </strong>
-                <span className="block ml-6 -mt-1">
+                <span className="block ml-6 -mt-1  tracking-wide text-[15px] font-[380]">
                   Always collect and retain{" "}
                   <strong>proper rent receipts</strong> for the rent paid. These
                   documents are essential evidence for your HRA claim and may be
@@ -413,11 +415,11 @@ const HRACalculator = () => {
                 </span>
               </li>
               <li>
-                <strong className="flex items-start">
+                <strong className="flex items-start  tracking-wide text-[16px] font-[400]">
                   <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
                   Metro vs. Non-Metro City Definition:
                 </strong>
-                <span className="block ml-6 -mt-1">
+                <span className="block ml-6 -mt-1  tracking-wide text-[15px] font-[380]">
                   The percentage of HRA exemption depends on your city of
                   residence. <strong>Metro cities</strong> are defined as Delhi,
                   Mumbai, Kolkata, and Chennai (50% exemption), while all other
@@ -426,11 +428,11 @@ const HRACalculator = () => {
                 </span>
               </li>
               <li>
-                <strong className="flex items-start">
+                <strong className="flex items-start  tracking-wide text-[16px] font-[400]">
                   <Users size={18} className="mr-2 mt-1 flex-shrink-0" />
                   Claiming HRA for Rent Paid to Parents:
                 </strong>
-                <span className="block ml-6 -mt-1">
+                <span className="block ml-6 -mt-1  tracking-wide text-[15px] font-[380]">
                   You can claim HRA exemption even if you pay rent to your
                   parents, provided the transaction is genuine. Your parents
                   must declare this rent as income in their tax returns. Ensure
@@ -438,7 +440,7 @@ const HRACalculator = () => {
                 </span>
               </li>
             </ul>
-            <p className="text-blue-800 mt-4 font-semibold">
+            <p className="text-blue-800 mt-4  tracking-wide text-[16px] font-[380]">
               Our UniCX HRA Calculator is here to help you navigate these rules
               and accurately calculate your tax exemption.
             </p>
@@ -451,17 +453,17 @@ const HRACalculator = () => {
             </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-            <p className="mb-4">
-              <strong>House Rent Allowance (HRA)</strong> is a special allowance
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+              <strong className="text-blue-500">House Rent Allowance (HRA)</strong> is a special allowance
               provided by employers to their employees to help cover the cost of
               rented accommodation. It is a part of a salaried individual's
               compensation package and is specifically designed to provide tax
               relief on the housing expenses incurred by the employee.
             </p>
-            <p>
+            <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
               While HRA is a part of your salary, it is not fully taxable; a
               certain portion of it can be claimed as an exemption under{" "}
-              <strong>Section 10(13A)</strong> of the Income Tax Act, 1961,
+              <strong className="text-blue-500">Section 10(13A)</strong> of the Income Tax Act, 1961,
               provided certain conditions are met. This makes HRA a crucial
               component for effective tax planning for those living in rented
               homes.
@@ -482,62 +484,62 @@ const HRACalculator = () => {
           <section className="">
             {" "}
             {/* No direct background or border on the section */}
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl text-textColor font-semibold  mb-3">
               Key Benefits & Tax Exemption Rules of HRA
             </h2>
-            <p className="mb-4">
+            <p className="mb-5 text-gray-600 tracking-wide text-[16px] font-[380]">
               The primary benefit of HRA is its potential for tax exemption,
               which directly reduces your taxable income. The amount of HRA that
               is exempt from tax is the{" "}
-              <strong>least of the following three amounts</strong>:
+              <strong className="text-blue-500"> least of the following three amounts</strong>:
             </p>
             <div className="space-y-4">
               {" "}
               {/* Container for individual cards */}
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800">
                   Actual HRA Received:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   The full House Rent Allowance amount that your employer pays
                   to you.
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800">
                   Rent Paid Minus 10% of Basic Salary + DA:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   The actual rent you pay for your accommodation, reduced by 10%
                   of your Basic Salary plus Dearness Allowance (if it forms part
                   of your retirement benefits).
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800">
                   Percentage of Basic Salary + DA Based on City:
                 </h3>
-                <ul className="list-disc list-inside ml-4 mt-1 text-sm text-gray-600">
-                  <li>
+                <ul className="list-disc list-inside ml-4 mt-1 ">
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>50% of Basic Salary + DA</strong> if you live in a{" "}
                     <strong>metro city</strong> (Delhi, Mumbai, Kolkata,
                     Chennai).
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>40% of Basic Salary + DA</strong> if you live in any{" "}
                     <strong>non-metro city</strong>.
                   </li>
                 </ul>
               </div>
             </div>
-            <p className="mt-4 text-sm text-gray-700 font-medium">
+            <p className="mt-4 text-[16px] text-gray-700 font-[400]">
               <strong>Note:</strong> For HRA calculation purposes, 'salary'
               typically includes Basic Salary and Dearness Allowance (DA), only
               if DA is part of your retirement benefits. It generally excludes
               other allowances and perquisites.
             </p>
-            <p className="mt-4 text-gray-800 font-semibold">
-              <strong>Eligibility for HRA Exemption:</strong> You must be a
+            <p className="mt-4 text-gray-600 tracking-wide text-[17px] font-[380]">
+              <strong className="text-blue-500">Eligibility for HRA Exemption:</strong> You must be a
               salaried individual, actively paying rent for accommodation, and
               not own a house in the city for which the HRA is claimed.
             </p>
@@ -545,61 +547,72 @@ const HRACalculator = () => {
 
           {/* How to Use the UniCX Free Online HRA Calculator - With a simpler list style, no grid with image */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl text-textColor font-semibold mb-3">
               How to Use the UniCX Free Online HRA Calculator
             </h2>
-            <p className="mb-4">
+             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
+                  <div className=""> <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Our UniCX HRA Calculator makes determining your tax-exempt HRA
               simple and quick. Just follow these steps:
             </p>
-            <ol className="list-decimal list-inside space-y-2 pl-4">
-              <li>
+            <ol className="list-decimal list-inside space-y-3 pl-4">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Basic Salary (Monthly ₹):</strong> Input your monthly
                 basic salary as per your payslip.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Dearness Allowance (DA) (Monthly ₹):</strong> Enter your
                 monthly Dearness Allowance if it is considered for retirement
                 benefits. If not applicable, you can enter '0'.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>HRA Received (Monthly ₹):</strong> Provide the actual
                 monthly House Rent Allowance you receive from your employer.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Actual Rent Paid (Monthly ₹):</strong> Fill in the
                 actual monthly rent you pay for your accommodation.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>City Type:</strong> Select whether your residence is in
                 a 'Metro City' (Delhi, Mumbai, Kolkata, Chennai) or a 'Non-Metro
                 City'. This selection impacts the tax exemption calculation.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>View Your Results:</strong> The calculator will
                 instantly display your "Exempt HRA Amount" and "Taxable HRA
                 Amount."
               </li>
             </ol>
+            </div>
+            <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300  ">
+                      <img
+                        src={howuse}
+                        alt="Abstract minimalist graphic representing interconnectedness of GST types"
+                        className="w-full max-w-lg object-contain h-auto max-h-[400px] xl:max-h-[400px] "
+                      />
+                    </div>
+                    </div>
+           
           </section>
 
           {/* Understanding Your HRA Calculator Results - Standard section with example box */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Understanding Your HRA Calculator Results
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Once you input your details, our calculator provides a clear
               breakdown of your HRA benefits:
             </p>
             <ul className="list-disc list-inside ml-4 space-y-2">
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Exempt HRA Amount:</strong> This is the portion of your
                 HRA that is <strong>completely free from income tax</strong>.
                 This amount will reduce your gross taxable income, leading to
                 direct tax savings.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Taxable HRA Amount:</strong> This is the remaining
                 portion of your HRA (Actual HRA Received - Exempt HRA Amount)
                 that will be <strong>added to your taxable income</strong>. This
@@ -634,45 +647,45 @@ const HRACalculator = () => {
 
           {/* Important HRA Rules & Considerations - Standard list style with varied headers */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Important HRA Rules & Considerations
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               To ensure you can successfully claim HRA exemption, keep the
               following rules and considerations in mind:
             </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                <strong className="text-lg">Proof of Rent Payment:</strong> It
+            <ul className="list-disc list-inside space-y-3">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Proof of Rent Payment:</strong> It
                 is mandatory to keep proper rent receipts or bank statements
                 showing rent transfers. Your employer will typically ask for
                 these proofs.
               </li>
-              <li>
-                <strong className="text-lg">Rent Agreement:</strong> A valid
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Rent Agreement:</strong> A valid
                 rent agreement is crucial, especially for higher rent amounts,
                 as it serves as primary proof of your rental obligation.
               </li>
-              <li>
-                <strong className="text-lg">Landlord's PAN Details:</strong> If
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Landlord's PAN Details:</strong> If
                 your annual rent payment exceeds{" "}
                 <strong>₹1,00,000 (Rupees One Lakh)</strong>, you must furnish
                 the PAN of your landlord to your employer. A declaration is
                 required if the landlord does not have a PAN.
               </li>
-              <li>
-                <strong className="text-lg">Living in Your Own House:</strong>{" "}
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Living in Your Own House:</strong>{" "}
                 You cannot claim HRA exemption if you live in a house that you
                 own in the same city for which you are claiming HRA.
               </li>
-              <li>
-                <strong className="text-lg">Paying Rent to Parents:</strong> You
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Paying Rent to Parents:</strong> You
                 can pay rent to your parents and claim HRA exemption, provided
                 the transaction is genuine, and your parents declare the rental
                 income in their tax returns.
               </li>
-              <li>
-                <strong className="text-lg">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">
                   No HRA in Salary (Section 80GG):
                 </strong>{" "}
                 If you are a salaried individual but do not receive HRA as part
@@ -680,8 +693,8 @@ const HRACalculator = () => {
                 paying rent, you can still claim a deduction for rent paid under{" "}
                 <strong>Section 80GG</strong> of the Income Tax Act.
               </li>
-              <li>
-                <strong className="text-lg">Metro vs. Non-Metro Cities:</strong>{" "}
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Metro vs. Non-Metro Cities:</strong>{" "}
                 For HRA purposes, metro cities generally include{" "}
                 <strong>Delhi, Mumbai, Kolkata, and Chennai</strong>. All other
                 cities fall under the <strong>'non-metro'</strong> category.
@@ -693,10 +706,10 @@ const HRACalculator = () => {
           <section className="">
             {" "}
             {/* No direct background or border on the section */}
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Advantages of Using the UniCX HRA Calculator
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Leveraging our <strong>free online HRA calculator</strong> offers
               significant benefits for accurate tax planning:
             </p>
@@ -704,46 +717,46 @@ const HRACalculator = () => {
               {" "}
               {/* Container for individual cards */}
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800">
                   Accurate Exemption Calculation:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Instantly determine the precise tax-exempt portion of your
                   HRA, avoiding manual errors.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800">
                   Simplify Complex Rules:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   Our calculator handles the "least of three" rule, making
                   complex tax provisions easy to understand.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+                <h3 className=" tracking-wide text-[15px] font-[380] text-blue-800">
                   Efficient Tax Planning:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   Get clear insights into how HRA impacts your taxable income,
                   aiding in better financial decisions.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+                <h3 className="tracking-wide text-[16px] font-[380] text-blue-800">
                   Time-Saving:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   Quickly get results without needing to manually apply
                   percentages and deductions.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800">
+                <h3 className="tracking-wide text-[16px] font-[380] text-blue-800">
                   User-Friendly Interface:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   Designed for ease of use, even for individuals without
                   in-depth tax knowledge.
                 </p>
@@ -754,7 +767,7 @@ const HRACalculator = () => {
           {/* Tip box - Standard yellow theme */}
           <section className="">
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md shadow-sm">
-              <p className="text-sm text-yellow-700">
+              <p className="tracking-wide text-[15px] font-[380] text-yellow-700">
                 <strong>UniCX Tip:</strong> Always retain all your rent receipts
                 and rent agreement copies. These are crucial documents for
                 claiming HRA exemption and may be required by your employer or
@@ -766,45 +779,45 @@ const HRACalculator = () => {
 
           {/* UniCX Expert Support & Resources - Consistent styling */}
           <section id="contact" className="">
-            <h2 className="2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Beyond Calculations: UniCX - Your Partner in Tax & Financial
               Planning
             </h2>
-            <p className="mb-4">
-              At <strong>UniconsultX Solutions Private Limited (UniCX)</strong>,
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+              At <strong className="text-blue-500">UniconsultX Solutions Private Limited (UniCX)</strong>,
               our commitment extends beyond providing a powerful HRA calculator.
               We understand that navigating the complexities of income tax and
               financial planning requires comprehensive support. That's why we
               offer <strong>comprehensive support and resources</strong> to help
               you optimize your finances.
             </p>
-            <h3 className="font-semibold text-xl mt-4 mb-2">
+            <h3 className="text-gray-600 tracking-wide text-[17px] font-[400] mt-4 mb-2">
               Our Expert Financial Services Include:
             </h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>
+            <ul className="list-disc list-inside space-y-3">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Income Tax Filing Assistance:</strong> Expert help with
                 accurate and timely filing of your income tax returns.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Tax Planning & Optimization:</strong> Personalized
                 strategies to maximize your tax savings through various
                 deductions and exemptions (including HRA, 80C, etc.).
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Investment Advisory:</strong> Guidance on suitable
                 investment avenues to achieve your financial goals.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Financial Consulting:</strong> Holistic financial
                 planning to grow and protect your wealth.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Compliance & Advisory:</strong> Keeping you updated on
                 the latest tax laws and regulations.
               </li>
             </ul>
-            <p className="mt-4">
+            <p className="mt-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               <strong>Optimize Your Savings with UniCX:</strong> We are
               dedicated to being your reliable source for all things tax and
               financial planning. Explore our website for more in-depth
@@ -839,7 +852,7 @@ const HRACalculator = () => {
                         : ""
                     }`}
                   >
-                    <p className="font-semibold">{faq.q}</p>
+                    <p className="text-gray-600 tracking-wide text-[16px] font-[400]">{faq.q}</p>
                     {openFAQ === i ? (
                       <ChevronUp size={18} />
                     ) : (
@@ -847,7 +860,7 @@ const HRACalculator = () => {
                     )}
                   </div>
                   <p
-                    className={`text-gray-800 text-md font-normal px-3 ${
+                    className={`text-gray-600 tracking-wide text-[14px] font-[380] px-3 ${
                       openFAQ === i
                         ? "max-h-[500px] opacity-100 py-2"
                         : "max-h-0 opacity-0"
@@ -861,8 +874,8 @@ const HRACalculator = () => {
           </section>
 
           {/* Footer note - Consistent styling */}
-          <footer className="pt-6 border-t mt-6">
-            <p className="text-sm text-gray-500">
+          <footer className="pt-4 border-t mt-6">
+            <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
               This HRA calculator and information is developed and maintained by{" "}
               <strong>UniCX (UniconsultX Solutions Private Limited)</strong> to
               help users simplify House Rent Allowance computations as per

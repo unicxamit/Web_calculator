@@ -13,6 +13,7 @@ import {
 } from "lucide-react"; 
 import Header from "../component/Header";
 import siplogo from "../assets/BG IMAGES/sip1.png"
+import howuse from "../assets/BG IMAGES/how4.png";
 function SIPCalculator() {
   const [tab, setTab] = useState("sip");
   const [sipAmount, setSipAmount] = useState("5000");
@@ -594,28 +595,28 @@ function SIPCalculator() {
          
           {/* What is a Systematic Investment Plan (SIP)? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               What is a Systematic Investment Plan (SIP)?
             </h2>
              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4">
-              A <strong>Systematic Investment Plan (SIP)</strong> is an
+                     <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+              A <strong className="text-blue-500">Systematic Investment Plan (SIP)</strong> is an
               investment method offered by mutual funds, allowing investors to
               make regular, fixed payments (e.g., monthly, quarterly) into a
               chosen mutual fund scheme. It's akin to a recurring deposit, but
               for mutual funds, and it enables investors to participate in the
               stock market without requiring a large lump sum.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               SIPs are designed to instill financial discipline and mitigate
               market volatility through a strategy called{" "}
-              <strong>Rupee Cost Averaging</strong>. They have become immensely
+              <strong className="text-blue-500">Rupee Cost Averaging</strong>. They have become immensely
               popular as they make investing in dynamic markets accessible to
               everyone, irrespective of their income level, by allowing them to
               start with small, manageable amounts.
             </p>
-            <p>
+            <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
               This method fosters a habit of regular saving and investing,
               proving to be a powerful tool for long-term wealth creation,
               especially when leveraging the benefit of compounding.
@@ -634,35 +635,36 @@ function SIPCalculator() {
 
           {/* How Does a SIP Work? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               How Does a SIP Work? (The Power of Rupee Cost Averaging)
             </h2>
-            <p className="mb-4">
+            
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Instead of investing a large sum at once (lump sum), a SIP allows
               you to invest smaller, regular amounts. Here’s how it typically
               works and why it's effective:
             </p>
-            <ol className="list-decimal list-inside space-y-2 pl-4">
-              <li>
+            <ol className="list-decimal list-inside space-y-3 pl-4">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Fixed Investment:</strong> You decide on a fixed amount
                 (e.g., ₹1,000, ₹5,000, ₹10,000) you want to invest at a regular
                 interval (e.g., monthly, quarterly).
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Regular Purchases:</strong> On a pre-determined date,
                 your chosen amount is automatically debited from your bank
                 account and invested into your selected mutual fund scheme.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Varying Units:</strong> Because market prices (Net Asset
                 Value - NAV) fluctuate, your fixed investment buys a different
                 number of units each time:
                 <ul className="list-disc list-inside ml-4">
-                  <li>When NAV is high, you buy fewer units.</li>
+                  <li >When NAV is high, you buy fewer units.</li>
                   <li>When NAV is low, you buy more units.</li>
                 </ul>
-              </li>
-              <li>
+              </li >
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Rupee Cost Averaging:</strong> Over time, this averages
                 out your purchase cost per unit. You end up buying more units
                 when prices are low and fewer when prices are high, which can
@@ -674,69 +676,69 @@ function SIPCalculator() {
 
           {/* Key Benefits of Investing through SIP - Using the NPS/HRA Card Style */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Key Benefits of Investing through SIP
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               SIPs offer several compelling advantages, making them a robust
               choice for your wealth creation journey:
             </p>
             <div className="space-y-4">
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <HandCoins size={20} className="flex-shrink-0" /> Financial
                   Discipline:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Instills a habit of regular saving and investing.
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <DollarSign size={20} className="flex-shrink-0" /> Rupee Cost
                   Averaging:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Reduces the risk of market timing by averaging out the
                   purchase cost of units over time.
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <TrendingUp size={20} className="flex-shrink-0" /> Power of
                   Compounding:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Allows your returns to generate further returns, leading to
                   significant wealth creation over the long term. Even small,
                   regular investments can grow into substantial sums.
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <Clock size={20} className="flex-shrink-0" /> Flexibility:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   You can choose your investment amount, frequency, and stop or
                   pause your SIPs as needed (subject to scheme rules).
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <HandCoins size={20} className="flex-shrink-0" />{" "}
                   Affordability:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Start investing with amounts as low as ₹500 per month, making
                   it accessible to a wider range of investors.
                 </p>
               </div>
-              <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+              <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <Target size={20} className="flex-shrink-0" /> Goal-Oriented
                   Investing:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                   Easily link your SIPs to specific financial goals like buying
                   a house, children's education, or retirement planning.
                 </p>
@@ -746,58 +748,68 @@ function SIPCalculator() {
 
           {/* How to Use the UniCX Free Online SIP Calculator - Standard ordered list style */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               How to Use the UniCX Free Online SIP Calculator
             </h2>
-            <p className="mb-4">
+             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
+                  <div className="">  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Our UniCX SIP Calculator makes estimating your potential returns
               simple and quick. Follow these steps to see your wealth growth
               potential:
             </p>
-            <ol className="list-decimal list-inside space-y-2 pl-4">
-              <li>
+            <ol className="list-decimal list-inside space-y-3 pl-4">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Monthly Investment (₹):</strong> Enter the fixed amount
                 you plan to invest regularly (e.g., monthly).
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Investment Period (Years):</strong> Specify the total
                 number of years you intend to continue your SIP.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Expected Annual Return (%):</strong> Input your assumed
                 annual rate of return from your mutual fund investments. This is
                 an assumed figure, as actual returns depend on market
                 performance.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Click "Calculate":</strong> The calculator will
                 instantly display your "Invested Amount" and "Estimated
                 Returns."
               </li>
             </ol>
+            </div>
+            <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300  ">
+                      <img
+                        src={howuse}
+                        alt="Abstract minimalist graphic representing interconnectedness of GST types"
+                        className="w-full max-w-lg object-contain h-auto max-h-[400px] xl:max-h-[400px] "
+                      />
+                    </div>
+          </div>
           </section>
 
           {/* Understanding Your SIP Calculator Results - Standard section with example box */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Understanding Your SIP Calculator Results
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               Once you input your details, our calculator provides a clear
               breakdown of your potential SIP growth:
             </p>
-            <ul className="list-disc list-inside ml-4 space-y-2">
-              <li>
+            <ul className="list-disc list-inside ml-4 space-y-3">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Total Invested Amount:</strong> This is the cumulative
                 sum of all your monthly investments over the specified
                 investment period.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Estimated Returns:</strong> This is the projected profit
                 you might earn on your total invested amount, based on the
                 expected annual return you entered.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Total Value (Corpus):</strong> This is the sum of your
                 "Total Invested Amount" and "Estimated Returns," representing
                 the estimated total value of your investment at the end of the
@@ -832,47 +844,47 @@ function SIPCalculator() {
 
           {/* Important SIP Considerations & Tips - Standard list style */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Important SIP Considerations & Tips
             </h2>
-            <p className="mb-4">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               While SIPs are an excellent investment tool, keep these points in
               mind for optimal results:
             </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                <strong className="text-lg">Realistic Expectations:</strong>{" "}
+            <ul className="list-disc list-inside space-y-3">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Realistic Expectations:</strong>{" "}
                 Expected returns are assumptions. Actual returns are subject to
                 market risks and fund performance.
               </li>
-              <li>
-                <strong className="text-lg">Long-Term Horizon:</strong> SIPs
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Long-Term Horizon:</strong> SIPs
                 deliver the best results when allowed to compound over a long
                 period (5+ years).
               </li>
-              <li>
-                <strong className="text-lg">Fund Selection:</strong> Choose
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Fund Selection:</strong> Choose
                 mutual funds carefully based on your financial goals, risk
                 appetite, and past performance (though past performance is not
                 indicative of future results).
               </li>
-              <li>
-                <strong className="text-lg">Regular Review:</strong>{" "}
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Regular Review:</strong>{" "}
                 Periodically review your SIPs and portfolio to ensure they align
                 with your goals and make adjustments if necessary.
               </li>
-              <li>
-                <strong className="text-lg">Inflation:</strong> Factor in
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Inflation:</strong> Factor in
                 inflation when setting financial goals, as it erodes the
                 purchasing power of money over time.
               </li>
-              <li>
-                <strong className="text-lg">Taxation:</strong> Returns from
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Taxation:</strong> Returns from
                 mutual funds are subject to taxation (Capital Gains Tax).
                 Consult a tax advisor for specific guidance.
               </li>
-              <li>
-                <strong className="text-lg">Emergency Fund:</strong> Ensure you
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Emergency Fund:</strong> Ensure you
                 have an adequate emergency fund before starting SIPs.
               </li>
             </ul>
@@ -880,59 +892,59 @@ function SIPCalculator() {
 
           {/* Advantages of Using the UniCX SIP Calculator - Using the NPS/HRA Card Style */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Advantages of Using the UniCX SIP Calculator
             </h2>
-            <p className="mb-4">
-              Leveraging our <strong>free online SIP calculator</strong> offers
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+              Leveraging our <strong className="text-blue-500">free online SIP calculator</strong> offers
               significant benefits for accurate investment planning:
             </p>
             <div className="space-y-4">
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <Clock size={20} className="flex-shrink-0" /> Quick Estimates:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[350]">
                   Instantly see potential returns for various investment
                   scenarios.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <Target size={20} className="flex-shrink-0" /> Simplify
                   Complex Calculations:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[350]">
                   Our tool handles the compounding effect, making projections
                   easy to understand.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <HandCoins size={20} className="flex-shrink-0" /> Goal-Based
                   Planning:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[350]">
                   Helps you set realistic SIP amounts and durations to achieve
                   your financial goals.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+                <h3 className="tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <HelpCircle size={20} className="flex-shrink-0" />{" "}
                   User-Friendly Interface:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[350]">
                   Designed for ease of use, even for individuals new to
                   investing.
                 </p>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                <h3 className="font-semibold text-lg text-blue-800 flex items-center gap-2">
+                <h3 className=" tracking-wide text-[16px] font-[380] text-blue-800 flex items-center gap-2">
                   <ShieldCheck size={20} className="flex-shrink-0" />{" "}
                   Empowerment:
                 </h3>
-                <p className="text-sm text-gray-600">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[350]">
                   Provides clear data to make informed investment decisions.
                 </p>
               </div>
@@ -941,7 +953,7 @@ function SIPCalculator() {
 
           {/* Frequently Asked Questions (FAQs) about SIP - Interactive section */}
           <section>
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Frequently Asked Questions (FAQs) about SIP
             </h2>
             <div className="space-y-2">
@@ -962,7 +974,7 @@ function SIPCalculator() {
                         : ""
                     }`}
                   >
-                    <p className="font-semibold">{faq.q}</p>
+                    <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
                     {openFAQ === i ? (
                       <ChevronUp size={18} />
                     ) : (
@@ -970,7 +982,7 @@ function SIPCalculator() {
                     )}
                   </div>
                   <p
-                    className={`text-gray-800 text-md font-normal px-3 ${
+                    className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                       openFAQ === i
                         ? "max-h-[500px] opacity-100 py-2"
                         : "max-h-0 opacity-0"
@@ -985,39 +997,39 @@ function SIPCalculator() {
 
           {/* UniCX Expert Support & Resources - Consistent styling */}
           <section id="contact" className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Beyond Calculations: UniCX - Your Partner in Financial Growth
             </h2>
-            <p className="mb-4">
-              At <strong>UniconsultX Solutions Private Limited (UniCX)</strong>,
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+              At <strong className="">UniconsultX Solutions Private Limited (UniCX)</strong>,
               our commitment extends beyond providing a powerful SIP calculator.
               We understand that effective wealth creation requires
               comprehensive support and strategic planning. That's why we offer{" "}
               <strong>expert financial services</strong> to help you achieve
               your investment goals.
             </p>
-            <h3 className="font-semibold text-xl mt-4 mb-2">
+            <h3 className="text-gray-600 tracking-wide text-[16px] font-[380] mt-4 mb-2">
               Our Expert Financial Services Include:
             </h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>
+            <ul className="list-disc list-inside space-y-3">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Investment Advisory:</strong> Personalized guidance on
                 mutual funds, stocks, and other investment avenues.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Financial Planning:</strong> Holistic plans to manage
                 your income, expenses, savings, and investments for long-term
                 goals.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Retirement Planning:</strong> Strategies to build a
                 robust corpus for a secure post-retirement life.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Tax Planning & Optimization:</strong> Advice on
                 minimizing tax liabilities through smart investments.
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong>Portfolio Management:</strong> Regular review and
                 rebalancing of your investments.
               </li>
@@ -1038,7 +1050,7 @@ function SIPCalculator() {
 
           {/* Footer note - Consistent styling */}
           <footer className="pt-6 border-t mt-6">
-            <p className="text-sm text-gray-500">
+            <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
               This SIP calculator and information is developed and maintained by{" "}
               <strong>UniCX (UniconsultX Solutions Private Limited)</strong> to
               help users estimate potential returns from Systematic Investment

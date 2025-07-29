@@ -10,7 +10,8 @@ import {
 import gstlogo from "../assets/gstlogo.png";
 import gsttype from "../assets/gsttypes.png";
 // import critical from "../assets/criticalupdates.png";
-import calculator from "../assets/gstcalculator.png";
+import calculator from "../assets/BG IMAGES/how2.png";
+import benifite from "../assets/BG IMAGES/2 png .png"
 import "../css/Gst.css";
 import Header from "../component/Header";
 function GSTCalculator() {
@@ -722,6 +723,13 @@ function GSTCalculator() {
                       quick verification tool for clients' GST computations.
                     </li>
                   </ul>
+                   <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300 ">
+                      <img
+                        src={benifite}
+                        alt="GST India Logo | Goods and Services Tax explained"
+                        className=" w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain"
+                      />
+                    </div>
                 </section>
 
                 {/* Advantages of GST Calculator - NEW Section */}

@@ -16,7 +16,8 @@ import {
 } from "lucide-react";
 import Header from "../component/Header";
 import lumpsumlogo from "../assets/BG IMAGES/lump1.png"
-import benifite from "../assets/All-Calculators-image/benefit.png"
+import benifite from "../assets/BG IMAGES/1 png.png"
+import howuse from "../assets/BG IMAGES/how1.png"
 function LumpsumCalculator() {
   const [amount, setAmount] = useState("10000");
   const [rate, setRate] = useState("5");
@@ -430,13 +431,13 @@ function LumpsumCalculator() {
               </ul>
             </div>
             {/* Image for How to Use */}
-            <div className="flex justify-center items-center h-full rounded-lg overflow-hidden shadow-md"> {/* Added shadow, rounded-lg */}
-              {/* <img
-                src={lumpSumBenefitsImage} // Used the 'benefits' image here, as it's a good general fit for calculator interaction
+            <div className="flex justify-center items-center h-full rounded-lg overflow-hidden "> {/* Added shadow, rounded-lg */}
+              <img
+                src={howuse} // Used the 'benefits' image here, as it's a good general fit for calculator interaction
                 alt="Image showing the UniCX Lump Sum Mutual Fund calculator interface with inputs for amount, rate, tenure, and calculated outputs"
                 className="w-full h-auto object-cover rounded-lg"
                 loading="lazy"
-              /> */}
+              />
             </div>
           </div>
         </section>

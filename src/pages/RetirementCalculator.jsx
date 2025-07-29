@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import Header from "../component/Header";
 import gratuitylogo from "../assets/BG IMAGES/retir1.png"
-
+import howuse from "../assets/BG IMAGES/how1.png";
+import benifite from "../assets/BG IMAGES/3 png.png"
 
 function RetirementCalculator() {
   // State variables for user inputs
@@ -787,13 +788,13 @@ function RetirementCalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is Retirement Planning? Section */}
             <section className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 What is Retirement Planning?
               </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4 text-gray-800 leading-relaxed">
-                <strong className="font-semibold">Retirement planning</strong>{" "}
+                     <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                <strong className="text-blue-500">Retirement planning</strong>{" "}
                 is the process of setting financial goals for your post-working
                 life and developing a strategy to achieve them. It involves
                 assessing your future expenses, estimating the funds required to
@@ -817,15 +818,15 @@ function RetirementCalculator() {
 
             {/* Securing Your Future: Why a Retirement Calculator is Essential Section */}
             <section className="mt-8">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Securing Your Future: Why a Retirement Calculator is Essential
               </h2>
-              <p className="mb-8 text-gray-800 leading-relaxed">
-                <strong className="font-semibold">Retirement planning</strong>{" "}
+              <p className="mb-8 text-gray-600 tracking-wide text-[16px] font-[380]">
+                <strong className="text-blue-500">Retirement planning</strong>{" "}
                 is not just about saving money; it's about building a financial
                 foundation that ensures your comfort, independence, and desired
                 lifestyle long after your working years. The{" "}
-                <strong className="font-semibold">
+                <strong className="text-sm">
                   UniCX Retirement Calculator
                 </strong>{" "}
                 is a powerful tool designed to help you visualize your financial
@@ -838,19 +839,19 @@ function RetirementCalculator() {
 
             {/* Why Retirement Planning is Crucial Section */}
             <section className="mt-10">
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+              {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4"> */}
                 <div>
-                  <h2 className="text-2xl font-bold mb-3">
+                  <h2 className="text-2xl font-semibold text-textColor mb-3">
                     The Indispensable Benefits of Early Retirement Planning
                   </h2>
-                  <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
-                    <strong className="font-semibold">Starting early</strong>{" "}
+                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                    <strong className="text-blue-500">Starting early</strong>{" "}
                     with your retirement planning, and regularly checking your
                     progress with a calculator, offers significant advantages:
                   </p>
                   {/* Removed list-disc list-inside for icon-based list */}
                   <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <Clock
                           size={18}
@@ -868,7 +869,7 @@ function RetirementCalculator() {
                         contributions.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <BarChart
                           size={18}
@@ -884,7 +885,7 @@ function RetirementCalculator() {
                         savings can actually buy what you need.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <Landmark
                           size={18}
@@ -898,7 +899,7 @@ function RetirementCalculator() {
                         your finances and lifestyle choices.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <CheckCircle
                           size={18}
@@ -912,7 +913,7 @@ function RetirementCalculator() {
                         more fully.
                       </span>
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="flex items-start">
                         <Target
                           size={18}
@@ -929,24 +930,24 @@ function RetirementCalculator() {
                   </ul>
                 </div>
                 {/* Image for Why Retirement Planning is Crucial - Concept: Serene retirement scene */}
-                <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded cursor-pointer hover:scale-102 transition-transform duration-300">
+                {/* <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded cursor-pointer hover:scale-102 transition-transform duration-300"> */}
                   {/* <img
                 src={retirementBenefitImage} // You'll generate this image later
                 alt="Benefits of Early Retirement Planning - Financial Freedom"
                 className="w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain"
               /> */}
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             </section>
 
             {/* How to Use the UniCX Free Online Retirement Calculator Section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 How to Use the UniCX Free Online Retirement Calculator
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
                     Our{" "}
                     <strong className="font-semibold">
                       intuitive UniCX Retirement Calculator
@@ -954,43 +955,43 @@ function RetirementCalculator() {
                     simplifies the process of estimating your retirement needs.
                     To get started, simply input the following details:
                   </p>
-                  <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ol className="list-decimal list-inside space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Current Age:</strong> Your current age in years.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Retirement Age:</strong> The age at which you plan
                       to retire.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Current Monthly Expenses (₹):</strong> Your
                       estimated current monthly expenditure.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Inflation Rate (%):</strong> The expected annual
                       inflation rate.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>
                         Expected Rate of Return (Pre-Retirement, %):
                       </strong>{" "}
                       Expected return from investments before retirement.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>
                         Expected Rate of Return (Post-Retirement, %):
                       </strong>{" "}
                       Expected return from investments after retirement.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Current Retirement Savings (if any, ₹):</strong>{" "}
                       Your existing retirement corpus.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Monthly Savings Towards Retirement (₹):</strong>{" "}
                       The amount you currently save monthly for retirement.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>View Your Results:</strong> The calculator will
                       show your estimated monthly expenses in retirement, the
                       total corpus needed, and your retirement readiness.
@@ -998,28 +999,28 @@ function RetirementCalculator() {
                   </ol>
                 </div>
                 {/* Image for How to Use Retirement Calculator - Concept: Abstract financial growth */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                src={retirementCalculatorUsageImage} // You'll generate this image later
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                src={howuse} // You'll generate this image later
                 alt="How to use UniCX Retirement Calculator - Step by step guide"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-              /> */}
+              />
                 </div>
               </div>
             </section>
 
             {/* Key Factors Influencing Your Retirement Corpus */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Key Factors Influencing Your Retirement Corpus
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 Several variables play a critical role in determining how much
                 you need for retirement and how quickly you can accumulate it:
               </p>
               {/* Removed list-disc list-inside for icon-based list */}
-              <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-none space-y-3 ">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong className="flex items-start">
                     <DollarSign
                       size={18}
@@ -1037,7 +1038,7 @@ function RetirementCalculator() {
                     funds have real purchasing power.
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong className="flex items-start">
                     <TrendingUp
                       size={18}
@@ -1051,7 +1052,7 @@ function RetirementCalculator() {
                     tolerance.
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong className="flex items-start">
                     <Clock
                       size={18}
@@ -1065,7 +1066,7 @@ function RetirementCalculator() {
                     needing a larger corpus.
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong className="flex items-start">
                     <Target
                       size={18}
@@ -1079,7 +1080,7 @@ function RetirementCalculator() {
                     consequently, the required corpus.
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong className="flex items-start">
                     <Briefcase
                       size={18}
@@ -1098,12 +1099,12 @@ function RetirementCalculator() {
             {/* Important Considerations for Robust Retirement Planning - Similar to your 'Critical Updates' box, but distinct color/icon */}
             <section className="mt-10">
               <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-                <h2 className="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+                <h2 className="text-2xl font-semibold  text-blue-700 mb-3 flex items-center">
                   <Target size={20} className="mr-3 mt-1 flex-shrink-0" />{" "}
                   {/* Using Target for planning focus */}
                   Important Considerations for Robust Retirement Planning
                 </h2>
-                <p className="text-blue-800 mb-4 text-[15px] leading-relaxed">
+                <p className="text-blue-800 mb-4  tracking-wide text-[16px] font-[380]">
                   Beyond the numbers, a{" "}
                   <strong className="font-semibold">holistic approach</strong>{" "}
                   to retirement planning involves several key aspects:
@@ -1115,8 +1116,8 @@ function RetirementCalculator() {
                 className="w-auto h-16 mx-auto my-4" // Consistent with other info box image sizes
             /> */}
                 {/* Removed list-inside for icon-based list */}
-                <ul className="list-none space-y-2 text-blue-700 text-[15px] leading-relaxed">
-                  <li>
+                <ul className="list-none space-y-3 text-blue-700 ">
+                  <li className=" ">
                     <strong className="flex items-start">
                       <CheckCircle
                         size={18}
@@ -1124,9 +1125,9 @@ function RetirementCalculator() {
                       />
                       Start Early, Stay Consistent:
                     </strong>
-                    <span className="block ml-6 -mt-1">
+                    <span className="block ml-6 -mt-1 tracking-wide text-[15px] font-[380]">
                       The{" "}
-                      <strong className="font-semibold">
+                      <strong className="">
                         most impactful advice
                       </strong>
                       . Even small amounts saved consistently over a long period
@@ -1220,48 +1221,48 @@ function RetirementCalculator() {
 
             {/* Who Can Benefit from the UniCX Retirement Calculator? */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Who Can Benefit from the UniCX Retirement Calculator?
               </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
                     Our{" "}
                     <strong className="font-semibold">
                       Retirement Calculator
                     </strong>{" "}
                     is a versatile and invaluable tool for:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
-                      <strong className="font-semibold">
+                  <ul className="list-disc list-inside space-y-3">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <strong className="">
                         Young Professionals:
                       </strong>{" "}
                       To kickstart their retirement planning early and
                       understand the magic of compounding.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="font-semibold">
                         Mid-Career Individuals:
                       </strong>{" "}
                       To assess if they are on track and make necessary
                       adjustments to their savings strategy.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="font-semibold">
                         Individuals Approaching Retirement:
                       </strong>{" "}
                       To fine-tune their plans and ensure they have adequate
                       funds.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="font-semibold">
                         Financial Advisors:
                       </strong>{" "}
                       As a quick estimation tool for client consultations and
                       initial planning discussions.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong className="font-semibold">
                         Anyone Concerned About Their Future:
                       </strong>{" "}
@@ -1271,58 +1272,58 @@ function RetirementCalculator() {
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit - Concept: Diverse group of people planning their future */}
-                <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                  {/* <img
-                    src={whoBenefitsImage} // You'll generate this image later
+                <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                  <img
+                    src={benifite} // You'll generate this image later
                     alt="Who can use Retirement Calculator - Diverse age groups"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-                /> */}
+                />
                 </div>
               </div>
             </section>
 
             {/* Why Use UniCX Retirement Calculator? - Similar to Advantages section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Why Choose UniCX for Your Retirement Planning Needs?
               </h2>
-              <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 Leveraging our{" "}
                 <strong className="font-semibold">
                   free online Retirement Calculator
                 </strong>{" "}
                 offers significant advantages for your financial planning:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                <li>
-                  <strong className="font-semibold">
+              <ul className="list-disc list-inside space-y-3 ">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="">
                     User-Friendly Interface:
                   </strong>{" "}
                   Designed for simplicity, allowing anyone to estimate their
                   retirement needs with ease.
                 </li>
-                <li>
-                  <strong className="font-semibold">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="">
                     Comprehensive Inputs:
                   </strong>{" "}
                   Takes into account crucial factors like inflation and
                   pre/post-retirement returns for a more realistic projection.
                 </li>
-                <li>
-                  <strong className="font-semibold">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="">
                     Instant & Accurate Results:
                   </strong>{" "}
                   Get immediate insights into your retirement readiness.
                 </li>
-                <li>
-                  <strong className="font-semibold">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="">
                     Empowering Decisions:
                   </strong>{" "}
                   Helps you make informed choices about your savings and
                   investments.
                 </li>
-                <li>
-                  <strong className="font-semibold">Free & Accessible:</strong>{" "}
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <strong className="">Free & Accessible:</strong>{" "}
                   A valuable resource available to you anytime, anywhere.
                 </li>
               </ul>
@@ -1330,33 +1331,33 @@ function RetirementCalculator() {
 
             {/* Simplified Retirement Calculation Concept & Example Scenario */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Simplified Retirement Calculation Concept & Example Scenario
               </h2>
-              <p className="text-gray-800 text-[15px] leading-relaxed">
+              <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
                 While the calculator handles the detailed math, the{" "}
-                <strong className="font-semibold">core idea</strong> is:
+                <strong className="">core idea</strong> is:
               </p>
-              <h3 className="font-semibold text-xl mt-4 mb-2">
+              <h3 className="text-gray-600 tracking-wide text-[17px] font-[500] mt-4 mb-2">
                 Core Calculation Principles:
               </h3>
-              <ul className="list-disc list-inside ml-4 space-y-1 text-gray-800 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-disc list-inside ml-4 space-y-3">
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Future Value of Expenses:</strong> Project your
                   current monthly expenses into the future using an inflation
                   rate.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Corpus Needed:</strong> Estimate the total corpus
                   required to cover your desired retirement lifestyle,
                   considering post-retirement returns.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Future Value of Current & Future Savings:</strong>{" "}
                   Calculate how much your existing savings and regular
                   contributions will grow to by retirement.
                 </li>
-                <li>
+                <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Gap Analysis:</strong> Compare your total estimated
                   future savings against the total corpus needed to identify any
                   shortfall or surplus.
@@ -1398,7 +1399,7 @@ function RetirementCalculator() {
                 </p>
               </div>
 
-              <p className="mt-4 text-gray-800 text-[15px] leading-relaxed">
+              <p className="mt-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                 <strong className="font-semibold">
                   The Power of Compounding:
                 </strong>{" "}
@@ -1411,7 +1412,7 @@ function RetirementCalculator() {
 
             {/* FAQs Section */}
             <section className="mt-10">
-              <h2 className="text-2xl font-bold mb-3">
+              <h2 className="text-2xl font-semibold text-textColor mb-3">
                 Frequently Asked Questions (FAQs) about Retirement Planning
               </h2>
               <div className="space-y-2">
@@ -1432,7 +1433,7 @@ function RetirementCalculator() {
                           : ""
                       }`}
                     >
-                      <p className="font-semibold text-gray-800">{faq.q}</p>
+                      <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
                       {openFAQ === i ? (
                         <ChevronUp size={18} />
                       ) : (
@@ -1440,7 +1441,7 @@ function RetirementCalculator() {
                       )}
                     </div>
                     <p
-                      className={`text-gray-800 text-md font-normal px-3 ${
+                      className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                         openFAQ === i
                           ? "max-h-[500px] opacity-100 py-2 "
                           : "max-h-0 opacity-0"
@@ -1454,11 +1455,11 @@ function RetirementCalculator() {
             </section>
 
             {/* Footer note */}
-            <section className="pt-6 border-t mt-10">
-              <p className="text-sm text-gray-500">
+            <section className="pt-4 border-t mt-10">
+              <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 This Retirement Calculator and information is developed and
                 maintained by{" "}
-                <strong className="font-semibold">
+                <strong className="text-blue-500">
                   UniCX (UniconsultX Solutions Private Limited)
                 </strong>{" "}
                 to help users estimate their retirement needs and plan for a

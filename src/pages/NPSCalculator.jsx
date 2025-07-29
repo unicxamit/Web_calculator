@@ -4,7 +4,8 @@ import { FaRupeeSign } from "react-icons/fa"; // Import FaRupeeSign for consiste
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Header from "../component/Header";
 import npslogo from "../assets/BG IMAGES/nps.png";
-import benifite from "../assets/All-Calculators-image/benefit.png"
+import benifite from "../assets/BG IMAGES/2 png .png"
+import howuse from "../assets/BG IMAGES/how2.png"
 // import { AlertCircle, CheckCircle, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 function NPSCalculator() {
   const [currentAge, setCurrentAge] = useState(30);
@@ -379,11 +380,11 @@ function NPSCalculator() {
               <section className="">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                    <h2 className="text-2xl text-textColor font-medium mb-3">
+                    <h2 className="text-2xl text-textColor font-semibold  mb-3">
                       What is the National Pension System (NPS)?
                     </h2>
-                    <p className="text-md">
-                      The <strong>National Pension System (NPS)</strong> is a
+                    <p className="text-gray-700 tracking-wide text-[16px] mb-4 font-[380] ">
+                      The <strong className="text-blue-500">National Pension System (NPS)</strong> is a
                       voluntary, long-term investment product introduced by the
                       Government of India to provide retirement security for its
                       citizens. Regulated by the Pension Fund Regulatory and
@@ -409,72 +410,72 @@ function NPSCalculator() {
 
               {/* Key Benefits of Investing in NPS - Styled like GST's Types section without the grid for text/image */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Key Benefits of Investing in NPS
                 </h2>
-                <p className="mb-4">
+                <p className="text-gray-600 tracking-wide text-[16px] mb-4 font-[380] ">
                   NPS offers several compelling advantages, making it a robust
                   choice for your retirement planning:
                 </p>
                 <div className="space-y-4">
-                  <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                    <h3 className="font-normal text-lg mb-2">
+                  <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                    <h3 className="text-gray-700 tracking-wide text-base  font-[380] leading-relaxed mb-2">
                       Significant Tax Benefits
                     </h3>
-                    <ul className="list-disc list-inside ml-4 text-sm text-gray-600">
-                      <li>
+                    <ul className="list-disc list-inside ml-4 ">
+                      <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                         Contributions are eligible for deduction under{" "}
                         <strong>Section 80C</strong> (up to ₹1.5 lakh) and an
                         additional deduction under{" "}
                         <strong>Section 80CCD(1B)</strong> (up to ₹50,000) for
                         Tier-I accounts.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                         Employer's contribution (up to 10% of basic salary + DA)
                         is tax-deductible under{" "}
                         <strong>Section 80CCD(2)</strong> (for salaried
                         employees).
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                         The maturity amount and lump-sum withdrawal are largely
                         tax-exempt, offering a triple tax benefit (EEE - Exempt,
                         Exempt, Exempt) status under certain conditions.
                       </li>
                     </ul>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                    <h3 className="font-normal text-lg mb-2">
+                  <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                    <h3 className="text-gray-600 tracking-wide text-base  font-[380] mb-2">
                       Long-Term Wealth Creation
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                       As a market-linked product, NPS offers the potential for
                       higher returns compared to traditional fixed-income
                       instruments, leveraging the power of compounding over
                       several decades.
                     </p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                    <h3 className="font-normal mb-2 text-lg">
+                  <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                    <h3 className="text-gray-600 tracking-wide text-base mb-2 font-[380]">
                       Flexibility & Choice
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                       You can choose your asset allocation (equity, corporate
                       debt, government securities) and select between "Active
                       Choice" (you decide allocation) or "Auto Choice"
                       (age-based dynamic allocation).
                     </p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                    <h3 className="font-normal mb-2 text-lg">Portability</h3>
-                    <p className="text-sm text-gray-600">
+                  <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                    <h3 className="text-gray-600 tracking-wide text-base font-[380] mb-2">Portability</h3>
+                    <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                       NPS is entirely portable across jobs and locations,
                       meaning your account remains the same regardless of your
                       employment changes.
                     </p>
                   </div>
-                  <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100">
-                    <h3 className="font-normal mb-2  text-lg">Low Cost</h3>
-                    <p className="text-sm text-gray-600">
+                  <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
+                    <h3 className="ftext-gray-600 tracking-wide text-[14px] mb-2 font-[380]">Low Cost</h3>
+                    <p className="text-gray-600 tracking-wide text-[14px] font-[380]">
                       NPS is known for its low fund management charges, which
                       ensures a larger portion of your contributions goes
                       towards investment growth.
@@ -485,47 +486,47 @@ function NPSCalculator() {
 
               {/* How to Use the UniCX Free Online NPS Calculator - Styled like GST's How-To section with image */}
               <section className="">
-                <h2 className="text-2xl font-medium text-textColor mb-3">
+                <h2 className="text-2xl font-semibold text-textColor mb-3">
                   How to Use the UniCX Free Online NPS Calculator
                 </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
-                  <div className="text-md">
-                    <p className="text-md">
-                      Our <strong>UniCX NPS Calculator</strong> makes projecting
+                  <div className="">
+                    <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
+                      Our <strong className="text-blue-500">UniCX NPS Calculator</strong> makes projecting
                       your retirement savings simple. Just follow these steps:
                     </p>
-                    <ol className="list-decimal list-inside space-y-1 mt-2 text-md">
-                      <li>
+                    <ol className="list-decimal list-inside space-y-3 mt-2 ">
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>Current Age (Years):</strong> Enter your current
                         age. This helps determine your remaining investment
                         period.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>Monthly Contribution (₹):</strong> Input the
                         amount you plan to contribute to NPS each month.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>Expected Annual Return (%):</strong> Provide
                         your estimated annual return percentage. NPS investments
                         are market-linked, so this is an estimate. (Typical
                         range might be 8-12% but is subject to market
                         conditions).
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>Retirement Age:</strong> The calculator uses the
                         standard retirement age of 60 years.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>% of Corpus for Annuity:</strong> The calculator
                         assumes 40% of your maturity amount will be used to
                         purchase an annuity, as per NPS rules.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>Expected Annuity Return:</strong> Enter the
                         expected interest rate you anticipate from your annuity
                         plan.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong>View Your Results:</strong> The calculator will
                         instantly display your projected total investment,
                         interest earned, maturity amount, tax-free lump sum,
@@ -534,56 +535,52 @@ function NPSCalculator() {
                     </ol>
                   </div>
                   {/* Replaced calculator image with placeholder */}
-                  <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                    {/* If you have an image illustrating the calculator, place it here: */}
-                    {/* <img
-              src={npsCalculatorImage}
-              alt="NPS Calculator Usage"
-              className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-            /> */}
-                    <div className="bg-gray-100 p-8 rounded-lg text-center text-gray-500 w-full max-h-[350px] flex items-center justify-center">
-                      [Image Placeholder for Calculator How-To]
-                    </div>
-                  </div>
+                <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300  ">
+                                      <img
+                                        src={howuse}
+                                        alt="Abstract minimalist graphic representing interconnectedness of GST types"
+                                        className="w-full max-w-lg object-contain h-auto max-h-[400px] xl:max-h-[400px] "
+                                      />
+                                    </div>
                 </div>
               </section>
 
               {/* Understanding Your NPS Calculator Results - Styled like GST's Example Box (but for explanation) */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Understanding Your NPS Calculator Results
                 </h2>
-                <p>
+                <p className="text-gray-600 tracking-wide text-[16px] font-[380] ">
                   Once you input your details, our calculator provides a
                   comprehensive breakdown of your potential NPS returns:
                 </p>
-                <ul className="list-disc list-inside ml-4 space-y-1 mt-4 text-md">
-                  <li>
+                <ul className="list-disc list-inside ml-4 space-y-3 mt-4 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Total Investment:</strong> This is the cumulative
                     sum of all your monthly contributions until retirement.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Interest Earned:</strong> This shows the total
                     interest or capital appreciation your investment is
                     estimated to generate over the years, thanks to compounding.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Maturity Amount:</strong> This is your total
                     accumulated corpus at retirement (Current EPF Balance +
                     Total Contributions + Total Interest Earned).
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Lump Sum Withdrawal (Tax-Free):</strong> As per
                     current NPS rules, up to 60% of your maturity corpus can be
                     withdrawn as a tax-free lump sum at retirement.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Annuity Purchase Amount:</strong> The remaining 40%
                     (or more, if you choose) of your corpus must be used to
                     purchase an annuity. This amount is used by the annuity
                     provider to give you a regular pension.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Estimated Monthly Pension:</strong> This is the
                     projected monthly income you would receive from the annuity
                     purchased with the mandatory portion of your corpus.
@@ -617,35 +614,35 @@ function NPSCalculator() {
 
               {/* Important NPS Rules & Considerations - Styled like a general section */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Important NPS Rules & Considerations
                 </h2>
-                <ul className="list-disc list-inside space-y-1 text-md">
-                  <li>
+                <ul className="list-disc list-inside space-y-3  ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Eligibility:</strong> Any Indian citizen, resident
                     or non-resident, between 18 and 70 years of age can open an
                     NPS account.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Minimum Contributions:</strong> There are minimum
                     annual contribution requirements (currently ₹1,000 for Tier
                     I).
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                     <strong>Tier I vs. Tier II Accounts:</strong>
                     <ul className="list-disc list-inside ml-4">
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                         <strong>Tier I:</strong> This is your primary retirement
                         account, with tax benefits and withdrawal restrictions.
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                         <strong>Tier II:</strong> A voluntary savings account,
                         offering greater flexibility for withdrawals but without
                         direct tax benefits on contributions.
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Partial Withdrawals:</strong> Limited partial
                     withdrawals (up to 25% of your own contributions) are
                     allowed from Tier I accounts for specific purposes (e.g.,
@@ -653,13 +650,13 @@ function NPSCalculator() {
                     illness) after 3 years of opening the account, with a
                     maximum of three withdrawals over the entire tenure.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Mandatory Annuity:</strong> At least 40% of your
                     accumulated corpus must be utilized to purchase an annuity
                     plan from an Annuity Service Provider (ASP) upon attaining
                     60 years of age.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Taxation of Annuity:</strong> The monthly pension
                     received from the annuity is taxable as per your income tax
                     slab in the year of receipt.
@@ -669,35 +666,35 @@ function NPSCalculator() {
 
               {/* Who Can Benefit from the UniCX GST Calculator? -> Who Can Benefit from NPS Calculator? */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Who Can Benefit from the UniCX NPS Calculator?
                 </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                <p>
-                  Our <strong>NPS calculator</strong> is a versatile tool
+                <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
+                  Our <strong className="text-blue-500">NPS calculator</strong> is a versatile tool
                   designed to assist a wide range of users in accurately
                   managing their NPS-related projections:
                 </p>
                  
-                       <ul className="list-disc list-inside space-y-1 text-md">
-                  <li>
+                       <ul className="list-disc list-inside space-y-3 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Individuals planning for retirement:</strong> To
                     estimate their retirement corpus and pension.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Salaried employees:</strong> To understand how NPS
                     can complement their EPF/PF savings.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Self-employed professionals:</strong> To build a
                     disciplined retirement fund with tax advantages.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Financial advisors:</strong> As a quick tool to
                     demonstrate NPS benefits to clients.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>
                       Anyone interested in long-term wealth creation:
                     </strong>{" "}
@@ -719,38 +716,38 @@ function NPSCalculator() {
 
               {/* Advantages of GST Calculator -> Advantages of NPS Calculator */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Advantages of Using the UniCX NPS Calculator
                 </h2>
-                <p className="mb-3">
+                <p className="mb-3 text-gray-600 tracking-wide text-[16px] font-[380]">
                   Leveraging our <strong>free online NPS calculator</strong>{" "}
                   offers significant benefits for individuals planning their
                   retirement:
                 </p>
-                <ul className="list-disc list-inside space-y-1 text-md">
-                  <li>
+                <ul className="list-disc list-inside space-y-3 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Clarity on Retirement Corpus:</strong> Get a clear
                     projection of your accumulated wealth at retirement.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Estimate Monthly Pension:</strong> Understand the
                     potential regular income you could receive post-retirement.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Visualize Growth:</strong> See how compounding works
                     over decades to build a substantial fund.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Aids Financial Planning:</strong> Helps in setting
                     realistic retirement goals and adjusting contributions
                     accordingly.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Understand Annuity Impact:</strong> Provides insight
                     into how the mandatory annuity purchase affects your lump
                     sum and pension.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>User-Friendly Interface:</strong> Designed for ease
                     of use, making complex retirement projections simple and
                     accessible.
@@ -761,7 +758,7 @@ function NPSCalculator() {
               {/* Tip box - Adapted for NPS */}
               <section className="">
                 <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-md shadow-sm">
-                  <p className="text-sm text-yellow-700">
+                  <p className="tracking-wide text-[14px] font-[380] text-yellow-700 ">
                     <strong>UniCX Tip:</strong> Start investing in NPS early to
                     maximize the benefits of compounding. Even small monthly
                     contributions over a long period can lead to a substantial
@@ -773,54 +770,54 @@ function NPSCalculator() {
 
               {/* UniCX Expert Support & Resources - Adapted for NPS */}
               <section id="contact" className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="text-2xl text-textColor font-semibold mb-3">
                   Beyond Calculations: UniCX - Your Partner in Retirement
                   Planning & Financial Growth
                 </h2>
-                <p>
+                <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
                   At{" "}
                   <strong>UniconsultX Solutions Private Limited (UniCX)</strong>
                   , our commitment extends beyond providing a powerful NPS
                   calculator. We understand that{" "}
-                  <strong>retirement planning is a long-term journey</strong>,
+                  <strong className="text-blue-500">retirement planning is a long-term journey</strong>,
                   and navigating its complexities requires comprehensive
                   support. That's why we offer{" "}
                   <strong>comprehensive support and resources</strong> to ensure
                   your financial future is secure.
                 </p>
-                <h3 className="font-normal text-textColor text-lg mt-4 mb-2">
+                <h3 className="text-gray-600 tracking-wide text-[16px] font-[400] mt-4 mb-2">
                   Our Expert Financial Services Include:
                 </h3>
-                <ul className="list-disc list-inside space-y-1 text-md">
-                  <li>
+                <ul className="list-disc list-inside space-y-3 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Retirement Planning Guidance:</strong> Personalized
                     strategies to help you achieve your retirement goals.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>Investment Advisory:</strong> Expert advice on
                     various investment avenues, including NPS, mutual funds,
                     etc.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>Tax Planning:</strong> Strategies to optimize your
                     tax savings through instruments like NPS, ELSS, etc.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>Annuity Selection Assistance:</strong> Guidance on
                     choosing the right annuity plan for your post-retirement
                     needs.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>Wealth Management:</strong> Holistic financial
                     planning to grow and protect your wealth.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[14px] font-[380]">
                     <strong>Educational Resources:</strong> Access to
                     informative articles, FAQs, and timely updates on retirement
                     planning and investment strategies.
                   </li>
                 </ul>
-                <p className="mt-4">
+                <p className="mt-4 text-gray-600 tracking-wide text-[15px] font-[380]">
                   <strong>Secure Your Future with UniCX:</strong> We are
                   dedicated to being your reliable source for all things
                   retirement planning. Explore our website for more in-depth
@@ -855,7 +852,7 @@ function NPSCalculator() {
                             : ""
                         }`}
                       >
-                        <p className="font-medium text-textColor">{faq.q}</p>
+                        <p className="text-gray-600 tracking-wide text-[16px] font-[400]">{faq.q}</p>
                         {openFAQ === i ? (
                           <ChevronUp size={18} />
                         ) : (
@@ -863,7 +860,7 @@ function NPSCalculator() {
                         )}
                       </div>
                       <p
-                        className={`text-textColor text-base font-normal px-3 ${
+                        className={`text-gray-600 tracking-wide text-[14px] font-[380] px-3 ${
                           openFAQ === i
                             ? "max-h-[500px] opacity-100 py-2"
                             : "max-h-0 opacity-0"
@@ -877,8 +874,8 @@ function NPSCalculator() {
               </section>
 
               {/* Footer note - Adapted for NPS */}
-              <section className="pt-6 border-t mt-6">
-                <p className="text-sm text-gray-500">
+              <section className="pt-4 border-t mt-6">
+                <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
                   This NPS calculator and information is developed and
                   maintained by{" "}
                   <strong>UniCX (UniconsultX Solutions Private Limited)</strong>{" "}

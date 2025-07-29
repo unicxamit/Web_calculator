@@ -15,8 +15,8 @@ import {
 } from "lucide-react";
 import Header from "../component/Header";
 import rdlogo from "../assets/BG IMAGES/rd1.png"
-// Assuming FaRupeeSign is used for currency inputs
-// import { FaRupeeSign } from "react-icons/fa";
+import howuse from "../assets/BG IMAGES/how3.png";
+import benifite from "../assets/BG IMAGES/4 png.png"
 
 
 function RDCalculator() {
@@ -359,14 +359,14 @@ function RDCalculator() {
         <div className="space-y-14 text-gray-700 text-base leading-relaxed">
           {/* What is a Recurring Deposit (RD)? Section */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               What is a Recurring Deposit (RD)?
             </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                       <p className="mb-4 text-gray-800 leading-relaxed">
+                       <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               A{" "}
-              <strong className="font-semibold">Recurring Deposit (RD)</strong>{" "}
+              <strong className="text-blue-500">Recurring Deposit (RD)</strong>{" "}
               is a popular savings scheme offered by banks and post offices in
               India, designed for individuals who wish to save a fixed amount
               regularly over a specific period. With an RD, you commit to
@@ -393,13 +393,13 @@ function RDCalculator() {
 
           {/* Why Use the UniCX RD Calculator? Section */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Why Use the UniCX RD Calculator?
             </h2>
-            <p className="mb-8 text-gray-800 leading-relaxed">
+            <p className="mb-8 text-gray-600 tracking-wide text-[16px] font-[380]">
               Planning your finances effectively often requires knowing the
               exact returns on your investments. The{" "}
-              <strong className="font-semibold">UniCX RD Calculator</strong>{" "}
+              <strong className="">UniCX RD Calculator</strong>{" "}
               offers invaluable benefits for anyone considering a Recurring
               Deposit:
             </p>
@@ -407,18 +407,18 @@ function RDCalculator() {
 
           {/* Why Use the UniCX RD Calculator? (Expanded Benefits Section) */}
           <section className="">
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+            {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4"> */}
               <div>
-                <h2 className="text-2xl font-bold mb-3">
+                <h2 className="text-2xl font-semibold text-textColor mb-3">
                   Key Benefits of Using the UniCX RD Calculator
                 </h2>
-                <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+                <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
                   The UniCX RD Calculator empowers you to make smarter savings
                   decisions:
                 </p>
                 {/* Removed list-disc list-inside for icon-based list */}
-                <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                  <li>
+                <ul className="list-none space-y-3 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="flex items-start">
                       <Calculator
                         size={18}
@@ -433,7 +433,7 @@ function RDCalculator() {
                       earned.
                     </span>
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="flex items-start">
                       <Target
                         size={18}
@@ -447,7 +447,7 @@ function RDCalculator() {
                       vacation.
                     </span>
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="flex items-start">
                       <BarChart2
                         size={18}
@@ -463,7 +463,7 @@ function RDCalculator() {
                       by simply adjusting the interest rate and tenure.
                     </span>
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="flex items-start">
                       <TrendingUp
                         size={18}
@@ -476,7 +476,7 @@ function RDCalculator() {
                       installment or extending your tenure on your final amount.
                     </span>
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="flex items-start">
                       <CheckCircle
                         size={18}
@@ -493,46 +493,46 @@ function RDCalculator() {
                 </ul>
               </div>
               {/* Image for RD Calculator Benefits - Concept: Money growth or financial planning */}
-              <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded cursor-pointer hover:scale-102 transition-transform duration-300">
+              {/* <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded cursor-pointer hover:scale-102 transition-transform duration-300"> */}
                 {/* <img
                 src={rdBenefitImage} // You'll generate this image later
                 alt="Benefits of using UniCX RD Calculator - Financial Growth"
                 className="w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain"
               /> */}
-              </div>
-            </div>
+              {/* </div> */}
+            {/* </div> */}
           </section>
 
           {/* How to Use the UniCX RD Calculator Section */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               How to Use the UniCX RD Calculator
             </h2>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               <div>
-                <p className="text-gray-800 text-[15px] leading-relaxed">
+                <p className="text-gray-600 tracking-wide text-[16px] mb-4 font-[380]">
                   Our{" "}
-                  <strong className="font-semibold">
+                  <strong className="">
                     user-friendly RD Calculator
                   </strong>{" "}
                   is designed for simplicity and accuracy. To get an instant
                   calculation of your Recurring Deposit maturity amount, simply
                   input the following details:
                 </p>
-                <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                  <li>
+                <ol className="list-decimal list-inside space-y-3 ">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Monthly Installment (₹):</strong> Enter the fixed
                     amount you plan to deposit every month.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Tenure (Years/Months):</strong> Specify the duration
                     for which you intend to make deposits.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>Annual Interest Rate (%):</strong> Input the annual
                     interest rate offered for the RD scheme.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong>View Your Results:</strong> The calculator will
                     instantly display your Total Amount Invested, Total Interest
                     Earned, and the final Maturity Amount.
@@ -540,28 +540,28 @@ function RDCalculator() {
                 </ol>
               </div>
               {/* Image for How to Use RD Calculator - Concept: User interacting with a digital calculator */}
-              <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                {/* <img
-                src={rdCalculatorUsageImage} // You'll generate this image later
+              <div className="flex justify-center  rounded cursor-pointer hover:scale-102 transition-transform duration-300">
+                <img
+                src={howuse} // You'll generate this image later
                 alt="How to use UniCX RD Calculator - Step by step guide"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-              /> */}
+              />
               </div>
             </div>
           </section>
 
           {/* Key Factors Affecting Your RD Returns */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Key Factors Affecting Your RD Returns
             </h2>
-            <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
               The final maturity amount of your Recurring Deposit is primarily
               influenced by these core factors:
             </p>
             {/* Removed list-disc list-inside for icon-based list */}
-            <ul className="list-none space-y-2 text-gray-800 text-[15px] leading-relaxed">
-              <li>
+            <ul className="list-none space-y-3 ">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong className="flex items-start">
                   <DollarSign
                     size={18}
@@ -578,7 +578,7 @@ function RDCalculator() {
                   consequently, a higher maturity amount.
                 </span>
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong className="flex items-start">
                   <Clock
                     size={18}
@@ -593,7 +593,7 @@ function RDCalculator() {
                   from the power of compounding interest.
                 </span>
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong className="flex items-start">
                   <TrendingUp
                     size={18}
@@ -611,7 +611,7 @@ function RDCalculator() {
                   earned.
                 </span>
               </li>
-              <li>
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                 <strong className="flex items-start">
                   <BarChart2
                     size={18}
@@ -634,12 +634,12 @@ function RDCalculator() {
           {/* Important Considerations for Recurring Deposits (RDs) - Info Box */}
           <section className="">
             <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
-              <h2 className="text-2xl font-bold text-blue-700 mb-3 flex items-center">
+              <h2 className="text-2xl font-semibold  text-blue-700 mb-3 flex items-center">
                 <PiggyBank size={20} className="mr-3 mt-1 flex-shrink-0" />{" "}
                 {/* Using PiggyBank for savings focus */}
                 Important Considerations for Recurring Deposits (RDs)
               </h2>
-              <p className="text-blue-800 mb-4 text-[15px] leading-relaxed">
+              <p className="text-blue-800 mb-4 text-[16px] font-[380]">
                 Before opening an RD, it's beneficial to be aware of these key
                 aspects:
               </p>
@@ -650,8 +650,8 @@ function RDCalculator() {
                 className="w-auto h-16 mx-auto my-4" // Consistent with other info box image sizes
             /> */}
               {/* Removed list-inside for icon-based list */}
-              <ul className="list-none space-y-2 text-blue-700 text-[15px] leading-relaxed">
-                <li>
+              <ul className="list-none space-y-2 text-blue-700 ">
+                <li >
                   <strong className="flex items-start">
                     <CheckCircle
                       size={18}
@@ -749,50 +749,50 @@ function RDCalculator() {
 
           {/* Who Can Benefit from the UniCX RD Calculator? */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Who Can Benefit from the UniCX RD Calculator?
             </h2>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               <div>
-                <p className="text-gray-800 text-[15px] leading-relaxed">
+                <p className="text-gray-600 tracking-wide text-[16px] mb-4 font-[380]">
                   The{" "}
-                  <strong className="font-semibold">UniCX RD Calculator</strong>{" "}
+                  <strong className="">UniCX RD Calculator</strong>{" "}
                   is an ideal tool for a wide range of individuals and financial
                   planning scenarios:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                  <li>
-                    <strong className="font-semibold">
+                <ul className="list-disc list-inside space-y-3">
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                    <strong className="">
                       Salaried Individuals:
                     </strong>{" "}
                     Who want to save a fixed portion of their income monthly
                     towards a goal without market risks.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="font-semibold">Students:</strong> Looking
                     to save small amounts regularly for future expenses like
                     higher education or personal purchases.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="font-semibold">
                       Small Business Owners/Freelancers:
                     </strong>{" "}
                     Who might have fluctuating income but want to maintain a
                     disciplined savings habit.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="font-semibold">Parents:</strong> Saving
                     for their children's future milestones like education or
                     marriage.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="font-semibold">
                       Anyone with Short-to-Medium Term Goals:
                     </strong>{" "}
                     Saving for a new gadget, a holiday, a home appliance, or an
                     emergency fund.
                   </li>
-                  <li>
+                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                     <strong className="font-semibold">
                       Budget-Conscious Savers:
                     </strong>{" "}
@@ -801,60 +801,60 @@ function RDCalculator() {
                 </ul>
               </div>
               {/* Image for Who Can Benefit - Concept: Diverse group of people saving */}
-              <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                {/* <img
-                    src={whoBenefitsRdImage} // You'll generate this image later
+              <div className="flex justify-center  rounded cursor-pointer hover:scale-102 transition-transform duration-300">
+                <img
+                    src={benifite} // You'll generate this image later
                     alt="Who can use RD Calculator - Diverse individuals saving"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-                /> */}
+                />
               </div>
             </div>
           </section>
 
           {/* Why Choose UniCX for Your RD Calculation? - Similar to Advantages section */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Why Choose UniCX for Your RD Calculation?
             </h2>
-            <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-              <li>
-                <strong className="font-semibold">
+            <ul className="list-disc list-inside space-y-3 ">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">
                   Accuracy & Reliability:
                 </strong>{" "}
                 Our calculator provides{" "}
-                <strong className="font-semibold">precise results</strong> based
+                <strong className="">precise results</strong> based
                 on standard financial formulas, including quarterly compounding,
                 giving you confidence in your projections.
               </li>
-              <li>
-                <strong className="font-semibold">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">
                   User-Friendly Interface:
                 </strong>{" "}
                 With a{" "}
-                <strong className="font-semibold">
+                <strong className="">
                   clean and intuitive design
                 </strong>
                 , it's easy for anyone to input details and get instant results.
               </li>
-              <li>
-                <strong className="font-semibold">Instant Results:</strong> No
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Instant Results:</strong> No
                 waiting time. Get your maturity amount, total interest earned,
                 and total invested amount in seconds.
               </li>
-              <li>
-                <strong className="font-semibold">
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">
                   Financial Planning Aid:
                 </strong>{" "}
                 Helps you{" "}
-                <strong className="font-semibold">
+                <strong className="">
                   visualize your savings growth
                 </strong>{" "}
                 and make informed decisions about your RD investments.
               </li>
-              <li>
-                <strong className="font-semibold">Completely Free:</strong> A
+              <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                <strong className="">Completely Free:</strong> A
                 valuable resource available to you at{" "}
-                <strong className="font-semibold">no cost</strong>, anytime,
+                <strong className="">no cost</strong>, anytime,
                 anywhere.
               </li>
             </ul>
@@ -862,30 +862,30 @@ function RDCalculator() {
 
           {/* Simplified RD Calculation Concept & Example Scenario */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Simplified RD Calculation Concept & Example
             </h2>
-            <p className="text-gray-800 text-[15px] leading-relaxed">
+            <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
               While banks use complex formulas for quarterly compounding, the{" "}
-              <strong className="font-semibold">core concept of an RD</strong>{" "}
+              <strong className="">core concept of an RD</strong>{" "}
               is straightforward: you invest regularly, and that money earns
               interest.
             </p>
-            <h3 className="font-semibold text-xl mt-4 mb-2">Basic Concept:</h3>
-            <p className="text-gray-800 text-[15px] leading-relaxed">
+            <h3 className="text-gray-600 tracking-wide text-[18px] font-[500] mt-4 mb-2">Basic Concept:</h3>
+            <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
               The <strong className="font-semibold">maturity amount (M)</strong>{" "}
               of an RD is essentially the sum of all your{" "}
-              <strong className="font-semibold">
+              <strong className="">
                 monthly installments (P)
               </strong>{" "}
               over the <strong className="font-semibold">tenure (n)</strong>,
               plus the <strong className="font-semibold">interest (I)</strong>{" "}
               earned on those installments, which compounds over time.
             </p>
-            <p className="text-gray-800 text-[15px] leading-relaxed mt-2">
+            <p className="text-gray-600 tracking-wide text-[15px] font-[380] mt-2">
               Formula (simplified conceptual view, as actual RD calculations are
               complex due to compounding frequency): <br />
-              <code className="bg-gray-100 px-2 py-1 rounded">
+              <code className="bg-blue-50 px-2 py-1 text-[14px] font-[200] p-4 rounded">
                 M = (P × number of installments) + Compound Interest
               </code>
             </p>
@@ -921,7 +921,7 @@ function RDCalculator() {
               </p>
             </div>
 
-            <p className="mt-4 text-gray-800 text-[15px] leading-relaxed">
+            <p className="mt-4 text-gray-600 tracking-wide text-[15px] font-[380]">
               This example clearly shows how your{" "}
               <strong className="font-semibold">regular savings</strong>,
               combined with a steady interest rate and the power of compounding,
@@ -933,7 +933,7 @@ function RDCalculator() {
 
           {/* FAQs Section */}
           <section className="">
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold text-textColor mb-3">
               Frequently Asked Questions (FAQs) about Recurring Deposits
             </h2>
             <div className="space-y-2">
@@ -954,7 +954,7 @@ function RDCalculator() {
                         : ""
                     }`}
                   >
-                    <p className="font-semibold text-gray-800">{faq.q}</p>
+                    <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
                     {openFAQ === i ? (
                       <ChevronUp size={18} />
                     ) : (
@@ -962,7 +962,7 @@ function RDCalculator() {
                     )}
                   </div>
                   <p
-                    className={`text-gray-800 text-md font-normal px-3 ${
+                    className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                       openFAQ === i
                         ? "max-h-[500px] opacity-100 py-2 "
                         : "max-h-0 opacity-0"
@@ -976,11 +976,11 @@ function RDCalculator() {
           </section>
 
           {/* Footer note */}
-          <section className="pt-6 border-t mt-10">
-            <p className="text-sm text-gray-500">
+          <section className="pt-4 border-t mt-8">
+            <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
               This Recurring Deposit Calculator and the information provided are
               developed and maintained by{" "}
-              <strong className="font-semibold">
+              <strong className="text-blue-500">
                 UniCX (UniconsultX Solutions Private Limited)
               </strong>{" "}
               to help users estimate their RD returns. While we strive for

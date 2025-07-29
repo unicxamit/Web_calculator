@@ -25,6 +25,8 @@ import {
   Percent,
 } from "lucide-react";
 import homelogo from "../assets/BG IMAGES/hemi1.png"
+import howuse from "../assets/BG IMAGES/how5.png"
+import benifite from "../assets/BG IMAGES/5 png .png"
 function HomeEMICalculator() {
   const [loanAmount, setLoanAmount] = useState("10000");
   const [interestRate, setInterestRate] = useState("6");
@@ -626,13 +628,13 @@ function HomeEMICalculator() {
               </ul>
             </div>
             {/* Image for How to Use */}
-            <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-              {/* <img
-                src={homeLoanPurposeImage}
+            <div className="flex justify-center items-center hover:shadow-md transition-shadow duration-300">
+              <img
+                src={howuse}
                 alt="Image showing the UniCX Home Loan calculator interface with input fields and calculated outputs"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                 loading="lazy"
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -977,13 +979,13 @@ function HomeEMICalculator() {
               </ul>
             </div>
             {/* Image for Who Can Benefit */}
-            <div className="flex justify-center items-center shadow rounded hover:shadow-md transition-shadow duration-300">
-              {/* <img
-                    src={homeLoanWhoCanBenefitImage}
+            <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+              <img
+                    src={benifite}
                     alt="Image showing diverse individuals benefiting from using a home loan calculator for property financing"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain rounded"
                     loading="lazy"
-                /> */}
+                />
             </div>
           </div>
         </section>

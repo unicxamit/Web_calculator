@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import Header from "../component/Header";
 import mutuallogo from "../assets/BG IMAGES/mf1.png"
+import howuse from '../assets/BG IMAGES/how2.png';
+import benifite from "../assets/BG IMAGES/2 png .png"
 function MutualFundCalculator() {
   const [tab, setTab] = useState("sip"); // 'sip' or 'lumpsum'
 
@@ -794,13 +796,13 @@ function MutualFundCalculator() {
               </ul>
             </div>
             {/* Image for How to Use */}
-            <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-              {/* <img
-                src={mfPurposeImage}
+            <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+              <img
+                src={howuse}
                 alt="How to use UniCX Mutual Fund Calculator - Step by step guide"
                 className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
                 loading="lazy"
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -920,13 +922,13 @@ function MutualFundCalculator() {
                 </ul>
             </div>
             {/* Image for Who Can Benefit */}
-            <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                {/* <img
-                    src={mfWhoCanBenefitImage}
+            <div className="flex justify-center items-center cursor-pointer hover:scale-102 transition-transform duration-300">
+                <img
+                    src={benifite}
                     alt="Who can use UniCX Mutual Fund Calculator - Diverse investors"
                     className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
                     loading="lazy"
-                /> */}
+                />
             </div>
           </div>
         </section>

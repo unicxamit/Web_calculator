@@ -11,10 +11,11 @@ import {
   ChevronUp,
   ChevronDown,
 } from "lucide-react";
-import benifite from "../assets/All-Calculators-image/benefit.png";
+import benifite from "../assets/BG IMAGES/3 png.png";
 import "../css/Epf.css";
 import Header from "../component/Header";
 import epfcalc from "../assets/BG IMAGES/epf1.png";
+import howuse from "../assets/BG IMAGES/how3.png"
 function EPFCalculator() {
   const [monthlyBasicDA, setMonthlyBasicDA] = useState("25000");
   const [currentAge, setCurrentAge] = useState("30");
@@ -662,7 +663,7 @@ function EPFCalculator() {
                 <section className="">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <h2 className="text-2xl text-textColor font-medium mb-3">
+                      <h2 className="text-2xl text-textColor font-semibold mb-3">
                         What is Employees' Provident Fund (EPF) in India?
                       </h2>
                       <p className="text-gray-600 tracking-wide text-[15px] font-[360] ">
@@ -694,13 +695,13 @@ function EPFCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Key Benefits of EPF for Employees
                   </h2>
-                  <p className="mb-4 text-md">
+                  <p className="mb-4  text-gray-700 tracking-wide text-base font-[360]">
                     EPF offers a multitude of advantages, making it an
                     indispensable part of financial planning for salaried
                     individuals:
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100 flex items-start">
+                    <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300 flex items-start">
                       <Landmark
                         size={20}
                         className="mr-3 mt-1 text-blue-600 flex-shrink-0"
@@ -716,7 +717,7 @@ function EPFCalculator() {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100 flex items-start">
+                    <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300 flex items-start">
                       <Briefcase
                         size={20}
                         className="mr-3 mt-1 text-blue-600 flex-shrink-0"
@@ -731,7 +732,7 @@ function EPFCalculator() {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100 flex items-start">
+                    <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300 flex items-start">
                       <TrendingUp
                         size={20}
                         className="mr-3 mt-1 text-blue-600 flex-shrink-0"
@@ -747,7 +748,7 @@ function EPFCalculator() {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-blue-50 p-4 rounded-lg shadow-sm border border-blue-100 flex items-start">
+                    <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300 flex items-start">
                       <Calculator
                         size={20}
                         className="mr-3 mt-1 text-blue-600 flex-shrink-0"
@@ -773,44 +774,44 @@ function EPFCalculator() {
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <p className="text-gray-800 text-[15px] leading-relaxed">
-                        Our <strong>UniCX EPF Calculator</strong> simplifies the
+                      <p className=" text-gray-700 tracking-wide text-base mb-4 font-[400] leading-relaxed">
+                        Our <strong className="text-blue-500">UniCX EPF Calculator</strong> simplifies the
                         complex task of estimating your EPF corpus. Here’s a
                         simple guide to using it:
                       </p>
-                      <ol className="list-decimal list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                        <li>
+                      <ol className="list-decimal list-inside space-y-2  leading-relaxed">
+                        <li className=" text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter Your Current Age:</strong> Provide your
                           current age in years.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter Your Retirement Age:</strong> Specify
                           the age you plan to retire.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter Your Basic Monthly Salary & DA:</strong>{" "}
                           Input your current basic salary plus dearness
                           allowance.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter Annual Salary Increment (%):</strong> If
                           you expect an annual increase in your salary, enter
                           the estimated percentage.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter EPF Employee Contribution (%):</strong>{" "}
                           The mandatory contribution is 12%, but you can
                           voluntarily contribute more.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Enter EPF Employer Contribution (%):</strong>{" "}
                           The employer's mandatory contribution is also 12%.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Current EPF Balance (if any):</strong> If you
                           already have an existing EPF balance, enter it.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>View Your Results:</strong> Click on
                           "Calculate" to instantly see your estimated total EPF
                           corpus at retirement.
@@ -818,15 +819,10 @@ function EPFCalculator() {
                       </ol>
                     </div>
                     {/* Image for How to Use EPF Calculator - Concept: Calculator with growth/piggy bank */}
-                    <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-102 transition-transform duration-300">
-                      {/* Placeholder for the "How to Use EPF Calculator" image. You'll need to generate and import this image (e.g., epfCalculatorIcon.png) */}
-                      {/* <img
-                                src={epfCalculatorIcon}
-                                alt="How to use UniCX EPF Calculator - Step by step guide"
-                                className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
-                            /> */}
+                    <div className="flex justify-center items-center  cursor-pointer hover:scale-102 transition-transform duration-300">
+                      
                       <img
-                        src="Gemini_Generated_Image_ybrwi9ybrwi9ybrw.jpg"
+                        src={howuse}
                         alt="How to use UniCX EPF Calculator - Step by step guide"
                         className="w-full h-auto max-h-[350px] xl:max-h-[290px] object-contain"
                       />
@@ -839,33 +835,33 @@ function EPFCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Key Factors Affecting Your EPF Calculation
                   </h2>
-                  <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
+                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[400] leading-relaxed">
                     Understanding these factors can help you better estimate
                     your EPF growth:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-2 leading-relaxed">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                       <strong>Contribution Rate:</strong> Both employee and
                       employer contribute 12% of Basic Salary + DA. A higher
                       voluntary contribution from the employee (VPC) will lead
                       to a larger corpus.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                       <strong>Interest Rate:</strong> The interest rate on EPF
                       is declared annually by the EPFO. It's compounded
                       annually.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                       <strong>Years of Service:</strong> The longer you
                       contribute, the greater the power of compounding on your
                       savings.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                       <strong>Salary Growth:</strong> Annual increments
                       significantly boost your future corpus as contributions
                       increase with salary.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[350]">
                       <strong>Withdrawals:</strong> Any partial withdrawals
                       before retirement will reduce the final corpus.
                     </li>
@@ -875,7 +871,7 @@ function EPFCalculator() {
                 {/* Important EPF Rules & Recent Updates - Similar to your 'Critical GST Updates' box */}
                 <section className="">
                   <div className="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-md shadow-sm">
-                    <h2 className="text-2xl font-bold text-yellow-700 mb-3 flex items-center">
+                    <h2 className="text-2xl font-medium text-yellow-700 mb-3 flex items-center">
                       <BellRing size={20} className="mr-3 mt-1 flex-shrink-0" />
                       Important EPF Rules & Recent Updates
                     </h2>
@@ -885,12 +881,12 @@ function EPFCalculator() {
                   alt="Important EPF Rules and Updates"
                   className="w-auto h-16 mx-auto my-4"
                 /> */}
-                    <p className="text-yellow-800 mb-4 text-md leading-relaxed">
+                    <p className="text-yellow-800 mb-4  tracking-wide text-base font-[400] leading-relaxed">
                       Stay informed about crucial EPF regulations and recent
                       changes:
                     </p>
-                    <ul className="list-inside space-y-2 text-yellow-700 text-[15px] leading-relaxed">
-                      <li>
+                    <ul className="list-inside space-y-2 text-yellow-700  leading-relaxed">
+                      <li className=" tracking-wide text-[15px] font-[360]"> 
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -903,7 +899,7 @@ function EPFCalculator() {
                           accounts and simplifies online services.
                         </span>
                       </li>
-                      <li>
+                      <li className=" tracking-wide text-[15px] font-[380]">
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -916,7 +912,7 @@ function EPFCalculator() {
                           declared annually by the EPFO.
                         </span>
                       </li>
-                      <li>
+                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -930,7 +926,7 @@ function EPFCalculator() {
                           attract tax.
                         </span>
                       </li>
-                      <li>
+                      <li className="tracking-wide text-[15px] font-[380]">
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -954,30 +950,30 @@ function EPFCalculator() {
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <p className="text-gray-800 text-[15px] leading-relaxed">
+                      <p className="text-gray-600 tracking-wide text-base font-[400] mb-4 leading-relaxed">
                         Our EPF Calculator is a valuable tool for:
                       </p>
-                      <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                        <li>
+                      <ul className="list-disc list-inside space-y-2 leading-relaxed">
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Salaried Employees:</strong> To estimate their
                           retirement savings and plan for the future.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Financial Planners:</strong> To create robust
                           financial plans for their clients.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>New Joinees:</strong> To understand the
                           potential growth of their initial EPF contributions.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>
                             Individuals Planning Early Retirement:
                           </strong>{" "}
                           To project their corpus and assess financial
                           readiness.
                         </li>
-                        <li>
+                        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                           <strong>Anyone Curious:</strong> To simply understand
                           how their EPF grows over time.
                         </li>
@@ -999,28 +995,28 @@ function EPFCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     Why Use UniCX EPF Calculator?
                   </h2>
-                  <p className="mb-4 text-gray-800 text-[15px] leading-relaxed">
-                    Leveraging our <strong>free online EPF calculator</strong>{" "}
+                  <p className="mb-4 text-gray-600 tracking-wide text-base font-[400] leading-relaxed">
+                    Leveraging our <strong className="text-blue-500">free online EPF calculator</strong>{" "}
                     offers significant advantages for your financial planning:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside space-y-2  leading-relaxed">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Accuracy:</strong> Our calculator provides precise
                       estimations based on current rules and your inputs.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Simplicity:</strong> Designed for ease of use,
                       making complex projections accessible to everyone.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Future Planning:</strong> Helps you visualize your
                       retirement corpus, aiding in better financial decisions.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Time-Saving:</strong> Get instant results without
                       manual calculations.
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       <strong>Free & Accessible:</strong> Available online 24/7
                       without any cost.
                     </li>
@@ -1032,70 +1028,93 @@ function EPFCalculator() {
                   <h2 className="text-2xl text-textColor font-medium mb-3">
                     EPF Calculation Formulas & Practical Examples (Simplified)
                   </h2>
-                  <p className="text-gray-800 text-[15px] leading-relaxed">
+                  <p className="text-gray-600 tracking-wide text-base font-[400] leading-relaxed">
                     While our calculator handles the complexities, understanding
                     the underlying principles can provide deeper insights into
                     your EPF growth:
                   </p>
-                  <h3 className="font-normal text-lg mt-4 mb-2">
+                  <h3 className="text-gray-700 tracking-wide text-[18px] font-[400] mt-4 mb-2">
                     1. Monthly Contribution Calculation:
                   </h3>
-                  <ul className="list-disc list-inside ml-4 space-y-1 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside ml-4 space-y-1  leading-relaxed">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[300]">
                       <strong>Employee Share</strong> = 12% of (Basic Salary +
                       DA)
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[300]">
                       <strong>Employer Share</strong> = 12% of (Basic Salary +
                       DA)
                     </li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[300]">
                       <strong>Total Monthly Contribution</strong> = Employee
                       Share + Employer Share
                     </li>
                   </ul>
 
-                  <h3 className="font-normal text-lg mt-4 mb-2">
+                  <h3 className="text-gray-700 tracking-wide text-[18px] font-[400] mt-4 mb-2">
                     2. Annual Interest Accrual:
                   </h3>
-                  <ul className="list-disc list-inside ml-4 space-y-1 text-gray-800 text-[15px] leading-relaxed">
-                    <li>
+                  <ul className="list-disc list-inside ml-4 space-y-1  leading-relaxed">
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       Interest is calculated on the monthly running balance.
                     </li>
-                    <li>The annual interest rate is declared by EPFO.</li>
-                    <li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">The annual interest rate is declared by EPFO.</li>
+                    <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
                       Interest is compounded annually, meaning interest earned
                       in one year also starts earning interest in subsequent
                       years.
                     </li>
                   </ul>
 
-                  <div className="bg-white border-l-4 border-green-500 p-4 rounded shadow-sm mt-6">
-                    <p className="text-gray-700 mb-2">
-                      📊 <strong>Example Scenario:</strong>
-                    </p>
-                    <p className="text-green-500 font-semibold">
-                      Current Age: <strong>25 years</strong>
-                    </p>
-                    <p className="text-green-500 font-semibold">
-                      Retirement Age: <strong>58 years</strong>
-                    </p>
-                    <p className="text-green-500 font-semibold">
-                      Monthly Basic Salary + DA: <strong>₹30,000</strong>
-                    </p>
-                    <p className="text-green-500 font-semibold">
-                      Estimated Annual Increment: <strong>5%</strong>
-                    </p>
-                    <p className="text-green-500 font-semibold">
-                      Current EPF Balance: <strong>₹50,000</strong>
-                    </p>
-                    <p className="text-primary font-bold text-lg mt-3">
-                      Estimated Total EPF Corpus at Retirement (approx):{" "}
-                      <strong>₹1.5 Crores</strong>
-                    </p>
-                  </div>
+ <div className="mx-auto p-4 max-w-[695px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-blue-100">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-green-300">
+            Example Scenario
+          </th>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-green-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-green-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Current Age</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">25 years</td>
+        </tr>
+        <tr className="bg-green-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Retirement Age</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">58 years</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Monthly Basic Salary + DA</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">₹30,000</td>
+        </tr>
+        <tr className="bg-green-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Estimated Annual Increment</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">5%</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Current EPF Balance</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">₹50,000</td>
+        </tr>
+        <tr className="bg-blue-100">
+          <td className="py-3 px-4 ttext-gray-800 tracking-wide text-[16px] font-[400] border border-green-300">
+            Estimated Total EPF Corpus at Retirement (approx)
+          </td>
+          <td className="py-3 px-4 text-gray-700 tracking-wide text-[15px] font-[400] border border-green-300">
+            ₹1.5 Crores
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
-                  <p className="mt-4 text-gray-800 text-[15px] leading-relaxed">
+
+                  <p className="mt-4 text-gray-700 tracking-wide text-[15px] font-[380] leading-relaxed">
                     <strong>The Power of Compounding:</strong> This example
                     illustrates how consistent contributions, coupled with
                     annual salary increments and compounding interest, can lead
@@ -1125,7 +1144,7 @@ function EPFCalculator() {
                               : ""
                           }`}
                         >
-                          <p className="font-normal text-gray-800">{faq.q}</p>
+                          <p className="text-gray-700 tracking-wide text-[16px] font-[400]">{faq.q}</p>
                           {openFAQ === i ? (
                             <ChevronUp size={18} />
                           ) : (
@@ -1133,7 +1152,7 @@ function EPFCalculator() {
                           )}
                         </div>
                         <p
-                          className={`text-gray-800 text-base font-normal px-3 ${
+                          className={`text-gray-700 tracking-wide text-[15px] font-[380] px-3 ${
                             openFAQ === i
                               ? "max-h-[500px] opacity-100 py-2 "
                               : "max-h-0 opacity-0"
@@ -1147,8 +1166,8 @@ function EPFCalculator() {
                 </section>
 
                 {/* Footer note */}
-                <section className="pt-6 border-t mt-10">
-                  <p className="text-sm text-gray-500">
+                <section className="pt-2 border-t mt-8">
+                  <p className="text-gray-700 tracking-wide text-[14px] font-[380]">
                     This EPF calculator and information is developed and
                     maintained by{" "}
                     <strong>
