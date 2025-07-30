@@ -230,21 +230,21 @@ function SIPCalculator() {
   ];
   return (
     <><Header/>
-    <section className="container-div">
+    <section className="container-div mt-14">
       <div className="second-container">
        
-        <section className="my-4">
+        <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">
             Systematic Investment Plan Calculator
           </h1>
-          <p className="mb-8">
+          {/* <p className="mb-8">
             A Systematic Investment Plan (SIP) is an investment method offered
             by mutual funds, allowing investors to make regular, fixed payments
             (e.g., monthly, quarterly) into a chosen mutual fund scheme. It's
             akin to a recurring deposit, but for mutual funds, and it enables
             investors to participate in the stock market without requiring a
             large lump sum.
-          </p>
+          </p> */}
         </section>
 
         <div className="grid-layout">
@@ -590,17 +590,17 @@ function SIPCalculator() {
               
             
         </div>
-<div className="mt-10">
+<div className="mt-24">
         <div className="space-y-14 text-gray-700 text-base leading-relaxed">
          
           {/* What is a Systematic Investment Plan (SIP)? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               What is a Systematic Investment Plan (SIP)?
             </h2>
              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                     <p className="mb-4 p-content">
               A <strong className="text-blue-500">Systematic Investment Plan (SIP)</strong> is an
               investment method offered by mutual funds, allowing investors to
               make regular, fixed payments (e.g., monthly, quarterly) into a
@@ -608,7 +608,7 @@ function SIPCalculator() {
               for mutual funds, and it enables investors to participate in the
               stock market without requiring a large lump sum.
             </p>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               SIPs are designed to instill financial discipline and mitigate
               market volatility through a strategy called{" "}
               <strong className="text-blue-500">Rupee Cost Averaging</strong>. They have become immensely
@@ -616,7 +616,7 @@ function SIPCalculator() {
               everyone, irrespective of their income level, by allowing them to
               start with small, manageable amounts.
             </p>
-            <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="p-content">
               This method fosters a habit of regular saving and investing,
               proving to be a powerful tool for long-term wealth creation,
               especially when leveraging the benefit of compounding.
@@ -635,11 +635,11 @@ function SIPCalculator() {
 
           {/* How Does a SIP Work? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               How Does a SIP Work? (The Power of Rupee Cost Averaging)
             </h2>
             
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               Instead of investing a large sum at once (lump sum), a SIP allows
               you to invest smaller, regular amounts. Here’s how it typically
               works and why it's effective:
@@ -676,10 +676,10 @@ function SIPCalculator() {
 
           {/* Key Benefits of Investing through SIP - Using the NPS/HRA Card Style */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Key Benefits of Investing through SIP
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               SIPs offer several compelling advantages, making them a robust
               choice for your wealth creation journey:
             </p>
@@ -748,11 +748,11 @@ function SIPCalculator() {
 
           {/* How to Use the UniCX Free Online SIP Calculator - Standard ordered list style */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               How to Use the UniCX Free Online SIP Calculator
             </h2>
              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
-                  <div className="">  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                  <div className="">  <p className="mb-4 p-content">
               Our UniCX SIP Calculator makes estimating your potential returns
               simple and quick. Follow these steps to see your wealth growth
               potential:
@@ -791,10 +791,10 @@ function SIPCalculator() {
 
           {/* Understanding Your SIP Calculator Results - Standard section with example box */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Understanding Your SIP Calculator Results
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               Once you input your details, our calculator provides a clear
               breakdown of your potential SIP growth:
             </p>
@@ -817,37 +817,82 @@ function SIPCalculator() {
               </li>
             </ul>
 
-            <div className="bg-gray-50 border-l-4 border-blue-500 p-4 rounded shadow-sm mt-6">
-              <p className="text-gray-700 mb-2">
-                📊 <strong>Example Calculation:</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                Monthly Investment: <strong>₹5,000</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                Investment Period: <strong>10 Years</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                Expected Annual Return: <strong>12%</strong>
-              </p>
-              <p className="text-blue-800 font-bold text-lg mt-2">
-                Estimated Invested Amount: <strong>₹6,00,000</strong>
-              </p>
-              <p className="text-blue-800 font-bold text-lg">
-                Estimated Returns: <strong>₹5,62,491</strong>
-              </p>
-              <p className="text-blue-800 font-bold text-lg">
-                Estimated Total Value (Corpus): <strong>₹11,62,491</strong>
-              </p>
-            </div>
+     <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Example Calculation
+          </th>
+          <th className="py-3 px-4 text-center text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            Monthly Investment
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            ₹5,000
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            Investment Period
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            10 Years
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            Expected Annual Return
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            12%
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Invested Amount
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹6,00,000
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Returns
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹5,62,491
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Total Value (Corpus)
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹11,62,491
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
           </section>
 
           {/* Important SIP Considerations & Tips - Standard list style */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Important SIP Considerations & Tips
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               While SIPs are an excellent investment tool, keep these points in
               mind for optimal results:
             </p>
@@ -892,10 +937,10 @@ function SIPCalculator() {
 
           {/* Advantages of Using the UniCX SIP Calculator - Using the NPS/HRA Card Style */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Advantages of Using the UniCX SIP Calculator
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               Leveraging our <strong className="text-blue-500">free online SIP calculator</strong> offers
               significant benefits for accurate investment planning:
             </p>
@@ -953,7 +998,7 @@ function SIPCalculator() {
 
           {/* Frequently Asked Questions (FAQs) about SIP - Interactive section */}
           <section>
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Frequently Asked Questions (FAQs) about SIP
             </h2>
             <div className="space-y-2">
@@ -974,7 +1019,7 @@ function SIPCalculator() {
                         : ""
                     }`}
                   >
-                    <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
+                    <p className="p-content">{faq.q}</p>
                     {openFAQ === i ? (
                       <ChevronUp size={18} />
                     ) : (
@@ -997,10 +1042,10 @@ function SIPCalculator() {
 
           {/* UniCX Expert Support & Resources - Consistent styling */}
           <section id="contact" className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Beyond Calculations: UniCX - Your Partner in Financial Growth
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               At <strong className="">UniconsultX Solutions Private Limited (UniCX)</strong>,
               our commitment extends beyond providing a powerful SIP calculator.
               We understand that effective wealth creation requires
@@ -1008,7 +1053,7 @@ function SIPCalculator() {
               <strong>expert financial services</strong> to help you achieve
               your investment goals.
             </p>
-            <h3 className="text-gray-600 tracking-wide text-[16px] font-[380] mt-4 mb-2">
+            <h3 className="p-content mt-4 mb-2">
               Our Expert Financial Services Include:
             </h3>
             <ul className="list-disc list-inside space-y-3">

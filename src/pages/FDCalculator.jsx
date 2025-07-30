@@ -22,6 +22,7 @@ import {
 import fdlogo from "../assets/BG IMAGES/fd1.png"
 import howuse from "../assets/BG IMAGES/how4.png"
 import benifite from "../assets/BG IMAGES/4 png.png"
+import Header from "../component/Header";
 function FDCalculator() {
   const [principal, setPrincipal] = useState("10000");
   const [rate, setRate] = useState("5");
@@ -155,14 +156,15 @@ function FDCalculator() {
     },
   ];
   return (
-    <section className="container-div">
+    <><Header/>
+    <section className="container-div mt-14">
       <div className="  second-container">
-       
-        <section className="my-3">
+   
+        <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">
             Fixed Deposit Calculator
           </h1>
-          <p className="mb-8">
+          {/* <p className="mb-8">
             A Fixed Deposit (FD) is a popular and secure investment option
             offered by banks and Non-Banking Financial Companies (NBFCs) in
             India. It allows individuals to deposit a lump sum amount for a
@@ -172,7 +174,7 @@ function FDCalculator() {
             a preferred choice for conservative investors due to their safety,
             guaranteed returns, and predictability, making them ideal for
             achieving specific financial goals over short to medium terms.
-          </p>
+          </p> */}
         </section>
         <div className="grid-layout ">
             <div className="">
@@ -358,7 +360,7 @@ function FDCalculator() {
                
               </div>
             </div>
-        <section className="mt-10 ">
+        <section className="mt-24  ">
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is a Fixed Deposit (FD)? Section */}
             <section className="">
@@ -387,19 +389,19 @@ function FDCalculator() {
               </p>
                   </div>
               
-               <div className="flex justify-center items-center  max-h-[350px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300">
+               <div className="flex justify-center items-center  max-h-[350px] mt-[-20px] rounded cursor-pointer hover:scale-101 transition-transform duration-300">
                                 
                                   <img
                                     src={fdlogo}
                                     alt="EPF - Retirement Savings and Security"
-                                    className="w-full h-auto max-h-[350px] xl:max-h-[300px] object-contain"
+                                    className="w-full h-auto max-h-[350px] xl:max-h-[250px] object-contain"
                                   />
                                 </div>
                                 </div>
             </section>
 
             {/* Why is an FD Calculator Important? Section */}
-            <section className="mt-8">
+            <section className="">
               <h2 className="main-heading mb-3">
                 Why is an FD Calculator Important?
               </h2>
@@ -487,7 +489,7 @@ function FDCalculator() {
             </section>
 
             {/* How to Use the UniCX FD Calculator Section */}
-            <section className="mt-10">
+            <section className="">
               <h2 className="main-heading mb-3">
                 How to Use the UniCX FD Calculator
               </h2>
@@ -566,7 +568,7 @@ function FDCalculator() {
             </section>
 
             {/* Understanding Fixed Deposits: Key Aspects of Your Investment Section */}
-            <section className="mt-10">
+            <section className="">
               <h2 className="main-heading mb-3">
                 Understanding Fixed Deposits: Key Aspects of Your Investment
               </h2>
@@ -692,14 +694,14 @@ function FDCalculator() {
                 </li>
               </ul>
               {/* Image for Understanding FD */}
-              <div className="flex justify-center items-center mt-4 border rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* <div className="flex justify-center items-center mt-4 border rounded shadow-sm hover:shadow-md transition-shadow duration-300"> */}
                 {/* <img
               src={fdUnderstandingImage}
               alt="Diagram illustrating Fixed Deposit features like compounding, safety, and fixed returns"
               className="w-full h-auto max-h-[300px] object-contain rounded"
               loading="lazy"
             /> */}
-              </div>
+              {/* </div> */}
 
               <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
                 <Percent
@@ -758,7 +760,7 @@ function FDCalculator() {
             </section>
 
             {/* Who Can Benefit from the UniCX FD Calculator? */}
-            <section className="mt-10">
+            <section className="">
               <h2 className="main-heading mb-3">
                 Who Can Benefit from the UniCX FD Calculator?
               </h2>
@@ -811,7 +813,7 @@ function FDCalculator() {
             </section>
 
             {/* Key Considerations & Important Notes for FD Investors */}
-            <section className="mt-10">
+            <section className="">
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-md shadow-sm">
                 <h2 className="text-2xl font-semibold text-yellow-700 mb-3 flex items-center">
                   <Lightbulb size={20} className="mr-3 mt-1 flex-shrink-0" />
@@ -913,7 +915,7 @@ function FDCalculator() {
             </section>
 
             {/* FAQs Section */}
-            <section className="mt-10">
+            <section className="">
               <h2 className="main-heading mb-3 flex items-center">
                 <HelpCircle size={20} className="mr-2 flex-shrink-0" />
                 Frequently Asked Questions (FAQs) about Fixed Deposits
@@ -985,6 +987,7 @@ function FDCalculator() {
         </div>
       
     </section>
+    </>
   );
 }
 

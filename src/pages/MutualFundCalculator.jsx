@@ -315,21 +315,22 @@ function MutualFundCalculator() {
   return (
     <>
       <Header />
-      <section className="container-div">
+      <section className="container-div mt-14">
         <div className="second-container">
-          <section className="my-3">
+          {/* <div className="border-2"> */}
+          <section className="mb-14">
             <h1 className="text-4xl font-medium text-textColor mb-5">
               Mutual Fund Calculator
             </h1>
-            <p className="mb-8">
+            {/* <p className="mb-8">
               Estimate the future value of your Mutual Fund investments, whether
               through Systematic Investment Plans (SIPs) or Lumpsum investments.
               Plan your financial goals effectively with this calculator.
-            </p>
+            </p> */}
           </section>
 
           {/* Right Section: Calculator Inputs and Results */}
-          <div className="grid-layout">
+          <div className="grid-layout ">
             <div className=" ">
               {/* Tab Buttons */}
 
@@ -629,9 +630,9 @@ function MutualFundCalculator() {
             </div>
           </div>
 
-          <section className="mt-8">
+          <section className="mt-24 ">
             <div className="space-y-14 text-gray-700 text-base leading-relaxed">
-              <section className="mt-8">
+              <section className="">
                 <h2 className="main-heading mb-3">What are Mutual Funds?</h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
@@ -683,7 +684,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* Why Invest in Mutual Funds? Section */}
-              <section className="mt-8">
+              <section className="">
                 <h2 className="main-heading mb-3">
                   Why Invest in Mutual Funds?
                 </h2>
@@ -758,7 +759,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* How to Use the UniCX Mutual Fund Calculator Section */}
-              <section className="mt-10">
+              <section className="">
                 <h2 className="main-heading mb-3">
                   How to Use the UniCX Mutual Fund Calculator
                 </h2>
@@ -845,7 +846,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* Understanding Mutual Funds: Key Aspects Section */}
-              <section className="mt-10">
+              <section className="">
                 <h2 className="main-heading mb-3">
                   Understanding Mutual Funds: Key Aspects
                 </h2>
@@ -855,7 +856,7 @@ function MutualFundCalculator() {
                 </p>
 
                 <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
-                  <DollarSign size={18} className="mr-2 flex-shrink-0" />{" "}
+                  <DollarSign size={18} className="mr-2 flex-shrink-0 text-blue-500"  />{" "}
                   Investment Methods
                 </h3>
                 <ul className="list-disc list-inside space-y-3">
@@ -875,7 +876,7 @@ function MutualFundCalculator() {
                 </ul>
 
                 <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
-                  <PieChart size={18} className="mr-2 flex-shrink-0" /> Types of
+                  <PieChart size={18} className="mr-2 flex-shrink-0 text-blue-400" /> Types of
                   Mutual Funds (Based on Asset Class)
                 </h3>
                 <p className="mb-3 p-content">
@@ -915,7 +916,7 @@ function MutualFundCalculator() {
                 </ul>
 
                 <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
-                  <BarChart2 size={18} className="mr-2 flex-shrink-0" /> Key
+                  <BarChart2 size={18} className="mr-2 flex-shrink-0 text-blue-500" /> Key
                   Charges & Metrics
                 </h3>
                 <ul className="list-disc list-inside space-y-3">
@@ -939,7 +940,7 @@ function MutualFundCalculator() {
                 </ul>
 
                 <h3 className="font-medium text-lg mt-6 mb-2 flex items-center">
-                  <Scale size={18} className="mr-2 flex-shrink-0" /> Taxation of
+                  <Scale size={18} className="mr-2 flex-shrink-0 text-blue-400" /> Taxation of
                   Mutual Funds in India
                 </h3>
                 <p className="mb-3 p-content">
@@ -990,7 +991,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* Who Can Benefit from the UniCX Mutual Fund Calculator? */}
-              <section className="mt-10">
+              <section className="">
                 <h2 className="main-heading mb-3">
                   Who Can Benefit from the UniCX Mutual Fund Calculator?
                 </h2>
@@ -1039,7 +1040,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* Key Considerations & Important Notes Regarding Mutual Funds */}
-              <section className="mt-10">
+              <section className="">
                 <div className="bg-red-50 border-l-4 border-red-500 p-5 rounded-md shadow-sm">
                   <h2 className="text-2xl font-semibold text-red-700 mb-3 flex items-center">
                     <Lightbulb size={20} className="mr-3 mt-1 flex-shrink-0" />
@@ -1136,7 +1137,7 @@ function MutualFundCalculator() {
               </section>
 
               {/* FAQs Section */}
-              <section className="mt-10">
+              <section className="">
                 <h2 className="main-heading mb-3">
                   Frequently Asked Questions (FAQs) about Mutual Funds
                 </h2>
@@ -1203,6 +1204,7 @@ function MutualFundCalculator() {
             </div>
           </section>
         </div>
+       
       </section>
     </>
   );

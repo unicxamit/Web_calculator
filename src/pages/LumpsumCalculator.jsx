@@ -153,14 +153,14 @@ function LumpsumCalculator() {
 
   return (
     <><Header/>
-    <section className="container-div">
+    <section className="container-div mt-14">
       <div className="second-container">
-     
-        <section className="my-3">
+     {/* <div className="border-2"> */}
+        <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">
             Lump Sum Mutual Fund Calculator
           </h1>
-          <p className="mb-10">
+          {/* <p className="mb-10">
            A
               <span className="">
                 Lump Sum Mutual Fund Investment
@@ -172,9 +172,9 @@ function LumpsumCalculator() {
               chosen when an investor has a substantial sum available, such as a
               bonus, inheritance, maturity proceeds from another investment, or
               funds from a property sale.
-          </p>
+          </p> */}
         </section>
-        <div className="grid-layout ">
+        <div className="grid-layout">
           <div className="">
             <div className="mb-6">
               <label
@@ -311,13 +311,15 @@ function LumpsumCalculator() {
           </div>
         </div>
 
-        <div className="mt-10 ">
+        <div className="mt-24 ">
             <div className="space-y-14 text-gray-700 text-base leading-relaxed">
      
-          <section className="">
-          <h2 className="main-heading ">What is a Lump Sum Mutual Fund Investment?</h2>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center"> {/* Grid for text and image */}
+          <section className="bg-[#ffffff]">
+          
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+          
             <div>
+              <h2 className="main-heading ">What is a Lump Sum Mutual Fund Investment?</h2>
               <p className="mb-4 p-content">
                 A <span className="font-bold bold-content ">Lump Sum Mutual Fund Investment</span> refers to a one-time, significant investment made into a chosen mutual fund scheme. Unlike a Systematic Investment Plan (SIP) where you invest a fixed amount periodically, a lump sum involves deploying all your capital at once. This approach is typically chosen when an investor has a substantial sum available, such as a bonus, inheritance, maturity proceeds from another investment, or funds from a property sale.
               </p>
@@ -337,7 +339,7 @@ function LumpsumCalculator() {
         </section>
 
         
-        <section className="  "> 
+        <section className=""> 
           <h2 className="main-heading mb-4">Why is a Lump Sum Mutual Fund Calculator Important?</h2>
           <p className="mb-6 p-content"> {/* Adjusted margin-bottom */}
             Investing a lump sum in mutual funds involves market dynamics, making a calculator an essential tool for strategic planning:
@@ -395,7 +397,7 @@ function LumpsumCalculator() {
         </section>
 
         {/* How to Use the UniCX Lump Sum Mutual Fund Calculator Section */}
-        <section className=""> {/* Added padding, background, shadow */}
+        <section className="bg-blue-50  rounded p-6"> {/* Added padding, background, shadow */}
           <h2 className="main-heading mb-4">How to Use the UniCX Lump Sum Mutual Fund Calculator</h2>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center"> {/* Increased gap, aligned items */}
             <div>
@@ -544,9 +546,10 @@ function LumpsumCalculator() {
 
         {/* Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator? */}
         <section className=" "> {/* Added padding, background, shadow */}
-          <h2 className="main-heading mb-3">Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator?</h2>
+          
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
             <div>
+              <h2 className="main-heading mb-3">Who Can Benefit from the UniCX Lump Sum Mutual Fund Calculator?</h2>
                 <p className="p-content mb-4">
                     The UniCX Lump Sum Mutual Fund Calculator is a valuable tool for:
                 </p>
@@ -578,7 +581,7 @@ function LumpsumCalculator() {
         </section>
 
         {/* Key Considerations & Important Notes for Lump Sum Mutual Fund Investors */}
-        <section className=" "> {/* No specific background here */}
+        <section className=""> {/* No specific background here */}
           <div className="bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded-md shadow-sm">
             <h2 className="text-2xl font-semibold text-yellow-800 mb-3 flex items-center">
               <Lightbulb size={24} className="mr-3 flex-shrink-0 text-yellow-600" /> {/* Larger icon */}
@@ -724,6 +727,7 @@ function LumpsumCalculator() {
         </div>
 </div>
 </div>
+{/* </div> */}
       {/* </div> */}
     </section>
     </>

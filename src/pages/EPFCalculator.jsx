@@ -663,10 +663,10 @@ function EPFCalculator() {
                 <section className="">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <h2 className="text-2xl text-textColor font-semibold mb-3">
+                      <h2 className="main-heading mb-3">
                         What is Employees' Provident Fund (EPF) in India?
                       </h2>
-                      <p className="text-gray-600 tracking-wide text-[15px] font-[360] ">
+                      <p className="p-content mb-4 ">
                         The <strong className="text-blue-500">Employees' Provident Fund (EPF)</strong> is
                         a mandatory savings scheme in India, managed by the
                         Employees' Provident Fund Organisation (EPFO). It's
@@ -692,10 +692,10 @@ function EPFCalculator() {
 
                 {/* Key Benefits of EPF Section */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Key Benefits of EPF for Employees
                   </h2>
-                  <p className="mb-4  text-gray-700 tracking-wide text-base font-[360]">
+                  <p className="mb-4  p-content">
                     EPF offers a multitude of advantages, making it an
                     indispensable part of financial planning for salaried
                     individuals:
@@ -769,12 +769,12 @@ function EPFCalculator() {
 
                 {/* How to Use the UniCX Free Online EPF Calculator */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     How to Use the UniCX Free Online EPF Calculator
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <p className=" text-gray-700 tracking-wide text-base mb-4 font-[400] leading-relaxed">
+                      <p className=" p-content mb-4">
                         Our <strong className="text-blue-500">UniCX EPF Calculator</strong> simplifies the
                         complex task of estimating your EPF corpus. Here’s a
                         simple guide to using it:
@@ -832,10 +832,10 @@ function EPFCalculator() {
 
                 {/* Key Factors Affecting EPF Calculation */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Key Factors Affecting Your EPF Calculation
                   </h2>
-                  <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[400] leading-relaxed">
+                  <p className="mb-4 p-content">
                     Understanding these factors can help you better estimate
                     your EPF growth:
                   </p>
@@ -912,7 +912,7 @@ function EPFCalculator() {
                           declared annually by the EPFO.
                         </span>
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="tracking-wide text-[15px] font-[380]">
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -945,12 +945,12 @@ function EPFCalculator() {
 
                 {/* Who Can Benefit from the UniCX EPF Calculator? */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Who Can Benefit from the UniCX EPF Calculator?
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                     <div>
-                      <p className="text-gray-600 tracking-wide text-base font-[400] mb-4 leading-relaxed">
+                      <p className="p-content mb-4">
                         Our EPF Calculator is a valuable tool for:
                       </p>
                       <ul className="list-disc list-inside space-y-2 leading-relaxed">
@@ -992,10 +992,10 @@ function EPFCalculator() {
 
                 {/* Why Use UniCX EPF Calculator? - Similar to Advantages of GST Calculator */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Why Use UniCX EPF Calculator?
                   </h2>
-                  <p className="mb-4 text-gray-600 tracking-wide text-base font-[400] leading-relaxed">
+                  <p className="mb-4 p-content">
                     Leveraging our <strong className="text-blue-500">free online EPF calculator</strong>{" "}
                     offers significant advantages for your financial planning:
                   </p>
@@ -1025,10 +1025,10 @@ function EPFCalculator() {
 
                 {/* EPF Calculation Formula (Simplified) & Practical Examples - Similar to GST formulas */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     EPF Calculation Formulas & Practical Examples (Simplified)
                   </h2>
-                  <p className="text-gray-600 tracking-wide text-base font-[400] leading-relaxed">
+                  <p className="p-content mb-4">
                     While our calculator handles the complexities, understanding
                     the underlying principles can provide deeper insights into
                     your EPF growth:
@@ -1066,45 +1066,45 @@ function EPFCalculator() {
                     </li>
                   </ul>
 
- <div className="mx-auto p-4 max-w-[695px] mt-5">
+ <div className=" container mx-auto p-4 max-w-[1024px] mt-5">
   <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
     <table className="min-w-full bg-white">
-      <thead className="bg-blue-100">
+      <thead className="bg-[#B7D5FE]">
         <tr>
-          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-green-300">
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
             Example Scenario
           </th>
-          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-green-300">
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
             Details
           </th>
         </tr>
       </thead>
-      <tbody className="divide-y divide-green-200">
+      <tbody className="divide-y divide-blue-200">
         <tr className="bg-white">
-          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Current Age</td>
-          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">25 years</td>
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">Current Age</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">25 years</td>
         </tr>
-        <tr className="bg-green-50">
-          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Retirement Age</td>
-          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">58 years</td>
-        </tr>
-        <tr className="bg-white">
-          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Monthly Basic Salary + DA</td>
-          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">₹30,000</td>
-        </tr>
-        <tr className="bg-green-50">
-          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Estimated Annual Increment</td>
-          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">5%</td>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">Retirement Age</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">58 years</td>
         </tr>
         <tr className="bg-white">
-          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-green-200">Current EPF Balance</td>
-          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-green-200">₹50,000</td>
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">Monthly Basic Salary + DA</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">₹30,000</td>
         </tr>
-        <tr className="bg-blue-100">
-          <td className="py-3 px-4 ttext-gray-800 tracking-wide text-[16px] font-[400] border border-green-300">
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">Estimated Annual Increment</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">5%</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">Current EPF Balance</td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">₹50,000</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 ttext-gray-800 tracking-wide text-[16px] font-[400] border border-blue-300">
             Estimated Total EPF Corpus at Retirement (approx)
           </td>
-          <td className="py-3 px-4 text-gray-700 tracking-wide text-[15px] font-[400] border border-green-300">
+          <td className="py-3 px-4 text-gray-700 tracking-wide text-[15px] font-[400] border border-blue-300">
             ₹1.5 Crores
           </td>
         </tr>
@@ -1125,7 +1125,7 @@ function EPFCalculator() {
 
                 {/* FAQs Section */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Frequently Asked Questions (FAQs) about EPF
                   </h2>
                   <div className="space-y-2">
@@ -1144,7 +1144,7 @@ function EPFCalculator() {
                               : ""
                           }`}
                         >
-                          <p className="text-gray-700 tracking-wide text-[16px] font-[400]">{faq.q}</p>
+                          <p className="p-content">{faq.q}</p>
                           {openFAQ === i ? (
                             <ChevronUp size={18} />
                           ) : (
@@ -1170,7 +1170,7 @@ function EPFCalculator() {
                   <p className="text-gray-700 tracking-wide text-[14px] font-[380]">
                     This EPF calculator and information is developed and
                     maintained by{" "}
-                    <strong>
+                    <strong className="text-blue-500">
                       UniCX (UniconsultX Solutions Private Limited)
                     </strong>{" "}
                     to help users understand and estimate their Employees'

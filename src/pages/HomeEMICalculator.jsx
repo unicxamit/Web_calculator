@@ -27,6 +27,7 @@ import {
 import homelogo from "../assets/BG IMAGES/hemi1.png"
 import howuse from "../assets/BG IMAGES/how5.png"
 import benifite from "../assets/BG IMAGES/5 png .png"
+import Header from "../component/Header";
 function HomeEMICalculator() {
   const [loanAmount, setLoanAmount] = useState("10000");
   const [interestRate, setInterestRate] = useState("6");
@@ -210,14 +211,16 @@ function HomeEMICalculator() {
     },
   ];
   return (
-    <section className="container-div">
+    <>
+    <Header/>
+    <section className="container-div mt-14">
       <div className="  second-container">
-        
-        <section className="my-3">
+        {/* <div className="border-2"> */}
+        <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">
             Home Loan Calculator
           </h1>
-          <p className="mb-8">
+          {/* <p className="mb-8">
             A Home Loan is a secured financial facility offered by banks and
             Housing Finance Companies (HFCs) to help individuals purchase,
             construct, extend, or renovate a residential property. It's
@@ -227,7 +230,7 @@ function HomeEMICalculator() {
             accessible to many. Given the substantial amount involved and the
             long repayment period, a home loan is one of the most significant
             financial commitments an individual undertakes.
-          </p>
+          </p> */}
         </section>
         <div className="grid-layout ">
           <div className="">
@@ -441,12 +444,13 @@ function HomeEMICalculator() {
             </div>
          
         </div>
-<div className=" mt-10">
+<div className=" mt-24 ">
   <div className="space-y-14 text-gray-700 text-base leading-relaxed">
         <section className="">
-          <h2 className="main-heading mb-3">What is a Home Loan?</h2>
+          
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
+                    <h2 className="main-heading mb-3">What is a Home Loan?</h2>
                     <p className="mb-4 p-content">
             A <strong className="text-blue-500">Home Loan</strong> is a
             secured financial facility offered by banks and Housing Finance
@@ -456,7 +460,7 @@ function HomeEMICalculator() {
             typically repaid through Equated Monthly Installments (EMIs) over a
             long tenure, making homeownership accessible to many.
           </p>
-          <p className="mb-4 p-content">
+          <p className=" p-content">
             Given the substantial amount involved and the long repayment period,
             a home loan is one of the most significant financial commitments an
             individual undertakes.
@@ -479,8 +483,8 @@ function HomeEMICalculator() {
           <h2 className="main-heading mb-3">
             Why is a Home Loan Calculator Important?
           </h2>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-            <div>
+          {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+            <div> */}
               <p className="mb-4 p-content">
                 A Home Loan Calculator is an indispensable tool for anyone
                 planning to take on a mortgage. Here's why it's crucial:
@@ -550,17 +554,17 @@ function HomeEMICalculator() {
                 calculations into simple, actionable information for your
                 homeownership journey.
               </p>
-            </div>
+            {/* </div> */}
             {/* Image for Why Important */}
-            <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+            {/* <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300"> */}
               {/* <img
                 src={homeLoanBenefitsImage}
                 alt="Illustration showing benefits of a home loan calculator: financial planning, budgeting, loan comparison"
                 className="w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain rounded"
                 loading="lazy"
               /> */}
-            </div>
-          </div>
+            {/* </div>
+          </div> */}
         </section>
 
         {/* How to Use the UniCX Home Loan Calculator Section */}
@@ -628,7 +632,7 @@ function HomeEMICalculator() {
               </ul>
             </div>
             {/* Image for How to Use */}
-            <div className="flex justify-center items-center hover:shadow-md transition-shadow duration-300">
+            <div className="flex justify-center items-center hover:scale-101 cursor-pointer transition-shadow duration-300">
               <img
                 src={howuse}
                 alt="Image showing the UniCX Home Loan calculator interface with input fields and calculated outputs"
@@ -979,7 +983,7 @@ function HomeEMICalculator() {
               </ul>
             </div>
             {/* Image for Who Can Benefit */}
-            <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+            <div className="flex justify-center items-center cursor-pointer  hover:scale-101 transition-shadow duration-300">
               <img
                     src={benifite}
                     alt="Image showing diverse individuals benefiting from using a home loan calculator for property financing"
@@ -1102,7 +1106,7 @@ function HomeEMICalculator() {
                   className={`flex justify-between items-center px-4 w-full text-left  rounded-lg py-3 ${
                     openFAQ !== i
                       ? "border border-gray-300 hover:border-gray-400"
-                      : "border-b border-blue-200"
+                      : ""
                   }`}
                   onClick={() => toggleFAQ(i)}
                   aria-expanded={openFAQ === i ? "true" : "false"}
@@ -1119,7 +1123,7 @@ function HomeEMICalculator() {
                   id={`faq-answer-${i}`}
                   className={`list-content px-4 ${
                     openFAQ === i
-                      ? "max-h-[500px] opacity-100 py-3"
+                      ? "max-h-[500px] opacity-100 py-0"
                       : "max-h-0 opacity-0"
                   }`}
                   aria-hidden={openFAQ !== i}
@@ -1153,8 +1157,10 @@ function HomeEMICalculator() {
       </div>
       </div>
       </div>
+      {/* </div> */}
      
     </section>
+    </>
   );
 }
 

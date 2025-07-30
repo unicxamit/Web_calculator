@@ -205,14 +205,14 @@ function EMICalculator() {
   return (
     <>
     <Header/>
-    <section className="container-div">
+    <section className="container-div mt-14">
       <div className="  second-container">
-        {/* <div className="border-4"> */}
-        <section className="my-3">
+        {/* <div className="border-2"> */}
+        <section className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">
             EMI Calculator
           </h1>
-          <p className="mb-8">
+          {/* <p className="mb-8">
             EMI stands for Equated Monthly Installment. It is a fixed payment
             amount that a borrower pays to a lender at a specified date each
             month. This monthly payment combines both the principal loan amount
@@ -222,9 +222,9 @@ function EMICalculator() {
             loan, personal loan, or any other type of financing, EMIs are the
             standard method of repayment, ensuring a systematic and predictable
             way to clear your debt.
-          </p>
+          </p> */}
         </section>
-        <div className="grid-layout ">
+        <div className="grid-layout">
           <div className="">
         
                 {/* Loan Amount */}
@@ -437,7 +437,7 @@ function EMICalculator() {
          
         </div>
 
-        <section className="mt-10">
+        <section className="mt-24 ">
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is EMI? Section */}
             <section className="">
@@ -1027,6 +1027,7 @@ function EMICalculator() {
         </section>
         {/* </div> */}
       </div>
+   
     </section>
     </>
   );

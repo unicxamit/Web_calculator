@@ -148,7 +148,7 @@ const HRACalculator = () => {
     <><Header/>
     <section className="container-div mt-14">
       <div className=" second-container ">
-      <div className="border-2"> 
+      <div className=""> 
 
       
         <div className="mb-14">
@@ -160,7 +160,7 @@ const HRACalculator = () => {
             minus dolore.
           </p> */}
         </div>
-        <div className="grid-layout border-2">
+        <div className="grid-layout ">
           <div className="  ">
             <div className="mb-6">
               <label className="block text-gray-600 font-medium mb-2">Basic salary received (₹)</label>
@@ -373,7 +373,7 @@ const HRACalculator = () => {
         </div>
      
 
-      <div className="mt-24 border-2">
+      <div className="mt-24 ">
         <div className="space-y-14 text-gray-700 text-base leading-relaxed">
           {/* Intro - Expanded with Updates/Rules style */}
           <section className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
@@ -448,19 +448,19 @@ const HRACalculator = () => {
 
           {/* What is House Rent Allowance (HRA)? - Standard section style */}
           <section>
-            <h2 className="text-2xl font-medium text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               What is House Rent Allowance (HRA)?
             </h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               <strong className="text-blue-500">House Rent Allowance (HRA)</strong> is a special allowance
               provided by employers to their employees to help cover the cost of
               rented accommodation. It is a part of a salaried individual's
               compensation package and is specifically designed to provide tax
               relief on the housing expenses incurred by the employee.
             </p>
-            <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="p-content">
               While HRA is a part of your salary, it is not fully taxable; a
               certain portion of it can be claimed as an exemption under{" "}
               <strong className="text-blue-500">Section 10(13A)</strong> of the Income Tax Act, 1961,
@@ -484,10 +484,10 @@ const HRACalculator = () => {
           <section className="">
             {" "}
             {/* No direct background or border on the section */}
-            <h2 className="text-2xl text-textColor font-semibold  mb-3">
+            <h2 className="main-heading  mb-3">
               Key Benefits & Tax Exemption Rules of HRA
             </h2>
-            <p className="mb-5 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-5 p-content">
               The primary benefit of HRA is its potential for tax exemption,
               which directly reduces your taxable income. The amount of HRA that
               is exempt from tax is the{" "}
@@ -547,7 +547,7 @@ const HRACalculator = () => {
 
           {/* How to Use the UniCX Free Online HRA Calculator - With a simpler list style, no grid with image */}
           <section className="">
-            <h2 className="text-2xl text-textColor font-semibold mb-3">
+            <h2 className="main-heading mb-3">
               How to Use the UniCX Free Online HRA Calculator
             </h2>
              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
@@ -598,10 +598,10 @@ const HRACalculator = () => {
 
           {/* Understanding Your HRA Calculator Results - Standard section with example box */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Understanding Your HRA Calculator Results
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               Once you input your details, our calculator provides a clear
               breakdown of your HRA benefits:
             </p>
@@ -620,37 +620,82 @@ const HRACalculator = () => {
               </li>
             </ul>
 
-            <div className="bg-gray-50 border-l-4 border-blue-500 p-4 rounded shadow-sm mt-6">
-              <p className="text-gray-700 mb-2">
-                📊 <strong>Example Calculation:</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                Basic Salary + DA: <strong>₹50,000</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                HRA Received: <strong>₹20,000</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                Actual Rent Paid: <strong>₹18,000</strong>
-              </p>
-              <p className="text-blue-700 font-semibold">
-                City Type: <strong>Metro</strong>
-              </p>
-              <p className="text-blue-800 font-bold text-lg mt-2">
-                Estimated Exempt HRA: <strong>₹13,000</strong> (approx.)
-              </p>
-              <p className="text-blue-800 font-bold text-lg">
-                Estimated Taxable HRA: <strong>₹7,000</strong> (approx.)
-              </p>
-            </div>
+    <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Example Calculation
+          </th>
+          <th className="py-3 px-4 text-center text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            Basic Salary + DA
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            ₹50,000
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            HRA Received
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            ₹20,000
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            Actual Rent Paid
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            ₹18,000
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-200">
+            City Type
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-200">
+            Metro
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Exempt HRA
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹13,000 (approx.)
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-contentborder border-blue-300">
+            Estimated Taxable HRA
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹7,000 (approx.)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
           </section>
 
           {/* Important HRA Rules & Considerations - Standard list style with varied headers */}
           <section className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Important HRA Rules & Considerations
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               To ensure you can successfully claim HRA exemption, keep the
               following rules and considerations in mind:
             </p>
@@ -706,10 +751,10 @@ const HRACalculator = () => {
           <section className="">
             {" "}
             {/* No direct background or border on the section */}
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Advantages of Using the UniCX HRA Calculator
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               Leveraging our <strong>free online HRA calculator</strong> offers
               significant benefits for accurate tax planning:
             </p>
@@ -779,11 +824,11 @@ const HRACalculator = () => {
 
           {/* UniCX Expert Support & Resources - Consistent styling */}
           <section id="contact" className="">
-            <h2 className="text-2xl font-semibold text-textColor mb-3">
+            <h2 className="main-heading mb-3">
               Beyond Calculations: UniCX - Your Partner in Tax & Financial
               Planning
             </h2>
-            <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+            <p className="mb-4 p-content">
               At <strong className="text-blue-500">UniconsultX Solutions Private Limited (UniCX)</strong>,
               our commitment extends beyond providing a powerful HRA calculator.
               We understand that navigating the complexities of income tax and
@@ -833,7 +878,7 @@ const HRACalculator = () => {
 
           {/* FAQs - Interactive section, with consistent blue FAQ active background */}
           <section>
-            <h2 className="text-2xl font-bold mb-3">
+            <h2 className="main-heading mb-3">
               Frequently Asked Questions (FAQs) about HRA
             </h2>
             <div className="space-y-2">
@@ -852,7 +897,7 @@ const HRACalculator = () => {
                         : ""
                     }`}
                   >
-                    <p className="text-gray-600 tracking-wide text-[16px] font-[400]">{faq.q}</p>
+                    <p className="p-content">{faq.q}</p>
                     {openFAQ === i ? (
                       <ChevronUp size={18} />
                     ) : (
@@ -860,7 +905,7 @@ const HRACalculator = () => {
                     )}
                   </div>
                   <p
-                    className={`text-gray-600 tracking-wide text-[14px] font-[380] px-3 ${
+                    className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                       openFAQ === i
                         ? "max-h-[500px] opacity-100 py-2"
                         : "max-h-0 opacity-0"

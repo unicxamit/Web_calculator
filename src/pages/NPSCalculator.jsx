@@ -380,10 +380,10 @@ function NPSCalculator() {
               <section className="">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                    <h2 className="text-2xl text-textColor font-semibold  mb-3">
+                    <h2 className="main-heading  mb-3">
                       What is the National Pension System (NPS)?
                     </h2>
-                    <p className="text-gray-700 tracking-wide text-[16px] mb-4 font-[380] ">
+                    <p className="p-content mb-4 ">
                       The <strong className="text-blue-500">National Pension System (NPS)</strong> is a
                       voluntary, long-term investment product introduced by the
                       Government of India to provide retirement security for its
@@ -410,10 +410,10 @@ function NPSCalculator() {
 
               {/* Key Benefits of Investing in NPS - Styled like GST's Types section without the grid for text/image */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Key Benefits of Investing in NPS
                 </h2>
-                <p className="text-gray-600 tracking-wide text-[16px] mb-4 font-[380] ">
+                <p className="p-content mb-4">
                   NPS offers several compelling advantages, making it a robust
                   choice for your retirement planning:
                 </p>
@@ -486,12 +486,12 @@ function NPSCalculator() {
 
               {/* How to Use the UniCX Free Online NPS Calculator - Styled like GST's How-To section with image */}
               <section className="">
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   How to Use the UniCX Free Online NPS Calculator
                 </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
                   <div className="">
-                    <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
+                    <p className="p-content mb-4">
                       Our <strong className="text-blue-500">UniCX NPS Calculator</strong> makes projecting
                       your retirement savings simple. Just follow these steps:
                     </p>
@@ -547,10 +547,10 @@ function NPSCalculator() {
 
               {/* Understanding Your NPS Calculator Results - Styled like GST's Example Box (but for explanation) */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Understanding Your NPS Calculator Results
                 </h2>
-                <p className="text-gray-600 tracking-wide text-[16px] font-[380] ">
+                <p className="p-content mb-4">
                   Once you input your details, our calculator provides a
                   comprehensive breakdown of your potential NPS returns:
                 </p>
@@ -588,33 +588,71 @@ function NPSCalculator() {
                 </ul>
 
                 {/* Removed GST-specific example box and formulas, if you want a numerical example for NPS, add it here */}
-                <div className="bg-white border-l-4 border-green-500 p-4 rounded shadow-sm mt-6">
-                  <p className="font-medium text-textColor mb-2">
-                    🧮 <strong>NPS Calculation Example:</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Current Age: <strong>30 years</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Monthly Contribution: <strong>₹5,000</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Expected Annual Return: <strong>10%</strong>
-                  </p>
-                  <p className="text-blue-600 font-bold text-lg mt-2">
-                    Estimated Maturity at 60: <strong>₹1,13,96,627</strong>{" "}
-                    (approx.)
-                  </p>
-                  <p className="text-blue-600 font-bold text-lg">
-                    Estimated Monthly Pension: <strong>₹22,793</strong>{" "}
-                    (approx.)
-                  </p>
-                </div>
+    <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            NPS Calculation Example
+          </th>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">
+            Current Age
+          </td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">
+            30 years
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">
+            Monthly Contribution
+          </td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">
+            ₹5,000
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">
+            Expected Annual Return
+          </td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] border border-blue-200">
+            10%
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Maturity at 60
+          </td>
+          <td className="py-3 px-4 list-content border border-blue-300">
+            ₹1,13,96,627 (approx.)
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Monthly Pension
+          </td>
+          <td className="py-3 px-4 list-content border border-blue-300">
+            ₹22,793 (approx.)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
               </section>
 
               {/* Important NPS Rules & Considerations - Styled like a general section */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Important NPS Rules & Considerations
                 </h2>
                 <ul className="list-disc list-inside space-y-3  ">
@@ -666,12 +704,12 @@ function NPSCalculator() {
 
               {/* Who Can Benefit from the UniCX GST Calculator? -> Who Can Benefit from NPS Calculator? */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Who Can Benefit from the UniCX NPS Calculator?
                 </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
+                <p className="p-content mb-4">
                   Our <strong className="text-blue-500">NPS calculator</strong> is a versatile tool
                   designed to assist a wide range of users in accurately
                   managing their NPS-related projections:
@@ -716,10 +754,10 @@ function NPSCalculator() {
 
               {/* Advantages of GST Calculator -> Advantages of NPS Calculator */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Advantages of Using the UniCX NPS Calculator
                 </h2>
-                <p className="mb-3 text-gray-600 tracking-wide text-[16px] font-[380]">
+                <p className="mb-3 p-content">
                   Leveraging our <strong>free online NPS calculator</strong>{" "}
                   offers significant benefits for individuals planning their
                   retirement:
@@ -770,11 +808,11 @@ function NPSCalculator() {
 
               {/* UniCX Expert Support & Resources - Adapted for NPS */}
               <section id="contact" className="">
-                <h2 className="text-2xl text-textColor font-semibold mb-3">
+                <h2 className="main-heading mb-3">
                   Beyond Calculations: UniCX - Your Partner in Retirement
                   Planning & Financial Growth
                 </h2>
-                <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
+                <p className="p-content mb-4">
                   At{" "}
                   <strong>UniconsultX Solutions Private Limited (UniCX)</strong>
                   , our commitment extends beyond providing a powerful NPS
@@ -833,7 +871,7 @@ function NPSCalculator() {
 
               {/* FAQs - Now with interactive toggle functionality */}
               <section className="">
-                <h2 className="text-2xl text-textColor font-medium mb-3">
+                <h2 className="main-heading mb-3">
                   Frequently Asked Questions (FAQs) about NPS
                 </h2>
                 <div className="">
@@ -852,7 +890,7 @@ function NPSCalculator() {
                             : ""
                         }`}
                       >
-                        <p className="text-gray-600 tracking-wide text-[16px] font-[400]">{faq.q}</p>
+                        <p className="p-content">{faq.q}</p>
                         {openFAQ === i ? (
                           <ChevronUp size={18} />
                         ) : (
@@ -860,7 +898,7 @@ function NPSCalculator() {
                         )}
                       </div>
                       <p
-                        className={`text-gray-600 tracking-wide text-[14px] font-[380] px-3 ${
+                        className={`text-gray-600 tracking-wide text-[15px] font-[380] px-3 ${
                           openFAQ === i
                             ? "max-h-[500px] opacity-100 py-2"
                             : "max-h-0 opacity-0"

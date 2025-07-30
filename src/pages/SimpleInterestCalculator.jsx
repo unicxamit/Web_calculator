@@ -171,22 +171,22 @@ function SimpleInterestCalculator() {
   return (
     <>
       <Header />
-      <div className="container-div">
+      <div className="container-div mt-14">
         <div className=" second-container">
           {/* Left Section: Introduction and Description */}
-
-          <div className="my-4">
+<div className="">
+          <div className="mb-14">
             <h1 className="text-4xl font-medium text-textColor mb-5">
               Simple & Compound Interest Calculator
             </h1>
-            <p className="mb-8">
+            {/* <p className="mb-8">
               Compare and calculate Simple Interest and Compound Interest for
               your investments or loans.
-            </p>
+            </p> */}
           </div>
 
           {/* Right Section: Calculator Inputs and Results */}
-          <div className="grid-layout">
+          <div className="grid-layout ">
             {/* Input Fields Section */}
 
             <div className="">
@@ -390,13 +390,13 @@ function SimpleInterestCalculator() {
             </div>
           </div>
 
-          <section className="mt-10">
+          <section className="mt-24 ">
             <div className="space-y-14 text-gray-700 text-base leading-relaxed">
               {/* What are Simple & Compound Interest? Section */}
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   What are Simple Interest & Compound Interest?
                 </h2>{" "}
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -416,7 +416,7 @@ function SimpleInterestCalculator() {
                 <ul className="list-disc list-inside space-y-3">
                   {" "}
                   {/* Reverted list style */}
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="text-blue-500">
                       Simple Interest (SI):
                     </strong>{" "}
@@ -429,7 +429,7 @@ function SimpleInterestCalculator() {
                     remains constant throughout the tenure, as it does not
                     factor in previously earned interest.
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="text-blue-500">
                       Compound Interest (CI):
                     </strong>{" "}
@@ -487,12 +487,12 @@ function SimpleInterestCalculator() {
                 {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4"> */}
                   {" "}
                   {/* Reverted gap */}
-                  <div>
-                    <h2 className="text-2xl font-semibold text-textColor mb-3">
+                  <div className="">
+                    <h2 className="main-heading mb-3">
                       Key Benefits of Using the UniCX Simple & Compound Interest
                       Calculator
                     </h2>
-                    <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                    <p className="mb-4 p-content">
                       Our calculator is an indispensable tool for anyone looking
                       to understand the mechanics of interest and make informed
                       financial decisions:
@@ -500,7 +500,7 @@ function SimpleInterestCalculator() {
                     <ul className="list-none space-y-3 ">
                       {" "}
                       {/* Reverted spacing */}
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="flex items-start">
                           <BarChart
                             size={18}
@@ -518,7 +518,7 @@ function SimpleInterestCalculator() {
                           .
                         </span>
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="flex items-start">
                           <Target
                             size={18}
@@ -536,7 +536,7 @@ function SimpleInterestCalculator() {
                           .
                         </span>
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="flex items-start">
                           <DollarSign
                             size={18}
@@ -553,7 +553,7 @@ function SimpleInterestCalculator() {
                           where interest is often compounded.
                         </span>
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="flex items-start">
                           <CheckCircle
                             size={18}
@@ -571,7 +571,7 @@ function SimpleInterestCalculator() {
                           .
                         </span>
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="flex items-start">
                           <HelpCircle
                             size={18}
@@ -606,14 +606,14 @@ function SimpleInterestCalculator() {
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   How to Use the UniCX Simple & Compound Interest Calculator
                 </h2>
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   {" "}
                   {/* Reverted gap */}
                   <div>
-                    <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
+                    <p className="p-content">
                       Our calculator is designed to be user-friendly, allowing
                       you to quickly determine interest earned or paid under
                       different conditions.
@@ -624,15 +624,15 @@ function SimpleInterestCalculator() {
                     <ol className="list-decimal list-inside space-y-3 ">
                       {" "}
                       {/* Reverted spacing */}
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong>Principal Amount (₹):</strong> The initial
                         amount of money you are investing or borrowing.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong>Annual Interest Rate (%):</strong> The annual
                         rate at which interest is applied.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong>Time Period (Years):</strong> The duration for
                         which the money is invested or borrowed.
                       </li>
@@ -643,7 +643,7 @@ function SimpleInterestCalculator() {
                     <ul className="list-disc list-inside space-y-2">
                       {" "}
                       {/* Reverted spacing */}
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong>Compounding Frequency:</strong> Select how often
                         the interest is compounded (Annually, Semi-annually,
                         Quarterly, Monthly, or Daily).
@@ -652,7 +652,7 @@ function SimpleInterestCalculator() {
                     <h3 className="text-gray-600 tracking-wide text-[17px] font-[500] mt-4 mb-2">
                       Outputs:
                     </h3>
-                    <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                    <p className="list-content">
                       The calculator will instantly provide you with the{" "}
                       <strong className="font-semibold">
                         Total Interest Earned
@@ -677,17 +677,17 @@ function SimpleInterestCalculator() {
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   Key Factors Influencing Interest
                 </h2>
-                <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                <p className="mb-4 p-content">
                   The amount of interest earned or paid is determined by several
                   crucial factors:
                 </p>
                 <ul className="list-none space-y-3 ">
                   {" "}
                   {/* Reverted spacing */}
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="flex items-start">
                       <DollarSign
                         size={18}
@@ -705,7 +705,7 @@ function SimpleInterestCalculator() {
                       other factors remain constant.
                     </span>
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="flex items-start">
                       <Percent
                         size={18}
@@ -723,7 +723,7 @@ function SimpleInterestCalculator() {
                       more interest over the same period.
                     </span>
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="flex items-start">
                       <CalendarDays
                         size={18}
@@ -739,7 +739,7 @@ function SimpleInterestCalculator() {
                       compounding.
                     </span>
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="flex items-start">
                       <Clock
                         size={18}
@@ -884,7 +884,7 @@ function SimpleInterestCalculator() {
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   Who Can Benefit from the UniCX Simple & Compound Interest
                   Calculator?
                 </h2>
@@ -892,44 +892,44 @@ function SimpleInterestCalculator() {
                   {" "}
                   {/* Reverted gap */}
                   <div>
-                    <p className="text-gray-600 tracking-wide text-[16px] font-[380] mb-4">
+                    <p className="p-contentmb-4">
                       This versatile calculator is beneficial for a wide array
                       of users:
                     </p>
                     <ul className="list-disc list-inside space-y-3 ">
                       {" "}
                       {/* Reverted spacing */}
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">Investors:</strong> To
                         estimate returns on various investment products like
                         FDs, RDs, bonds, or equity growth assumptions.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">Borrowers:</strong> To
                         understand the actual cost of personal loans, car loans,
                         or home loans.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">
                           Financial Planners & Advisors:
                         </strong>{" "}
                         As a quick estimation tool during client consultations.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">
                           Students & Educators:
                         </strong>{" "}
                         To learn and teach fundamental financial concepts in a
                         practical way.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">
                           Anyone Planning Savings:
                         </strong>{" "}
                         To set realistic savings goals and see the impact of
                         consistent contributions and interest.
                       </li>
-                      <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                      <li className="list-content">
                         <strong className="">
                           Small Business Owners:
                         </strong>{" "}
@@ -953,13 +953,13 @@ function SimpleInterestCalculator() {
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   Why Choose UniCX for Your Interest Calculations?
                 </h2>
                 <ul className="list-disc list-inside space-y-3">
                   {" "}
                   {/* Reverted spacing */}
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">
                       Dual Functionality:
                     </strong>{" "}
@@ -969,7 +969,7 @@ function SimpleInterestCalculator() {
                     </strong>{" "}
                     in one convenient tool.
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">
                       Accuracy & Precision:
                     </strong>{" "}
@@ -979,7 +979,7 @@ function SimpleInterestCalculator() {
                     </strong>
                     .
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">
                       User-Friendly Design:
                     </strong>{" "}
@@ -990,7 +990,7 @@ function SimpleInterestCalculator() {
                     makes it easy for anyone to input data and understand the
                     output.
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">Instant Insights:</strong>{" "}
                     Get{" "}
                     <strong className="">
@@ -999,13 +999,13 @@ function SimpleInterestCalculator() {
                     , allowing for quick comparisons and informed
                     decision-making.
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">Completely Free:</strong>{" "}
                     Access this powerful financial tool at{" "}
                     <strong className="">no cost</strong>, whenever
                     you need it.
                   </li>
-                  <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+                  <li className="list-content">
                     <strong className="">
                       Educational Value:
                     </strong>{" "}
@@ -1022,7 +1022,7 @@ function SimpleInterestCalculator() {
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   Understanding the Formulas & Example Scenarios
                 </h2>
                 <h3 className="text-gray-600 tracking-wide text-[17px] font-[500] mt-4 mb-2">
@@ -1047,31 +1047,46 @@ function SimpleInterestCalculator() {
                   <code className="bg-gray-50 px-1 rounded">T</code> = Time
                   Period in Years
                 </p>
-                <div className="bg-white border-l-4 border-blue-500 p-4 rounded shadow-sm mt-6">
-                  {" "}
-                  {/* Reverted styling */}
-                  <p className="text-gray-700 mb-2">
-                    📊{" "}
-                    <strong className="font-semibold">
-                      Example: Simple Interest
-                    </strong>
-                  </p>
-                  <p className="text-blue-700 font-semibold">
-                    Principal ($P$): <strong>₹10,000</strong>
-                  </p>
-                  <p className="text-blue-700 font-semibold">
-                    Annual Interest Rate ($R$): <strong>5%</strong>
-                  </p>
-                  <p className="text-blue-700 font-semibold">
-                    Time Period ($T$): <strong>3 Years</strong>
-                  </p>
-                  <p className="text-primary font-bold text-lg mt-3">
-                    Total Interest Earned: <strong>₹1,500</strong>
-                  </p>
-                  <p className="text-primary font-bold text-lg mt-1">
-                    Total Amount after 3 years: <strong>₹11,500</strong>
-                  </p>
-                </div>
+              <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Example Scenario
+          </th>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Principal (P)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">₹10,000</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Annual Interest Rate (R)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">5%</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Time Period (T)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">3 Years</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Compounding Frequency (n)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">Annually (n = 1)</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Total Interest Earned</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">₹1,576.25</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+
                 <h3 className="text-gray-600 tracking-wide text-[17px] font-[500] mt-8 mb-2">
                   Compound Interest Formula:
                 </h3>{" "}
@@ -1111,49 +1126,62 @@ function SimpleInterestCalculator() {
                   <code className="bg-gray-50 px-1 rounded">CI</code> = Compound
                   Interest
                 </p>
-                <div className="bg-white border-l-4 border-green-500 p-4 rounded shadow-sm mt-6">
-                  {" "}
-                  {/* Reverted styling */}
-                  <p className="text-gray-700 mb-2">
-                    📊{" "}
-                    <strong className="font-semibold">
-                      Example: Compound Interest (Annually)
-                    </strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Principal ($P$): <strong>₹10,000</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Annual Interest Rate ($R$): <strong>5%</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Time Period ($T$): <strong>3 Years</strong>
-                  </p>
-                  <p className="text-green-700 font-semibold">
-                    Compounding Frequency ($n$): <strong>Annually (n=1)</strong>
-                  </p>
-                  <p className="text-primary font-bold text-lg mt-3">
-                    Total Interest Earned: <strong>₹1,576.25</strong>
-                  </p>
-                  <p className="text-primary font-bold text-lg mt-1">
-                    Total Amount after 3 years: <strong>₹11,576.25</strong>
-                  </p>
-                  <p className="text-gray-700 mt-2 text-sm">
-                    <strong className="font-semibold">Comparison Note:</strong>{" "}
-                    Notice how for the same principal, rate, and time, Compound
-                    Interest (₹1,576.25) yields more than Simple Interest
-                    (₹1,500) because of the "interest on interest" effect. This
-                    difference becomes significantly larger over longer periods
-                    and with more frequent compounding.
-                  </p>
-                </div>
+                <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Example Scenario
+          </th>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Principal (P)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">₹10,000</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Annual Interest Rate (R)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">5%</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Time Period (T)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">3 Years</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Compounding Frequency (n)</td>
+          <td className="py-3 px-4 text-gray-600 font-[380] border border-blue-200">Annually (n = 1)</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Total Interest Earned</td>
+          <td className="py-3 px-4 text-gray-700 font-[300] border border-blue-200">₹1,576.25</td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-200">Total Amount after 3 Years</td>
+          <td className="py-3 px-4 text-gray-700 font-[300] border border-blue-200">₹11,576.25</td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 font-[400] border border-blue-300">
+            Compared to Simple Interest (for reference)
+          </td>
+          <td className="py-3 px-4 text-gray-700 font-[400] border border-blue-300">₹1,500</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
               </section>
 
               {/* FAQs Section */}
               <section className="">
                 {" "}
                 {/* Reverted margin */}
-                <h2 className="text-2xl font-semibold text-textColor mb-3">
+                <h2 className="main-heading mb-3">
                   Frequently Asked Questions (FAQs) about Simple & Compound
                   Interest
                 </h2>
@@ -1175,7 +1203,7 @@ function SimpleInterestCalculator() {
                             : "" // Reverted styling
                         }`}
                       >
-                        <p className="text-gray-600 tracking-wide text-[16px] font-[380]">{faq.q}</p>
+                        <p className="p-content">{faq.q}</p>
                         {openFAQ === i ? (
                           <ChevronUp size={18} />
                         ) : (
@@ -1217,6 +1245,7 @@ function SimpleInterestCalculator() {
             </div>
           </section>
         </div>
+      </div>
       </div>
     </>
   );

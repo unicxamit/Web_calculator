@@ -410,11 +410,11 @@ function GSTCalculator() {
                 <section className="">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4  ">
                     <div className=" ">
-                      <h2 className="text-2xl text-textColor font-semibold mb-3">
+                      <h2 className="main-heading mb-3">
                         What is Goods and Services Tax (GST) in India?
                       </h2>
                       <span className="space-y-3">
-                        <p className="text-gray-600 tracking-wide text-[16px] font-[380] ">
+                        <p className="p-content mb-4 ">
                           <strong className="text-blue-600">GST (Goods and Services Tax)</strong> is a
                           landmark unified, indirect tax system introduced in
                           India on <strong>July 1, 2017</strong>. It marked a
@@ -428,7 +428,7 @@ function GSTCalculator() {
                           final consumer, creating a "One Nation, One Tax"
                           regime across India.
                         </p>
-                        <p className="text-gray-700 tracking-wide text-base font-[360]">
+                        <p className="p-content">
                           As a{" "}
                           <strong className="text-blue-600">
                             comprehensive, multi-stage, destination-based tax
@@ -457,10 +457,10 @@ function GSTCalculator() {
                 </section>
                 {/* Types of GST - Expanded */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Types of GST in India: CGST, SGST, IGST, UTGST Explained
                   </h2>
-                  <p className="mb-4 text-gray-700 tracking-wide text-base font-[360]">
+                  <p className="mb-4 p-content">
                     Understanding the <strong className="text-blue-600">four types of GST</strong> is
                     crucial for accurate tax computation and compliance, as they
                     apply depending on the nature and location of the supply:
@@ -468,19 +468,19 @@ function GSTCalculator() {
                   {/* The "Abstract Interconnectedness" image you liked */}
 
                   <div className="grid lg:grid-cols-2 gap-4">
-                    <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300  ">
+                    {/* <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300  ">
                       <img
                         src={gsttype}
                         alt="Abstract minimalist graphic representing interconnectedness of GST types"
                         className="w-full max-w-lg object-contain h-auto max-h-[400px] xl:max-h-[400px] "
                       />
-                    </div>
-                    <div className="space-y-4 ">
+                    </div> */}
+                    
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
+                        <h3 className="font-normal text-md">
                           CGST (Central GST)
                         </h3>
-                        <p className=" text-gray-700 tracking-wide text-[14px] font-[300] ">
+                        <p className=" text-sm text-gray-600 ">
                           <strong>Central Goods and Services Tax</strong>.
                           Collected by the <strong>Central Government</strong>{" "}
                           for{" "}
@@ -492,10 +492,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
+                        <h3 className="font-normal text-md">
                           SGST (State GST)
                         </h3>
-                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
+                        <p className="text-sm text-gray-600">
                           <strong>State Goods and Services Tax</strong>.
                           Collected by the <strong>State Government</strong> for{" "}
                           <strong>
@@ -506,10 +506,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
+                        <h3 className="font-normal text-md">
                           IGST (Integrated GST)
                         </h3>
-                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
+                        <p className="text-sm text-gray-600">
                           <strong>Integrated Goods and Services Tax</strong>.
                           Collected by the <strong>Central Government</strong>{" "}
                           on{" "}
@@ -522,10 +522,10 @@ function GSTCalculator() {
                         </p>
                       </div>
                       <div className="bg-[#ddebff] p-4 rounded-lg shadow-sm border-2 border-blue-300">
-                        <h3 className="font-[400] text-[#314259] text-lg mb-2">
+                        <h3 className="font-normal text-md">
                           UTGST (Union Territory GST)
                         </h3>
-                        <p className="text-gray-700 tracking-wide text-[14px] font-[300]">
+                        <p className="text-sm text-gray-600">
                           <strong>
                             Union Territory Goods and Services Tax
                           </strong>
@@ -535,47 +535,47 @@ function GSTCalculator() {
                           Collected along with CGST, similar to SGST.
                         </p>
                       </div>
-                    </div>
+                   
                   </div>
                 </section>
                 {/* How to Use This Calculator - Expanded */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     How to Use the UniCX Free Online GST Calculator
                   </h2>
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
                     <div className="">
-                      <p className="text-gray-700 tracking-wide text-base font-[360]">
+                      <p className="p-content">
                         Our <strong className="text-blue-600">user-friendly GST calculator</strong>{" "}
                         simplifies complex tax computations. Follow these simple
                         steps to get <strong>accurate results instantly</strong>
                         :
                       </p>
                       <ol className="list-decimal list-inside space-y-4 mt-3">
-                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                        <li className="list-content">
                           <strong className="">Enter the Price:</strong> Input the base price
                           of your goods or services in the designated "Amount"
                           field.
                         </li>
-                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                        <li className="list-content">
                           <strong>Select Calculation Type:</strong> Choose
                           whether the price you entered is "Inclusive of Tax"
                           (to extract GST) or "Exclusive of Tax" (to add GST).
                         </li>
-                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                        <li className="list-content">
                           <strong>Choose GST Rate:</strong> Select the
                           applicable GST rate (e.g., 5%, 12%, 18%, or 28%) from
                           the available options. This corresponds to the tax
                           slab for your specific product or service.
                         </li>
-                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                        <li className="list-content">
                           <strong>Pick Supply Type (if applicable):</strong>{" "}
                           Indicate if the supply is Inter-state or Intra-state.
                           Our calculator intelligently determines the{" "}
                           <strong className="text-blue-600">CGST, SGST</strong>, or <strong className="text-blue-600">IGST</strong>{" "}
                           components.
                         </li>
-                        <li className="text-gray-700 tracking-wide text-base font-[360]">
+                        <li className="list-content">
                           <strong>View Instant Breakdown:</strong> The
                           calculator will automatically display a clear
                           breakdown of the total amount, GST amount, and the net
@@ -583,7 +583,7 @@ function GSTCalculator() {
                         </li>
                       </ol>
                     </div>
-                    <div className="flex justify-center items-center shadow rounded cursor-pointer hover:scale-105 transition-transform duration-300 ">
+                    <div className="flex justify-center items-center  cursor-pointer hover:scale-105 transition-transform duration-300 ">
                       <img
                         src={calculator}
                         alt="GST India Logo | Goods and Services Tax explained"
@@ -595,10 +595,10 @@ function GSTCalculator() {
 
                 {/* Example Box - Expanded with Formulas */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     GST Calculation Formulas & Practical Examples
                   </h2>
-                  <p className="text-gray-700 tracking-wide text-base font-[360]">
+                  <p className="p-content mb-4">
                     While our <strong className="text-blue-600">UniCX GST Calculator</strong> automates
                     everything, understanding the underlying formulas can
                     provide deeper insights into your tax liabilities:
@@ -631,7 +631,7 @@ function GSTCalculator() {
                     </li>
                   </ul>
 
-                  <div class="container mx-auto p-4 max-w-lg mt-8">
+                  <div class="container mx-auto p-4 max-w-[1024px] mt-8">
                     <div class="rounded-xl border-2 border-blue-300 overflow-hidden shadow-sm">
                       <table class="min-w-full bg-white">
                         <thead class="bg-[#B7D5FE]">
@@ -674,7 +674,7 @@ function GSTCalculator() {
                     </div>
                   </div>
 
-                  <p className="mt-4 text-gray-700 tracking-wide text-base font-[360]">
+                  <p className="mt-4 p-content">
                     <strong className="">Impact of GST across the Supply Chain:</strong>{" "}
                     GST's <strong>Input Tax Credit (ITC) mechanism</strong>{" "}
                     significantly reduces the cascading effect of taxes (tax on
@@ -687,10 +687,10 @@ function GSTCalculator() {
 
                 {/* Who Can Benefit from the UniCX GST Calculator? - Maintained */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Who Can Benefit from the UniCX GST Calculator?
                   </h2>
-                  <p className="text-gray-700 tracking-wide text-base font-[360] mb-3">
+                  <p className="p-content mb-3">
                     Our <strong>GST calculator</strong> is a versatile tool
                     designed to assist a wide range of users in accurately
                     managing their GST-related calculations:
@@ -723,21 +723,21 @@ function GSTCalculator() {
                       quick verification tool for clients' GST computations.
                     </li>
                   </ul>
-                   <div className="flex justify-center items-center   max-h-[399px]  rounded cursor-pointer hover:scale-101 transition-transform duration-300 ">
+                   <div className="flex justify-center items-center bg-slate-100    rounded cursor-pointer hover:scale-101 transition-transform duration-300 ">
                       <img
                         src={benifite}
                         alt="GST India Logo | Goods and Services Tax explained"
-                        className=" w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain"
+                        className=" w-full h-auto max-h-[300px] xl:max-h-[220px] mt-[-10px]  object-contain"
                       />
                     </div>
                 </section>
 
                 {/* Advantages of GST Calculator - NEW Section */}
                 <section className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Advantages of Using the UniCX GST Calculator
                   </h2>
-                  <p className="text-gray-700 tracking-wide text-base font-[360] mb-3">
+                  <p className="p-content mb-3">
                     Leveraging our <strong className="  ">free online GST calculator</strong>{" "}
                     offers significant benefits for individuals and businesses
                     alike:
@@ -794,7 +794,7 @@ function GSTCalculator() {
 
                 {/* UniCX Expert Support & Resources - NEW Section */}
                 <section id="contact" className="">
-                  <h2 className="text-2xl text-textColor font-medium mb-3">
+                  <h2 className="main-heading mb-3">
                     Beyond Calculations: UniCX - Your Partner in GST Compliance
                     & Growth
                   </h2>
@@ -867,58 +867,46 @@ function GSTCalculator() {
                 </section>
 
                 {/* FAQs - Maintained with updated Q&A */}
-                <section className=" px-4 ">
-                  {" "}
-                  {/* Added padding, rounded corners, and shadow */}
-                  <h2 className="text-2xl text-textColor font-medium  mb-6">
-                    Frequently Asked Questions (FAQs) about GST
-                  </h2>
-                  <div className="space-y-6">
-                    {" "}
-                    {/* Added space between FAQ items */}
-                    {faqs.map((faq, i) => (
-                      <div
-                        key={i}
-                        className={`border border-gray-200 rounded-lg overflow-hidden transition-all duration-500 ease-in-out ${
-                          openFAQ === i
-                            ? "shadow-md bg-blue-50"
-                            : "hover:shadow-sm" // Highlight active FAQ
-                        }`}
-                      >
-                        <div
-                          className="flex justify-between items-center px-4 py-2 cursor-pointer bg-white" // Added background to header
-                          onClick={() => toggleFAQ(i)}
-                        >
-                          <p className="text-gray-800 tracking-wide text-base font-[400]">
-                            {faq.q}
-                          </p>
-                          {openFAQ === i ? (
-                            <ChevronUp size={20} className="text-blue-600" />
-                          ) : (
-                            <ChevronDown size={20} className="text-gray-500" />
-                          )}
-                        </div>
-
-                        <p
-                          className={`text-gray-700 text-base font-normal px-4  pt-2 transition-all duration-500 ease-in-out ${
-                            openFAQ === i
-                              ? "max-h-[500px] opacity-100"
-                              : "max-h-0 opacity-0"
-                          }`}
-                          style={
-                            {
-                              // Optional: For even smoother height transition, you can calculate max-height dynamically
-                              // For most cases, a generous max-height like 500px works well for typical FAQ answers.
-                              // If answers are extremely long, you might need to adjust this.
-                            }
-                          }
-                        >
-                          {faq.a}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </section>
+                  <section className="">
+                                 <h2 className="main-heading mb-3">
+                                   Frequently Asked Questions (FAQs) about EPF
+                                 </h2>
+                                 <div className="space-y-2">
+                                   {faqs.map((faq, i) => (
+                                     <div
+                                       key={i}
+                                       className={`py-2 cursor-pointer overflow-hidden transition-all duration-300 ease-in-out ${
+                                         openFAQ === i ? "bg-blue-50 rounded-lg " : ""
+                                       }`}
+                                       onClick={() => toggleFAQ(i)}
+                                     >
+                                       <div
+                                         className={`flex justify-between items-center px-3 ${
+                                           openFAQ !== i
+                                             ? "border border-gray-300 rounded-lg py-3"
+                                             : ""
+                                         }`}
+                                       >
+                                         <p className="p-content">{faq.q}</p>
+                                         {openFAQ === i ? (
+                                           <ChevronUp size={18} />
+                                         ) : (
+                                           <ChevronDown size={18} />
+                                         )}
+                                       </div>
+                                       <p
+                                         className={`text-gray-700 tracking-wide text-[15px] font-[380] px-3 ${
+                                           openFAQ === i
+                                             ? "max-h-[500px] opacity-100 py-2 "
+                                             : "max-h-0 opacity-0"
+                                         }`}
+                                       >
+                                         {faq.a}
+                                       </p>
+                                     </div>
+                                   ))}
+                                 </div>
+                               </section>
                 {/* Footer note - Maintained */}
                 <section className="pt-6 border-t mt-6 ">
                   <p className="text-gray-700 tracking-wide text-base font-[360]">

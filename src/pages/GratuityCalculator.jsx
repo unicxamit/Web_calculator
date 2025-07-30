@@ -144,15 +144,12 @@ function GratuityCalculator() {
 
   return (
     <><Header/>
-    <div className=" container-div">
+    <div className=" container-div mt-14">
       <div className=" second-container">
-        <div className="my-4">
+        
+        <div className="mb-14">
           <h1 className="text-4xl font-medium text-textColor mb-5">Gratuity Calculator</h1>
-          <p className="mb-8">
-            Calculate your estimated gratuity amount based on your last drawn
-            salary, years of service, and whether your organization is covered
-            under the Gratuity Act.
-          </p>
+         
         </div>
 
       
@@ -259,14 +256,14 @@ function GratuityCalculator() {
             </div>
           </div>
         </div>
-<section className="mt-10">
+<section className="mt-24 ">
   <div className="space-y-14 text-gray-700 text-base leading-relaxed">
     {/* What is Gratuity? */}
     <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3">What is Gratuity?</h2>
+      <h2 className="main-heading mb-3">What is Gratuity?</h2>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                      <p className="mb-4 p-content">
         <strong className="text-blue-500">Gratuity</strong> is a lump sum payment made by an employer to an
         employee upon the employee's superannuation (retirement),
         resignation, death, or disablement, provided they meet certain
@@ -275,7 +272,7 @@ function GratuityCalculator() {
         the <strong className="text-blue-500">Payment of Gratuity Act, 1972</strong>, and a policy-based
         benefit for others.
       </p>
-       <p className="text-gray-600 tracking-wide text-[16px] font-[380]">
+       <p className="p-content">
         It serves as a long-term benefit for employees, recognizing
         their loyalty and contribution to the company over the years.
       </p>
@@ -294,12 +291,12 @@ function GratuityCalculator() {
     </section>
 
     {/* The Payment of Gratuity Act, 1972 (and its Scope) */}
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Landmark size={22} className="flex-shrink-0" />
         The Payment of Gratuity Act, 1972 (and its Scope)
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         The <strong>Payment of Gratuity Act, 1972</strong> is a central act that
         mandates the payment of gratuity to employees engaged in
         factories, mines, oilfields, plantations, ports, railway
@@ -322,12 +319,12 @@ function GratuityCalculator() {
       </ul>
     </section>
 
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Briefcase size={22} className="flex-shrink-0" />
         Eligibility Criteria for Gratuity
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         To be eligible for gratuity under the Payment of Gratuity Act,
         1972, an employee must have completed <strong>at least five years of
         continuous service</strong> with the same employer.
@@ -351,12 +348,12 @@ function GratuityCalculator() {
       </ul>
     </section>
 
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Calculator size={22} className="flex-shrink-0" />
         How Gratuity is Calculated?
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         The method of calculating gratuity differs based on whether the
         employee is covered under the Payment of Gratuity Act, 1972.
       </p>
@@ -440,12 +437,12 @@ function GratuityCalculator() {
       </ul>
     </section>
 
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Scale size={22} className="flex-shrink-0" />
         Taxation of Gratuity
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         The tax treatment of gratuity varies based on the type of
         employer:
       </p>
@@ -507,13 +504,13 @@ function GratuityCalculator() {
       </ul>
     </section>
 
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Calculator size={22} className="flex-shrink-0" />
         How to Use the UniCX Free Online Gratuity Calculator
       </h2>
        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
-                  <div className=""> <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+                  <div className=""> <p className="mb-4 p-content">
         Our UniCX Gratuity Calculator makes estimating your potential
         returns simple and quick. Follow these steps to see your wealth
         growth potential:
@@ -560,78 +557,117 @@ function GratuityCalculator() {
     </section>
 
     {/* Understanding Your Gratuity Calculator Results */}
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <FileText size={22} className="flex-shrink-0" />
         Understanding Your Gratuity Calculator Results
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         Once you input your details, our calculator provides a clear
         breakdown of your potential gratuity:
       </p>
       <ul className="list-disc list-inside ml-4 space-y-2">
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Estimated Gratuity Amount:</strong> This is the calculated gratuity
           payment you are potentially eligible for.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Tax Exempt Gratuity:</strong> This is the portion of your gratuity
           that is exempt from income tax, based on the applicable rules.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Taxable Gratuity:</strong> This is any remaining portion of your
           gratuity that will be added to your taxable income and taxed
           as per your applicable income tax slab.
         </li>
       </ul>
 
-      <div className="bg-white border-l-4 border-green-500 p-4 rounded shadow-sm mt-6">
-        <p className="text-gray-700 mb-2">
-          📊 <strong>Example Calculation (Covered by Act):</strong>
-        </p>
-        <p className="text-green-700 font-semibold">
-          Last Drawn Basic + DA: <strong>₹50,000</strong>
-        </p>
-        <p className="text-green-700 font-semibold">
-          Years of Service: <strong>15 Years, 8 Months</strong> (Calculated as 16
-          years)
-        </p>
-        <p className="text-blue-800 font-bold text-lg mt-2">
-          Estimated Gratuity Amount: <strong>₹4,61,538</strong>
-        </p>
-        <p className="text-blue-800 font-bold text-lg">
-          Tax Exempt (Example): <strong>₹4,61,538</strong>
-        </p>
-        <p className="text-blue-800 font-bold text-lg">
-          Taxable Gratuity: <strong>₹0</strong>
-        </p>
-      </div>
+    <div className="container mx-auto p-4 max-w-[1024px] mt-5">
+  <div className="rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
+    <table className="min-w-full bg-white">
+      <thead className="bg-[#B7D5FE]">
+        <tr>
+          <th className="py-3 px-4 text-left text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Example Calculation (Covered by Act)
+          </th>
+          <th className="py-3 px-4 text-center text-gray-700 tracking-wide text-[16px] font-[500] border border-blue-300">
+            Details
+          </th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-blue-200">
+        <tr className="bg-white">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">
+            Last Drawn Basic + DA
+          </td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] text-center border border-blue-200">
+            ₹50,000
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 text-gray-800 tracking-wide text-[15px] font-[400] border border-blue-200">
+            Years of Service
+          </td>
+          <td className="py-3 px-4 text-gray-600 tracking-wide text-[15px] font-[380] text-center border border-blue-200">
+            15 Years, 8 Months (Calculated as 16 years)
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Estimated Gratuity Amount
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹4,61,538
+          </td>
+        </tr>
+        <tr className="bg-blue-50">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Tax Exempt (Example)
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹4,61,538
+          </td>
+        </tr>
+        <tr className="bg-white">
+          <td className="py-3 px-4 p-content border border-blue-300">
+            Taxable Gratuity
+          </td>
+          <td className="py-3 px-4 list-content text-center border border-blue-300">
+            ₹0
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
     </section>
 
     {/* Important Gratuity Rules & Considerations */}
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <ScrollText size={22} className="flex-shrink-0" />
         Important Gratuity Rules & Considerations
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         While gratuity is a significant benefit, keep these important
         points in mind:
       </p>
       <ul className="list-disc list-inside space-y-2">
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong className="">Continuous Service:</strong> This
           means uninterrupted service, including periods of leave,
           absence due to accident/sickness, or strike/lockout not due to
           employee's fault.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong className="text-lg">Termination:</strong> Gratuity is
           payable upon termination of employment for any reason
           (superannuation, resignation, death, disablement, or even
           retrenchment).
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong className="text-lg">Forfeiture of Gratuity:</strong>{" "}
           Gratuity can be wholly or partially forfeited if the
           employee's services have been terminated for certain acts of
@@ -639,7 +675,7 @@ function GratuityCalculator() {
           or for riotous/disorderly conduct, or any act involving moral
           turpitude committed in the course of employment.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong className="text-lg">Employer's Obligation:</strong>{" "}
           The employer is legally obligated to pay gratuity within 30
           days of it becoming payable. If not, they are liable to pay
@@ -649,12 +685,12 @@ function GratuityCalculator() {
     </section>
 
     {/* Advantages of Using the UniCX Gratuity Calculator */}
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <Award size={22} className="flex-shrink-0" />
         Advantages of Using the UniCX Gratuity Calculator
       </h2>
-      <p className="mb-4 text-gray-700 tracking-wide text-[16px]  font-[380] ">
+      <p className="mb-4 list-content ">
         Leveraging our <strong>free online Gratuity calculator</strong> offers
         significant benefits for accurate financial planning:
       </p>
@@ -664,7 +700,7 @@ function GratuityCalculator() {
             <Calculator size={20} className="flex-shrink-0" /> <strong>Accuracy
             & Ease:</strong>
           </h3>
-          <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
+          <p className="list-content">
             Ensures precise calculation based on relevant Act or company
             policy, simplifying complex computations.
           </p>
@@ -674,7 +710,7 @@ function GratuityCalculator() {
             <Briefcase size={20} className="flex-shrink-0" /> <strong>Clarity on
             Eligibility:</strong>
           </h3>
-          <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
+          <p className="list-content">
             Helps understand eligibility conditions and their impact on
             your payout.
           </p>
@@ -684,7 +720,7 @@ function GratuityCalculator() {
             <Scale size={20} className="flex-shrink-0" /> <strong>Tax Impact
             Analysis:</strong>
           </h3>
-          <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
+          <p className="list-content">
             Provides insight into the taxability of your gratuity
             payout.
           </p>
@@ -694,7 +730,7 @@ function GratuityCalculator() {
             <HandCoins size={20} className="flex-shrink-0" /> <strong>Financial
             Planning:</strong>
           </h3>
-          <p className="text-gray-600 tracking-wide text-[15px] font-[380]">
+          <p className="list-content">
             Aids in estimating your retirement or end-of-service corpus
             for better financial security.
           </p>
@@ -703,8 +739,8 @@ function GratuityCalculator() {
     </section>
 
     {/* Frequently Asked Questions (FAQs) about Gratuity */}
-    <section>
-      <h2 className="text-2xl font-semibold text-textColor mb-3 flex items-center gap-2">
+    <section className="">
+      <h2 className="main-heading mb-3 flex items-center gap-2">
         <HelpCircle size={22} className="flex-shrink-0" />
         Frequently Asked Questions (FAQs) about Gratuity
       </h2>
@@ -751,11 +787,11 @@ function GratuityCalculator() {
     {/* <div className="my-10 border-t border-gray-200"></div> */}
 
     {/* UniCX Expert Support & Resources */}
-    <section id="contact">
-      <h2 className="text-2xl font-semibold text-textColor mb-3">
+    <section id="contact" className="">
+      <h2 className="main-heading mb-3">
         Beyond Calculations: UniCX - Your Partner in Financial Planning
       </h2>
-      <p className="mb-4 text-gray-600 tracking-wide text-[16px] font-[380]">
+      <p className="mb-4 p-content">
         At <strong>UniconsultX Solutions Private Limited (UniCX)</strong>, our
         commitment extends beyond providing powerful financial
         calculators. We understand that navigating end-of-service
@@ -763,23 +799,23 @@ function GratuityCalculator() {
         expert guidance. That's why we offer <strong>comprehensive support and
         resources</strong> to help you optimize your finances.
       </p>
-      <h3 className="text-gray-600 tracking-wide text-[16px] font-[400] mt-4 mb-2">
+      <h3 className="p-content mt-4 mb-2">
         Our Expert Financial Services Include:
       </h3>
       <ul className="list-disc list-inside space-y-2">
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Retirement Planning:</strong> Strategies to ensure a secure and
           comfortable post-employment life.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Tax Consulting:</strong> Expert advice on gratuity taxation, income
           tax filing, and overall tax optimization.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Wealth Management:</strong> Holistic financial planning to grow and
           protect your wealth.
         </li>
-        <li className="text-gray-600 tracking-wide text-[15px] font-[380]">
+        <li className="list-content">
           <strong>Investment Advisory:</strong> Guidance on suitable investment
           avenues for your long-term goals.
         </li>
