@@ -1,43 +1,43 @@
 import React from "react";
-// import Header from "../component/Header";
+import Header from "../component/Header";
 import { useNavigate } from "react-router-dom";
 import epfcalc from "../assets/epf2.png";
-import gst from "../assets/All-Calculators-image/gst1.png";
-import nps from "../assets/All-Calculators-image/nps4.png";
-import hra from "../assets/All-Calculators-image/hra1.png";
-import sip from "../assets/All-Calculators-image/sip1.png";
-import gratuity from "../assets/All-Calculators-image/gratuti1.png";
-import retirement from "../assets/All-Calculators-image/retir1.png";
-import rd from "../assets/All-Calculators-image/rd2.png";
-import simple from "../assets/All-Calculators-image/sim1.png";
-import tds from "../assets/All-Calculators-image/tds1.png";
-import ppf from "../assets/All-Calculators-image/ppf1.png";
-import mutual from "../assets/All-Calculators-image/mf1.png";
-import emi from "../assets/All-Calculators-image/emi2.png";
-import fd from "../assets/All-Calculators-image/fd1.png";
-import home from "../assets/All-Calculators-image/home-Emi1.png";
-import lump from "../assets/All-Calculators-image/lum1.png";
-import business from "../assets/All-Calculators-image/bui3.png";
-import itr from "../assets/All-Calculators-image/itr2.png";
+import gst from "../assets/images/calculators_img/All-Calculators-image/gst1.png";
+import nps from "../assets/images/calculators_img/All-Calculators-image/nps4.png";
+import hra from "../assets/images/calculators_img/All-Calculators-image/hra1.png";
+import sip from "../assets/images/calculators_img/All-Calculators-image/sip1.png";
+import gratuity from "../assets/images/calculators_img/All-Calculators-image/gratuti1.png";
+import retirement from "../assets/images/calculators_img/All-Calculators-image/retir1.png";
+import rd from "../assets/images/calculators_img/All-Calculators-image/rd2.png";
+import simple from "../assets/images/calculators_img/All-Calculators-image/sim1.png";
+import tds from "../assets/images/calculators_img/All-Calculators-image/tds1.png";
+import ppf from "../assets/images/calculators_img/All-Calculators-image/ppf1.png";
+import mutual from "../assets/images/calculators_img/All-Calculators-image/mf1.png";
+import emi from "../assets/images/calculators_img/All-Calculators-image/emi2.png";
+import fd from "../assets/images/calculators_img/All-Calculators-image/fd1.png";
+import home from "../assets/images/calculators_img/All-Calculators-image/home-Emi1.png";
+import lump from "../assets/images/calculators_img/All-Calculators-image/lum1.png";
+import business from "../assets/images/calculators_img/All-Calculators-image/bui3.png";
+import itr from "../assets/images/calculators_img/All-Calculators-image/itr2.png";
 const AllCalculator = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* <Header /> */}
-      <section className=" px-6  py-5 bg-white w-full">
-        <div className=" max-w-screen-xl mx-auto pt-18 lg:px-10 3sm:px-4 pb-5">
+     
+      <section className=" 2sm:px-6  py-5 bg-white w-full">
+        <div className=" max-w-screen-xl mx-auto pt-18 2sm:px-10 px-5  pb-5">
          
             <section className="mb-14">
-              <h1 className="3sm:text-6xl text-3xl font-semibold text-textColor ">
+              <h1 className="lg:text-6xl text-4xl font-semibold text-textColor ">
                 Calculators
               </h1>
             </section>
 
-            <div className="grid md:grid-cols-3 lg:gap-10 4sm:grid-cols-2 gap-3  ">
+            <div className="grid lg:grid-cols-3 gap-y-8 2sm:gap-10 4sm:grid-cols-2  ">
               {/* <div className="w-full cursor-pointer " onClick={() => navigate("/gst-calc")}> */}
 
               <div
-                className=" border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 
+                className=" border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4  h-[318px]
                  w-full cursor-pointer border-[#D5E5FC]   hover:border-primary "
                 // data-testid="calculator-card"
                 // style={{
@@ -46,7 +46,7 @@ const AllCalculator = () => {
                 // }}
                 onClick={() => navigate("/gst-calc")}
               >
-                <p className="md:text-2xl text-xl  font-medium text-textColor  mb-3 ">
+                <p className="xl:text-2xl text-xl  font-medium text-textColor  mb-3 ">
                   GST Calculator{" "}
                 </p>
                 <span className="font-normal text-gray-500 line-clamp-3 ">
@@ -69,11 +69,11 @@ const AllCalculator = () => {
               </div>
 
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer    hover:border-primary "
-                onClick={() => navigate("/income")}
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  h-[318px]   hover:border-primary "
+                onClick={() => navigate("/itr-calc")}
               >
                 <div>
-                  <p className="md:text-2xl text-xl font-medium text-textColor  mb-3  ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3  ">
                     ITR Calculator
                   </p>
                   <span className=" font-normal text-gray-500 line-clamp-3 ">
@@ -93,11 +93,11 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  hover:border-primary  h-[318px]"
                 onClick={() => navigate("/epf-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     EPF Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3 ">
@@ -110,17 +110,17 @@ const AllCalculator = () => {
                     <img
                       src={epfcalc}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 md:mt-8 3sm:mt-3 object-contain"
+                      className="w-full h-24 mt-8  object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary "  
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary "  
                 onClick={() => navigate("/nps-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     NPS Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3">
@@ -140,11 +140,11 @@ const AllCalculator = () => {
               </section>
              
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer   hover:border-primary "
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px]  hover:border-primary "
                 onClick={() => navigate("/hra-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     HRA Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -163,11 +163,11 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer "
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px]  hover:border-primary  cursor-pointer "
                 onClick={() => navigate("/sip-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor mb-3 ">
                     SIP Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3 ">
@@ -186,11 +186,11 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary  "
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary  "
                 onClick={() => navigate("/gratuity-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     Gratuity Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -208,11 +208,11 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer"
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px]  hover:border-primary  cursor-pointer"
                 onClick={() => navigate("/retirement-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     Retirement Calculator 
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -225,17 +225,17 @@ const AllCalculator = () => {
                     <img
                       src={retirement}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-20 lg:mt-12 object-contain"
+                      className="w-full h-20 lg:mt-6 xl:mt-10 3lg:mt-10 md:mt-10 5md:mt-5 mt-8 object-contain"
                     />
                   </div>
                 {/* </div> */}
               </section>
               <section
-                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary  "
+                className="border rounded-xl pt-7  lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px] cursor-pointer  hover:border-primary  "
                 onClick={() => navigate("/rd-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     RD Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3 ">
@@ -253,14 +253,14 @@ const AllCalculator = () => {
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary   h-[318px]"
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  hover:border-primary   h-[318px]"
                 onClick={() => navigate("/simple-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     Simple Interest Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-2  ">
+                  <span className="font-normal text-gray-500 xl:line-clamp-2 line-clamp-3  ">
                     Easily predict your money's future, compound interest
                     calculator for your financial adventure.
                   </span>
@@ -269,17 +269,17 @@ const AllCalculator = () => {
                     <img
                       src={simple}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-8 object-contain"
+                      className="w-full h-24 xl:mt-8 lg:mt-5 md:mt-8 5md:mt-5 mt-10 4md:mt-14 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer  "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px] hover:border-primary  cursor-pointer  "
                 onClick={() => navigate("/tds-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     TDS Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -292,20 +292,20 @@ const AllCalculator = () => {
                     <img
                       src={tds}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-9 object-contain"
+                      className="w-full h-24 mt-9  object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC]  hover:border-primary  cursor-pointer "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px] hover:border-primary  cursor-pointer "
                 onClick={() => navigate("/business")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     Business Setup Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-2  ">
+                  <span className="font-normal text-gray-500 xl:line-clamp-2 line-clamp-3 ">
                     Starting a business? Don't fret! Use the business setup
                     calculator to estimate expenses, avoid surprises, and plan
                     your budget for success.
@@ -315,17 +315,17 @@ const AllCalculator = () => {
                     <img
                       src={business}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-6 object-contain"
+                      className="w-full h-28 xl:mt-6 lg:mt-3 md:mt-8 mt-5 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary  h-[318px] "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  hover:border-primary  h-[318px] "
                 onClick={() => navigate("/ppf-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     PPF Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -338,20 +338,20 @@ const AllCalculator = () => {
                     <img
                       src={ppf}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-5 object-contain"
+                      className="w-full h-[120px] mt-5 xl:mt-2 3lg:mt-1 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer   hover:border-primary "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  h-[318px] hover:border-primary "
                 onClick={() => navigate("/mutual-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
-                    Mutual Fund Returns Calculator
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
+                    Mutual Fund  Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-2 ">
+                  <span className="font-normal text-gray-500 line-clamp-3 ">
                     Mutual Fund Returns Calculator forecasts potential returns
                     based on investment amount, tenure, and expected returns. It
                     assists in evaluating mutual fund investment strategies.
@@ -361,17 +361,17 @@ const AllCalculator = () => {
                     <img
                       src={mutual}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-5 object-contain"
+                      className="w-full h-[120px] lg:mt-1  xl:mt-5 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary  "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary  "
                 onClick={() => navigate("/emi-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
                     Online EMI Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -384,20 +384,20 @@ const AllCalculator = () => {
                     <img
                       src={emi}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-36 mt-2 object-contain"
+                      className="w-full xl:h-36 h-[140px] lg:mt-0.5 xl:mt-2 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary  "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 h-[318px] border-[#D5E5FC] cursor-pointer  hover:border-primary  "
                 onClick={() => navigate("/fd-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor mb-3 ">
-                    Online Fixed Deposit(FD) Calculator
+                  <p className="xl:text-2xl text-xl font-medium text-textColor mb-3  ">
+                    Online FD Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-2 ">
+                  <span className="font-normal text-gray-500  line-clamp-3 ">
                     Determine your FD returns with our Online Fixed Deposit
                     Calculator. Enter your investment amount, tenure, and
                     interest rate for results
@@ -407,20 +407,20 @@ const AllCalculator = () => {
                     <img
                       src={fd}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-9 object-contain"
+                      className="w-full h-24 xl:mt-9 lg:mt-6 2lg:mt-8 mt-6 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary "
                 onClick={() => navigate("/homeEmi-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
-                    Online Home EMI Calculator
+                  <p className="xl:text-2xl text-xl font-medium text-textColor 2lg:mb-1 3lg:mb-3 lg:mb-3 mb-3">
+                     Home EMI Calculator
                   </p>
-                  <span className="font-normal text-gray-500 line-clamp-2  ">
+                  <span className="font-normal text-gray-500 line-clamp-3   ">
                     Calculate your Home Loan EMI effortlessly with our online
                     tool. Enter the loan amount, interest rate, and tenure to
                     get the EMI outcomes.
@@ -430,17 +430,17 @@ const AllCalculator = () => {
                     <img
                       src={home}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 mt-9 object-contain"
+                      className="w-full h-24 3lg:mt-9  lg:mt-6 mt-5 object-contain"
                     />
                   </div>
                 </div>
               </section>
               <section
-                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-2 border-[#D5E5FC] cursor-pointer  hover:border-primary "
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary "
                 onClick={() => navigate("/lumsum-calc")}
               >
                 <div>
-                  <p className="text-2xl font-medium text-textColor  mb-3 ">
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  xl:mb-3 ">
                     Lump Sum Calculator
                   </p>
                   <span className="font-normal text-gray-500 line-clamp-3  ">
@@ -453,7 +453,7 @@ const AllCalculator = () => {
                     <img
                       src={lump}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-5 object-contain"
+                      className="w-full h-28 mt-5 lg:mt-4 xl:mt-4 2lg:mt-3 3lg:mt-4 object-contain"
                     />
                   </div>
                 </div>

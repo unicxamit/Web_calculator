@@ -11,9 +11,11 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Header from "../component/Header";
-import ppflogo from "../assets/BG IMAGES/ppf1.png"
-import howuse from "../assets/BG IMAGES/how1.png";
-import benifite from "../assets/BG IMAGES/1 png.png"
+import ppflogo from "../assets/images/calculators_img/BG IMAGES/ppf1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how1.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/1 png.png";
+
+
 function PPFCalculator() {
   const [perPeriodDeposit, setPerPeriodDeposit] = useState("10000");
   const [tenure, setTenure] = useState("15");
@@ -234,7 +236,7 @@ function PPFCalculator() {
       <div className=" max-w-screen-xl mx-auto 3sm:px-10">
        
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">PPF Calculator</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">PPF Calculator</h1>
          
         </div>
         <div className="grid-layout">

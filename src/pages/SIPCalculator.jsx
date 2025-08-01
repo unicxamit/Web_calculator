@@ -12,8 +12,11 @@ import {
   HelpCircle,
 } from "lucide-react"; 
 import Header from "../component/Header";
-import siplogo from "../assets/BG IMAGES/sip1.png"
-import howuse from "../assets/BG IMAGES/how4.png";
+import siplogo from "../assets/images/calculators_img/BG IMAGES/sip1.png";
+import howuse from "../assets/images/calculators_img/BG IMAGES/how4.png";
+
+
+
 function SIPCalculator() {
   const [tab, setTab] = useState("sip");
   const [sipAmount, setSipAmount] = useState("5000");
@@ -234,7 +237,7 @@ function SIPCalculator() {
       <div className="second-container">
        
         <section className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
             Systematic Investment Plan Calculator
           </h1>
           {/* <p className="mb-8">
@@ -400,15 +403,15 @@ function SIPCalculator() {
                 <div className="mb-6">
                   <label
                     htmlFor="lumpAmount"
-                    className="input-label"
+                    className="block text-gray-600 font-medium mb-2"
                   >
                     Lumpsum Amount (₹)
                   </label>
                   <div
-                    className={`flex items-center w-full max-w-xl border rounded-xl px-2 py-1 ${
+                    className={`flex items-center border rounded-xl  px-3 py-3  ${
                       errorMessage.lumpAmount // Check if there's an error for lumpAmount
                         ? "border-red-500 shadow-red-300"
-                        : "border-gray-200 input-wrapper focus-within:border-primary focus-within:shadow-primary focus-within:shadow"
+                        : "border-gray-200  focus-within:border-primary focus-within:shadow-primary focus-within:shadow"
                     }`}
                   >
                     <label className="size-5 text-md font-normal text-gray-500">
@@ -419,7 +422,7 @@ function SIPCalculator() {
                       id="lumpAmount"
                       value={lumpAmount}
                       onChange={handleLumpsumAmountChange}
-                      className="input-field py-1.5"
+                      className="text-gray-900 font-[25rem] w-full outline-none bg-transparent"
                       min="1000"
                       max="10000000"
                       placeholder="e.g., 100000"
@@ -524,7 +527,7 @@ function SIPCalculator() {
                     
                          <div className="flex justify-between py-2 border-b border-gray-200">
         <span className="text-gray-900"> Interest Earned</span>
-        <span className="font-normal text-gray-900"> ₹{" "}
+        <span className="font-normal text-gray-900"> ₹
                           {formatNumber(
                             Math.max(
                               0,
@@ -536,7 +539,7 @@ function SIPCalculator() {
                           )}</span>
       </div>
                        </div>
-                        <div className="flex text-primary text-xl font-normal justify-between items-center mt-28 py-3  border-t-2 border-t-primary ">
+                        <div className="flex text-primary 2sm:text-xl font-normal justify-between items-center mt-28 py-3  border-t-2 border-t-primary ">
                         <span className="">
                           Total Value:
                         </span>
@@ -566,7 +569,7 @@ function SIPCalculator() {
                           Interest Earned:
                         </span>
                         <span className="font-normal text-gray-900">
-                          ₹{" "}
+                          ₹
                           {formatNumber(
                             Math.max(0, lumpResult - parseFloat(lumpAmount))
                           )}
@@ -574,7 +577,7 @@ function SIPCalculator() {
                       </div>
                      
                       </div> 
-                      <div className="flex text-primary text-xl font-normal justify-between items-center mt-28 py-3  border-t-2 border-t-primary">
+                      <div className="flex text-primary 2sm:text-xl font-normal justify-between items-center mt-28 py-3  border-t-2 border-t-primary">
                         <span className="">
                           Total Value:
                         </span>

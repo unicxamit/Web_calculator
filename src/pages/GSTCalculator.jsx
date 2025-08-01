@@ -7,11 +7,10 @@ import {
   Clock,
   CheckCircle,
 } from "lucide-react";
-import gstlogo from "../assets/gstlogo.png";
-import gsttype from "../assets/gsttypes.png";
-// import critical from "../assets/criticalupdates.png";
-import calculator from "../assets/BG IMAGES/how2.png";
-import benifite from "../assets/BG IMAGES/2 png .png"
+import gstlogo from "../assets/images/calculators_img/gstlogo.png";
+import calculator from "../assets/images/calculators_img/BG IMAGES/how2.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/2 png .png";
+
 import "../css/Gst.css";
 import Header from "../component/Header";
 function GSTCalculator() {
@@ -128,7 +127,7 @@ function GSTCalculator() {
         <div className="second-container ">
           <div className="">
             <section className=" mb-14 ">
-              <h1 className="text-4xl font-medium text-textColor mb-5">
+              <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
                 GST Calculator
               </h1>
               {/* <p className="mb-12 text-base">
@@ -245,13 +244,13 @@ function GSTCalculator() {
               {/* Right - Results */}
               <div className="p-12 bg-white  w-full sm:p-6  rounded-tr-lg  rounded-br-lg rounded-bl-lg shadow-shadowsmall">
                 <div className="mt-5 space-y-4">
-                  <div className="flex justify-between py-2 border-b border-gray-200">
+                  <div className="flex justify-between items-center 3md:flex-row flex-col py-2 border-b border-gray-200">
                     <span className="text-gray-900">Original Amount</span>
                     <span className="font-normal text-gray-900">
                       ₹ {parseFloat(cost).toFixed(2)}
                     </span>
                   </div>
-                  <div className="flex justify-between py-2 border-b border-gray-200">
+                  <div className="flex justify-between 3md:flex-row flex-col items-center py-2 border-b border-gray-200">
                     <span className="text-gray-900">GST Amount</span>
                     <span className="font-normal text-gray-900">
                       ₹ {gstAmount}
@@ -263,13 +262,13 @@ function GSTCalculator() {
                     </p>
                     {supplyType === "Intra-state" ? (
                       <>
-                        <div className="flex justify-between border-b border-gray-200 py-4">
+                        <div className="flex justify-between 3md:flex-row flex-col items-center border-b border-gray-200 py-4">
                           <span className="text-gray-900">CGST (50%)</span>
                           <span className="font-normal text-gray-900">
                             ₹ {cgstAmount}
                           </span>
                         </div>
-                        <div className="flex justify-between  border-b border-gray-200 py-4">
+                        <div className="flex justify-between 3md:flex-row flex-col items-center border-b border-gray-200 py-4">
                           <span className="text-gray-900">SGST (50%)</span>
                           <span className="font-normal text-gray-900">
                             ₹ {sgstAmount}
@@ -277,18 +276,18 @@ function GSTCalculator() {
                         </div>
                       </>
                     ) : (
-                      <div className="flex justify-between py-2 border-b border-gray-200">
+                      <div className="flex justify-between 3md:flex-row flex-col items-center py-2 border-b border-gray-200">
                         <span className="text-gray-900">IGST (100%)</span>
                         <span className="font-normal text-gray-900">
                           ₹ {igstAmount}
                         </span>
                       </div>
                     )}
-                    <div className=" flex justify-between py-2 border-b border-gray-200 mt-4">
+                    <div className=" flex 3md:flex-row flex-col items-center justify-between py-2 border-b border-gray-200 mt-4">
                       <span className="text-gray-900">GST Rate</span>
                       <span className="font-normal text-gray-900">{gst}%</span>
                     </div>
-                    <div className="flex text-primary text-xl font-normal justify-between items-center mt-20 py-3  border-t-2 border-t-primary  ">
+                    <div className="flex 3md:flex-row flex-col  text-primary text-xl font-normal justify-between items-center mt-20 py-3  border-t-2 border-t-primary  ">
                       <h2 className="">Total Amount</h2>
                       <p className="">₹ {totalAmount}</p>
                     </div>

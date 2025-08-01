@@ -14,9 +14,12 @@ import {
   Scale,
 } from "lucide-react";
 import Header from "../component/Header";
-import mutuallogo from "../assets/BG IMAGES/mf1.png";
-import howuse from "../assets/BG IMAGES/how2.png";
-import benifite from "../assets/BG IMAGES/2 png .png";
+import mutuallogo from "../assets/images/calculators_img/BG IMAGES/mf1.png";
+import howuse from "../assets/images/calculators_img/BG IMAGES/how2.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/2 png .png";
+
+
+
 function MutualFundCalculator() {
   const [tab, setTab] = useState("sip"); // 'sip' or 'lumpsum'
 
@@ -319,7 +322,7 @@ function MutualFundCalculator() {
         <div className="second-container">
           {/* <div className="border-2"> */}
           <section className="mb-14">
-            <h1 className="text-4xl font-medium text-textColor mb-5">
+            <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
               Mutual Fund Calculator
             </h1>
             {/* <p className="mb-8">

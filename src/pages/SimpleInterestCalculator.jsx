@@ -13,9 +13,12 @@ import {
   CalendarDays,
 } from "lucide-react";
 import Header from "../component/Header";
-import simplelogo from "../assets/BG IMAGES/sim1.png"
-import howuse from "../assets/BG IMAGES/how4.png"
-import benifite from "../assets/BG IMAGES/5 png .png"
+import simplelogo from "../assets/images/calculators_img/BG IMAGES/sim1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how4.png"
+import benifite from "../assets/images/calculators_img/BG IMAGES/5 png .png"
+
+
+
 function SimpleInterestCalculator() {
   const [activeTab, setActiveTab] = useState("simple");
   const [principal, setPrincipal] = useState("10000");
@@ -176,7 +179,7 @@ function SimpleInterestCalculator() {
           {/* Left Section: Introduction and Description */}
 <div className="">
           <div className="mb-14">
-            <h1 className="text-4xl font-medium text-textColor mb-5">
+            <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
               Simple & Compound Interest Calculator
             </h1>
             {/* <p className="mb-8">

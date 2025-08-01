@@ -24,9 +24,10 @@ import {
   Banknote,
   Percent,
 } from "lucide-react";
-import homelogo from "../assets/BG IMAGES/hemi1.png"
-import howuse from "../assets/BG IMAGES/how5.png"
-import benifite from "../assets/BG IMAGES/5 png .png"
+import homelogo from "../assets/images/calculators_img/BG IMAGES/hemi1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how5.png"
+import benifite from "../assets/images/calculators_img/BG IMAGES/5 png .png"
+
 import Header from "../component/Header";
 function HomeEMICalculator() {
   const [loanAmount, setLoanAmount] = useState("10000");
@@ -217,7 +218,7 @@ function HomeEMICalculator() {
       <div className="  second-container">
         {/* <div className="border-2"> */}
         <section className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
             Home Loan Calculator
           </h1>
           {/* <p className="mb-8">

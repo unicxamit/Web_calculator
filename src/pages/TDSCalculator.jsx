@@ -12,9 +12,10 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Header from "../component/Header";
-import tdslogo from "../assets/BG IMAGES/tds1.png"
-import benifite from "../assets/BG IMAGES/4 png.png"
-import howuse from "../assets/BG IMAGES/how2.png";
+import tdslogo from "../assets/images/calculators_img/BG IMAGES/tds1.png"
+import benifite from "../assets/images/calculators_img/BG IMAGES/4 png.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how2.png";
+
 function TDSCalculator() {
   // List of TDS sections with their logic (Unique keys now)
   const tdsOptions = [
@@ -278,7 +279,7 @@ function TDSCalculator() {
         className=" second-container">
 {/* <div className="border-2"> */}
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">TDS Calculator (India)</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">TDS Calculator (India)</h1>
          
         </div>
         {/* Right Section: Calculator Inputs and Results */}
@@ -385,7 +386,7 @@ function TDSCalculator() {
             </div>
           </div>
 
-          <div className="p-12 bg-white max-h-[380px] w-full sm:p-6  rounded-tr-lg  rounded-br-lg rounded-bl-lg shadow-shadowsmall">
+          <div className="p-12 bg-white lg:max-h-[450px] w-full sm:p-6  rounded-tr-lg  rounded-br-lg rounded-bl-lg shadow-shadowsmall">
             <div className="mt-5">
               <div className="space-y-6">
                 <div className="flex justify-between py-2 border-b border-gray-200">

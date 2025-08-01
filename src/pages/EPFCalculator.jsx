@@ -11,11 +11,12 @@ import {
   ChevronUp,
   ChevronDown,
 } from "lucide-react";
-import benifite from "../assets/BG IMAGES/3 png.png";
-// import "../css/Epf.css";
+import benifite from "../assets/images/calculators_img/BG IMAGES/3 png.png";
+import epfcalc from "../assets/images/calculators_img/BG IMAGES/epf1.png";
+import howuse from "../assets/images/calculators_img/BG IMAGES/how3.png"
+
 import Header from "../component/Header";
-import epfcalc from "../assets/BG IMAGES/epf1.png";
-import howuse from "../assets/BG IMAGES/how3.png"
+
 function EPFCalculator() {
   const [monthlyBasicDA, setMonthlyBasicDA] = useState("25000");
   const [currentAge, setCurrentAge] = useState("30");
@@ -316,7 +317,7 @@ function EPFCalculator() {
         <div className=" second-container">
           <div className="">
             <section className="mb-14">
-              <h1 className="text-4xl font-medium text-textColor mb-5">
+              <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
                 EPF Calculator
               </h1>
               {/* <p className="mb-8 ">
@@ -367,8 +368,8 @@ function EPFCalculator() {
                     </p>
                   )}
                 </div>
-
-                <div className="mb-6">
+<section className="grid 2lg:grid-cols-2 2lg:space-x-4">
+   <div className="mb-6">
                   <label
                     htmlFor="currentAge"
                     className="block text-gray-600 font-medium mb-2"
@@ -446,14 +447,15 @@ function EPFCalculator() {
                     </p>
                   )}
                 </div>
-
-                {/* Employee Contribution Percent Input */}
-                <div className="mb-6">
+</section>
+               
+<section className="grid 2lg:grid-cols-2 2lg:space-x-4">  
+<div className="mb-6">
                   <label
                     htmlFor="employeeContributionPercent"
                     className="block text-gray-600 font-medium mb-2"
                   >
-                    Your Contribution to EPF (%)
+                    Your  EPF (%)
                   </label>
                   <div
                     className={`flex items-center border rounded-xl  px-3 py-3 ${
@@ -495,7 +497,7 @@ function EPFCalculator() {
                     htmlFor="annualSalaryIncreasePercent"
                     className="block text-gray-600 font-medium mb-2"
                   >
-                    Expected Annual Salary Increase (%)
+                      Salary Increase (%)
                   </label>
                   <div
                     className={`flex items-center border rounded-xl  px-3 py-3 ${
@@ -530,6 +532,9 @@ function EPFCalculator() {
                     </p>
                   )}
                 </div>
+                </section>
+                {/* Employee Contribution Percent Input */}
+              
 
                 {/* Current EPF Balance Input */}
                 <div className="mb-6">
@@ -610,15 +615,15 @@ function EPFCalculator() {
 
               {/* Right - Result Section */}
 
-              <div className="p-12 bg-white h-[23rem] w-full sm:p-6  rounded-tr-lg   rounded-br-lg rounded-bl-lg shadow-shadowsmall">
+              <div className="p-12 bg-white 3md:h-[420px] lg:h-[390px] w-full sm:p-6  rounded-tr-lg   rounded-br-lg rounded-bl-lg shadow-shadowsmall">
                 <div className="mt-5">
                   <div className="space-y-4">
                     <div className="flex justify-between py-2 border-b border-gray-200">
                       <span className="text-gray-900">
                         Your Estimated PF Corpus
                       </span>
-                      <span className="font-normal text-gray-900">
-                        ₹{" "}
+                      <span className="2sm:font-normal text-gray-900">
+                        ₹
                         {estimatedCorpus.toLocaleString("en-IN", {
                           maximumFractionDigits: 0,
                         })}
@@ -628,9 +633,9 @@ function EPFCalculator() {
                       <span className="text-gray-900">
                         Total Contributions:
                       </span>
-                      <span className="font-normal text-gray-900">
-                        ₹{" "}
-                        {totalContributions.toLocaleString("en-IN", {
+                      <span className=" 2sm:font-normal text-gray-900">
+                        ₹
+                        {  totalContributions.toLocaleString("en-IN", {
                           maximumFractionDigits: 0,
                         })}
                       </span>
@@ -641,10 +646,10 @@ function EPFCalculator() {
                         Breakdown
                       </p>
 
-                      <div className="flex text-primary text-xl font-normal justify-between items-center mt-20 py-3  border-t-2 border-t-primary  ">
+                      <div className="flex text-primary 2sm:text-xl font-normal justify-between items-center mt-20 py-3  border-t-2 border-t-primary  ">
                         <span className="">Total Interest Earned:</span>
                         <span className="">
-                          {" "}
+                          
                           ₹
                           {totalInterestEarned.toLocaleString("en-IN", {
                             maximumFractionDigits: 0,

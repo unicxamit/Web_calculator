@@ -15,8 +15,11 @@ import {
   HelpCircle,
 } from "lucide-react";
 import Header from "../component/Header";
-import gratuitylogo from "../assets/BG IMAGES/gratuity1.png"
-import howuse from "../assets/BG IMAGES/how5.png"
+import gratuitylogo from "../assets/images/calculators_img/BG IMAGES/gratuity1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how5.png"
+
+
+
 function GratuityCalculator() {
   const [lastSalary, setLastSalary] = useState("10000");
   const [yearsOfService, setYearsOfService] = useState("5");
@@ -148,7 +151,7 @@ function GratuityCalculator() {
       <div className=" second-container">
         
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">Gratuity Calculator</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">Gratuity Calculator</h1>
          
         </div>
 
@@ -236,7 +239,7 @@ function GratuityCalculator() {
           </div>
 
           {/* Results Section */}
-          <div className="p-12 bg-white max-h-[180px]  w-full sm:p-6  rounded-tr-lg  rounded-br-lg rounded-bl-lg shadow-shadowsmall">
+          <div className="p-12 bg-white 2sm:max-h-[280px] 2md:max-h-[240px] w-full sm:p-6  rounded-tr-lg  rounded-br-lg rounded-bl-lg shadow-shadowsmall">
             <div className="mt-5">
               <div className="space-y-4">
                 <div className="flex text-primary text-xl font-normal justify-between items-center mt-0 py-3  border-t-2 border-t-primary  ">
@@ -244,7 +247,7 @@ function GratuityCalculator() {
                     Estimated Gratuity Amount:
                   </span>
                   <span className="">
-                    ₹ {formatNumber(gratuity) || "0.00"}
+                    ₹{formatNumber(gratuity) || "0.00"}
                   </span>
                 </div>
 

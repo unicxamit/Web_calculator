@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { FaRupeeSign } from "react-icons/fa"; // Import FaRupeeSign for consistency
+
 
 import { ChevronDown, ChevronUp } from "lucide-react";
+import npslogo from "../assets/images/calculators_img/BG IMAGES/nps.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/2 png .png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how2.png"
 import Header from "../component/Header";
-import npslogo from "../assets/BG IMAGES/nps.png";
-import benifite from "../assets/BG IMAGES/2 png .png"
-import howuse from "../assets/BG IMAGES/how2.png"
-// import { AlertCircle, CheckCircle, Clock, ChevronDown, ChevronUp } from 'lucide-react';
+
+
+
 function NPSCalculator() {
   const [currentAge, setCurrentAge] = useState(30);
   const [monthlyContribution, setMonthlyContribution] = useState(5000);
@@ -181,7 +183,7 @@ function NPSCalculator() {
       <div className="second-container">
         <div className="">
           <section className="mb-14">
-            <h1 className="text-4xl font-medium text-textColor mb-5 ">
+            <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5 ">
               NPS Calculator
             </h1>
             {/* <p className="mb-8">
@@ -305,7 +307,7 @@ function NPSCalculator() {
                   <div className="flex justify-between py-2 border-b border-gray-200">
                     <span className=" text-gray-900">Total Investment:</span>
                     <span className="font-normal text-gray-900">
-                      ₹{" "}
+                      ₹
                       {totalInvestment.toLocaleString("en-IN", {
                         maximumFractionDigits: 0,
                       })}
@@ -316,7 +318,7 @@ function NPSCalculator() {
                   <div className="flex justify-between py-2 border-b border-gray-200">
                     <span className=" text-gray-900">Interest Earned:</span>
                     <span className="font-normal text-gray-900">
-                      ₹{" "}
+                      ₹
                       {interestEarned.toLocaleString("en-IN", {
                         maximumFractionDigits: 0,
                       })}
@@ -327,7 +329,7 @@ function NPSCalculator() {
                   <div className="flex justify-between py-2 border-b border-gray-200">
                     <span className=" text-gray-900">Maturity Amount:</span>
                     <span className="font-normal text-gray-900">
-                      ₹{" "}
+                      ₹
                       {totalCorpus.toLocaleString("en-IN", {
                         maximumFractionDigits: 0,
                       })}
@@ -340,7 +342,7 @@ function NPSCalculator() {
                       Lump Sum Withdrawal (Tax-Free):
                     </span>
                     <span className="font-normal text-gray-900">
-                      ₹{" "}
+                      ₹
                       {lumpSumWithdrawal.toLocaleString("en-IN", {
                         maximumFractionDigits: 0,
                       })}
@@ -353,7 +355,7 @@ function NPSCalculator() {
                       Annuity Purchase Amount:
                     </span>
                     <span className="font-normal text-gray-900">
-                      ₹{" "}
+                      ₹
                       {annuityAmount.toLocaleString("en-IN", {
                         maximumFractionDigits: 0,
                       })}
@@ -366,7 +368,7 @@ function NPSCalculator() {
                 <div className="flex text-primary text-xl font-normal justify-between items-center mt-20 py-3  border-t-2 border-t-primary ">
                   <span className="">Estimated Monthly Pension:</span>
                   <span className="">
-                    ₹{" "}
+                    ₹
                     {monthlyPension.toLocaleString("en-IN", {
                       maximumFractionDigits: 0,
                     })}

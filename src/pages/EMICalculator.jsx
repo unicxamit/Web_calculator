@@ -17,10 +17,16 @@ import {
   CheckCircle,
   FileText,
 } from "lucide-react";
-import emilogo from "../assets/BG IMAGES/emi1.png"
+
+
+import emilogo from "../assets/images/calculators_img/BG IMAGES/emi1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how3.png"
+import benifite from  "../assets/images/calculators_img/BG IMAGES/3 png.png"
+
+// import benifite from  "../assets/BG IMAGES/3 png.png"
 import Header from "../component/Header";
-import howuse from "../assets/BG IMAGES/how3.png"
-import benifite from  "../assets/BG IMAGES/3 png.png"
+// import howuse from "../assets/BG IMAGES/how3.png"
+// import benifite from  "../assets/BG IMAGES/3 png.png"
 function EMICalculator() {
   const [loanAmount, setLoanAmount] = useState("2000000");
   const [interestRate, setInterestRate] = useState("14");
@@ -209,7 +215,7 @@ function EMICalculator() {
       <div className="  second-container">
         {/* <div className="border-2"> */}
         <section className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
             EMI Calculator
           </h1>
           {/* <p className="mb-8">

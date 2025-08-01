@@ -14,9 +14,9 @@ import {
   Target,
 } from "lucide-react";
 import Header from "../component/Header";
-import rdlogo from "../assets/BG IMAGES/rd1.png"
-import howuse from "../assets/BG IMAGES/how3.png";
-import benifite from "../assets/BG IMAGES/4 png.png"
+import rdlogo from "../assets/images/calculators_img/BG IMAGES/rd1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how3.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/4 png.png"
 
 
 function RDCalculator() {
@@ -198,7 +198,7 @@ function RDCalculator() {
       <div className=" second-container">
      
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">Recurring Deposit Calculator</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">Recurring Deposit Calculator</h1>
           {/* <p className="mb-8">
             Estimate the maturity amount and interest earned on your Recurring
             Deposit (RD). Enter your monthly deposit amount, tenure, and annual

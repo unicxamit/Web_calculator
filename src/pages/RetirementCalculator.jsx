@@ -13,9 +13,11 @@ import {
   ChevronDown,
 } from "lucide-react";
 import Header from "../component/Header";
-import gratuitylogo from "../assets/BG IMAGES/retir1.png"
-import howuse from "../assets/BG IMAGES/how1.png";
-import benifite from "../assets/BG IMAGES/3 png.png"
+import gratuitylogo from "../assets/images/calculators_img/BG IMAGES/retir1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how1.png";
+import benifite from "../assets/images/calculators_img/BG IMAGES/3 png.png"
+
+
 
 function RetirementCalculator() {
   // State variables for user inputs
@@ -405,7 +407,7 @@ function RetirementCalculator() {
     <section className="container-div mt-14">
       <div className="second-container">
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">Retirement Calculator</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">Retirement Calculator</h1>
          
         </div>
 
@@ -445,9 +447,9 @@ function RetirementCalculator() {
             </div>
 
             {/* Retirement Age */}
-            <div className="mb-6">
+            <section className="grid 4xl:grid-cols-2 4xl:space-x-4"> <div className="mb-6">
               <label htmlFor="retirementAge" className="block text-gray-600 font-medium mb-2">
-                Retirement Age (Years)
+                Retirement Age(Yrs)
               </label>
               <div
                 className={`flex items-center border rounded-xl  px-3 py-3 
@@ -478,7 +480,7 @@ function RetirementCalculator() {
             {/* Life Expectancy */}
             <div className="mb-6">
               <label htmlFor="lifeExpectancy" className="block text-gray-600 font-medium mb-2">
-                Life Expectancy (Years)
+                Life Expectancy
               </label>
               <div
                 className={` flex items-center border rounded-xl  px-3 py-3 
@@ -504,10 +506,9 @@ function RetirementCalculator() {
               {errors.lifeExpectancy && (
                 <p className="error-text">{errors.lifeExpectancy}</p>
               )}
-            </div>
-
-            {/* Current Monthly Expenses */}
-            <div className="mb-6">
+            </div></section>
+           
+<section className="grid 4xl:grid-cols-2 4xl:space-x-4"> <div className="mb-6">
               <label htmlFor="currentMonthlyExpenses" className="block text-gray-600 font-medium mb-2">
                 Current Monthly Expenses (₹)
               </label>
@@ -566,12 +567,12 @@ function RetirementCalculator() {
               {errors.inflationRate && (
                 <p className="error-text">{errors.inflationRate}</p>
               )}
-            </div>
-
-            {/* Pre-Retirement ROI */}
-            <div className="mb-6">
+            </div></section>
+            {/* Current Monthly Expenses */}
+           
+<section className="grid 4xl:grid-cols-2 4xl:space-x-4">   <div className="mb-6">
               <label htmlFor="preRetirementROI" className="block text-gray-600 font-medium mb-2">
-                Expected ROI (Pre-Retirement, %)
+                ROI (Pre-Retirement, %)
               </label>
               <div
                 className={` flex items-center border rounded-xl  px-3 py-3 
@@ -603,7 +604,7 @@ function RetirementCalculator() {
             {/* Post-Retirement ROI */}
             <div className="mb-6">
               <label htmlFor="postRetirementROI" className="block text-gray-600 font-medium mb-2">
-                Expected ROI (Post-Retirement, %)
+               ROI (Post-Retirement, %)
               </label>
               <div
                 className={`flex items-center border rounded-xl  px-3 py-3 
@@ -630,10 +631,10 @@ function RetirementCalculator() {
               {errors.postRetirementROI && (
                 <p className="error-text">{errors.postRetirementROI}</p>
               )}
-            </div>
-
-            {/* Existing Savings */}
-            <div className="mb-6">
+            </div></section>
+            {/* Pre-Retirement ROI */}
+         
+<section className="grid 4xl:grid-cols-2 4xl:space-x-4">  <div className="mb-6">
               <label htmlFor="existingSavings" className="block text-gray-600 font-medium mb-2">
                 Existing Retirement Savings (₹)
               </label>
@@ -665,7 +666,7 @@ function RetirementCalculator() {
             {/* Retirement Benefits */}
             <div className="mb-6">
               <label htmlFor="retirementBenefits" className="block text-gray-600 font-medium mb-2">
-                Expected Retirement Benefits (₹)
+                 Retirement Benefits (₹)
               </label>
               <div
                 className={` flex items-center border rounded-xl  px-3 py-3
@@ -690,7 +691,9 @@ function RetirementCalculator() {
               {errors.retirementBenefits && (
                 <p className="error-text">{errors.retirementBenefits}</p>
               )}
-            </div>
+            </div></section>
+            {/* Existing Savings */}
+          
           </div>
 
           {/* Results Display */}
@@ -780,12 +783,13 @@ function RetirementCalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is Retirement Planning? Section */}
             <section className="">
-              <h2 className="main-heading mb-3">
-                What is Retirement Planning?
-              </h2>
+             
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
-                     <p className="mb-4 p-content">
+                     <h2 className="main-heading mb-3">
+                What is Retirement Planning?
+              </h2>
+                     <p className=" p-content">
                 <strong className="text-blue-500">Retirement planning</strong>{" "}
                 is the process of setting financial goals for your post-working
                 life and developing a strategy to achieve them. It involves

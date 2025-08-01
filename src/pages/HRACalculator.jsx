@@ -11,9 +11,11 @@ import {
   Users,
 } from "lucide-react"; 
 import Header from "../component/Header";
-import hralogo from "../assets/BG IMAGES/hra1.png"
-import howuse from "../assets/BG IMAGES/how3.png";
-import benifite from "../assets/BG IMAGES/3 png.png";
+import hralogo from "../assets/images/calculators_img/BG IMAGES/hra1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how3.png";
+
+
+
 const HRACalculator = () => {
   const [basic, setBasic] = useState("600000");
   const [da, setDa] = useState("998");
@@ -152,7 +154,7 @@ const HRACalculator = () => {
 
       
         <div className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5 ">HRA Calculator</h1>
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5 ">HRA Calculator</h1>
           {/* <p className="mb-8">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
             veniam beatae veritatis possimus nisi quaerat ad, omnis voluptas
@@ -379,8 +381,8 @@ const HRACalculator = () => {
           <section className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-md shadow-sm">
             <h2 className="text-2xl font-semibold text-blue-700 mb-3 gap-2 flex items-center">
               <AlertCircle size={18} className="mr-2 mt-1 flex-shrink-0" />
-              HRA Tax Exemption:{" "}
-              <strong>Important Updates & Rules You Need to Know!</strong>
+              HRA Tax Exemption:
+            Important Updates & Rules You Need to Know!
             </h2>
             <p className="text-blue-700 mb-4  tracking-wide text-base font-[400]">
               Understanding the <strong>House Rent Allowance (HRA)</strong>{" "}

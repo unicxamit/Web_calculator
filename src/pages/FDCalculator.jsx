@@ -19,9 +19,11 @@ import {
   Percent,
   CreditCard,
 } from "lucide-react";
-import fdlogo from "../assets/BG IMAGES/fd1.png"
-import howuse from "../assets/BG IMAGES/how4.png"
-import benifite from "../assets/BG IMAGES/4 png.png"
+import fdlogo from "../assets/images/calculators_img/BG IMAGES/fd1.png"
+import howuse from "../assets/images/calculators_img/BG IMAGES/how4.png"
+import benifite from "../assets/images/calculators_img/BG IMAGES/4 png.png"
+
+
 import Header from "../component/Header";
 function FDCalculator() {
   const [principal, setPrincipal] = useState("10000");
@@ -161,7 +163,7 @@ function FDCalculator() {
       <div className="  second-container">
    
         <section className="mb-14">
-          <h1 className="text-4xl font-medium text-textColor mb-5">
+          <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
             Fixed Deposit Calculator
           </h1>
           {/* <p className="mb-8">
@@ -364,11 +366,12 @@ function FDCalculator() {
           <div className="space-y-14 text-gray-700 text-base leading-relaxed">
             {/* What is a Fixed Deposit (FD)? Section */}
             <section className="">
-              <h2 className="main-heading mb-3">
-                What is a Fixed Deposit (FD)?
-              </h2>
+           
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                   <div>
+                       <h2 className="main-heading mb-3">
+                What is a Fixed Deposit (FD)?
+              </h2>
                     <p className="mb-4 p-content">
                 A{" "}
                 <strong className="bold-content">
@@ -405,8 +408,8 @@ function FDCalculator() {
               <h2 className="main-heading mb-3">
                 Why is an FD Calculator Important?
               </h2>
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                <div>
+              {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                <div> */}
                   <p className="mb-4 p-content">
                     An FD calculator is an essential tool for effective
                     financial planning and making informed investment decisions.
@@ -475,17 +478,17 @@ function FDCalculator() {
                     you to optimize your Fixed Deposit investments for maximum
                     returns.
                   </p>
-                </div>
+                {/* </div> */}
                 {/* Image for Why Important */}
-                <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+                {/* <div className="flex justify-center items-center mt-[-20px] max-h-[350px] border rounded shadow-sm hover:shadow-md transition-shadow duration-300"> */}
                   {/* <img
                 src={fdBenefitsImage}
                 alt="Illustration showing the benefits of using an FD calculator for financial planning and savings growth"
                 className="w-full h-auto max-h-[350px] xl:max-h-[400px] object-contain rounded"
                 loading="lazy"
               /> */}
-                </div>
-              </div>
+                {/* </div>
+              </div> */}
             </section>
 
             {/* How to Use the UniCX FD Calculator Section */}
@@ -556,7 +559,7 @@ function FDCalculator() {
                   </ul>
                 </div>
                 {/* Image for How to Use */}
-                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center items-center  hover:scale-101 transition-transform cursor-pointer duration-300">
                   <img
                 src={howuse}
                 alt="Image showing the UniCX FD calculator interface with inputs for principal, rate, tenure, and compounding frequency, and calculated outputs"
@@ -801,7 +804,7 @@ function FDCalculator() {
                   </ul>
                 </div>
                 {/* Image for Who Can Benefit */}
-                <div className="flex justify-center items-center  hover:shadow-md transition-shadow duration-300">
+                <div className="flex justify-center items-center hover:scale-101 transition-transform cursor-pointer duration-300">
                   <img
                     src={benifite}
                     alt="Image showing diverse individuals benefiting from using an FD calculator for savings and financial planning"

@@ -1,26 +1,34 @@
 import React from 'react'
 import '../css/Header.css'
-
-import header from  "../assets/header.jpg"
+import headerImage from '../assets/header.jpg';
+import { IoIosContact } from "react-icons/io";
+import { Brain, Lightbulb, MessageSquare } from 'lucide-react';
 export default function Header() {
-  return (
-    <header className="app-header-startup">
-      {/* This wrapper manages the side-by-side layout */}
-      <div className="header-flex-container">
-        {/* Image on the left */}
+ return (
+    <header className="startup-header" role="banner">
+      <div className="header-container">
+        {/* Left Image */}
         <div className="header-image-wrapper">
-          <img src={header} alt="Startup Header" className="header-main-image " />
+          <img
+            src={headerImage}
+            alt="Professional startup support banner"
+            className="header-image"
+          />
+          <div className="header-overlay"></div>
         </div>
 
-        {/* Text content on the right */}
-        <div className="header-text-content">
-          <h1 className="header-title-startup">Build Your Startup Foundation</h1>
-          <p className="header-tagline-startup">Expert Guidance. Seamless Setup. Accelerated Growth.</p>
-          <button className="header-cta-button-startup">
-            Launch Your Venture Today
-          </button>
+        {/* Right Content */}
+        <div className="header-content">
+          <h1 className="header-title">Launch Smarter, Grow Faster</h1>
+          <p className="header-subtitle">
+            Get expert help to set up your startup — fast, compliant, and ready to scale.
+          </p>
+          <div className="header-cta" aria-label="Get started with startup setup services">
+          <MessageSquare size={25} />
+            Talk to an Expert
+          </div>
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -20,6 +20,7 @@ import EMICalculator from "./pages/EMICalculator";
 import FDCalculator from "./pages/FDCalculator";
 import HomeEMICalculator from "./pages/HomeEMICalculator";
 import LumpsumCalculator from "./pages/LumpsumCalculator";
+import ITRCalculator from "./pages/ITRCalculator";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AllCalculator />} />
         <Route path="/gst-calc" element={<GSTCalculator />} />
+        <Route path="/itr-calc" element={<ITRCalculator />} />
         <Route path="/epf-calc" element={<EPFCalculator />} />
         <Route path="/nps-calc" element={<NPSCalculator />} />
         <Route path="/hra-calc" element={<HRACalculator />} />
