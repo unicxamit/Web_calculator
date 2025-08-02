@@ -3,7 +3,7 @@ import { Mail } from 'lucide-react'; // Using lucide-react for the icon
 import Header from '../component/Header';
 
 // The main App component for the Coming Soon page
-const ITRCalculator = () => {
+const BusinessCalculator = () => {
   // Define the target date for the countdown.
   // This is set to one week from the current date.
   const targetDate = new Date();
@@ -89,7 +89,7 @@ const ITRCalculator = () => {
       <section className='second-container '>
       <section className=" mb-14 ">
               <h1 className="md:text-4xl text-3xl font-medium text-textColor mb-5">
-                ITR Calculator
+                Business Calculator
               </h1>
               </section>
     
@@ -100,7 +100,7 @@ const ITRCalculator = () => {
           Coming Soon
         </h1>
         <p className="p-content mb-8 max-w-xl">
-          We're working hard to launch our new <strong className='text-blue-500'>ITR Calculator</strong>. Follow us for updates and get notified when we go live!
+          We're working hard to launch our new <strong className='text-blue-500'>Business Calculator</strong>. Follow us for updates and get notified when we go live!
         </p>
 
         {/* Countdown Timer */}
@@ -175,4 +175,4 @@ const ITRCalculator = () => {
   );
 };
 
-export default ITRCalculator;
+export default BusinessCalculator;

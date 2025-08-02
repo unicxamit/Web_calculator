@@ -68,7 +68,7 @@ const AllCalculator = () => {
                 </div>
               </div>
 
-              <section
+              {/* <section
                 className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  h-[318px]   hover:border-primary "
                 onClick={() => navigate("/itr-calc")}
               >
@@ -91,7 +91,7 @@ const AllCalculator = () => {
                     />
                   </div>
                 </div>
-              </section>
+              </section> */}
               <section
                 className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  hover:border-primary  h-[318px]"
                 onClick={() => navigate("/epf-calc")}
@@ -299,7 +299,7 @@ const AllCalculator = () => {
               </section>
               <section
                 className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] h-[318px] hover:border-primary  cursor-pointer "
-                onClick={() => navigate("/business")}
+                onClick={() => navigate("/business-calc")}
               >
                 <div>
                   <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3 ">
@@ -384,7 +384,7 @@ const AllCalculator = () => {
                     <img
                       src={emi}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full xl:h-36 h-[140px] lg:mt-0.5 xl:mt-2 object-contain"
+                      className="w-full xl:h-36 h-[140px] lg:mt-0.5 xl:mt-2 2lg:mt-0 object-contain"
                     />
                   </div>
                 </div>
@@ -407,7 +407,7 @@ const AllCalculator = () => {
                     <img
                       src={fd}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-24 xl:mt-9 lg:mt-6 2lg:mt-8 mt-6 object-contain"
+                      className="w-full h-24 xl:mt-9 lg:mt-6 2lg:mt-10 mt-6 object-contain"
                     />
                   </div>
                 </div>
@@ -435,6 +435,30 @@ const AllCalculator = () => {
                   </div>
                 </div>
               </section>
+                 <section
+                className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer  h-[318px]   hover:border-primary "
+                onClick={() => navigate("/itr-calc")}
+              >
+                <div>
+                  <p className="xl:text-2xl text-xl font-medium text-textColor  mb-3  ">
+                    ITR Calculator
+                  </p>
+                  <span className=" font-normal text-gray-500 line-clamp-3 ">
+                    A useful online tool for accurately computing income tax
+                    liability, deductions, and refunds based on the latest tax
+                    laws and regulations. It simplifies tax planning and
+                    compliance
+                  </span>
+                  <div className=" ">
+                  
+                    <img
+                      src={itr}
+                      alt="EPF - Retirement Savings and Security"
+                      className="w-full h-40 mt-0 object-contain"
+                    />
+                  </div>
+                </div>
+              </section>
               <section
                 className="border rounded-xl pt-7 lg:pl-6 lg:pr-[54px] px-4 border-[#D5E5FC] cursor-pointer h-[318px] hover:border-primary "
                 onClick={() => navigate("/lumsum-calc")}
@@ -453,7 +477,7 @@ const AllCalculator = () => {
                     <img
                       src={lump}
                       alt="EPF - Retirement Savings and Security"
-                      className="w-full h-28 mt-5 lg:mt-4 xl:mt-4 2lg:mt-3 3lg:mt-4 object-contain"
+                      className="w-full h-28 mt-5 lg:mt-3 xl:mt-4 2lg:mt-2 3lg:mt-4 object-contain"
                     />
                   </div>
                 </div>

@@ -21,6 +21,7 @@ import FDCalculator from "./pages/FDCalculator";
 import HomeEMICalculator from "./pages/HomeEMICalculator";
 import LumpsumCalculator from "./pages/LumpsumCalculator";
 import ITRCalculator from "./pages/ITRCalculator";
+import BusinessCalculator from "./pages/BusinessCalculator";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
         <Route path="/fd-calc" element={<FDCalculator />} />
         <Route path="/homeEmi-calc" element={<HomeEMICalculator />} />
         <Route path="/lumsum-calc" element={<LumpsumCalculator />} />
+       <Route path="/business-calc" element={<BusinessCalculator />} />
       </Routes>
     </Router>
   );
